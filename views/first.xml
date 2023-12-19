@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="base_first_action" model="ir.actions.act_window">
+        <field name="name">Action base first</field>
+        <field name="res_model">base.first</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[]</field>
+        <field name="context">{}</field>
+        <field name="help" type="html">
+            <p>ini halaman base first</p>
+        </field>
+    </record>
+
+    <record id="base_first_view_tree" model="ir.ui.view">
+        <field name="name">base.first.view.tree</field>
+        <field name="model">base.first</field>
+        <field name="arch" type="xml">
+            <tree string="first tree">
+                <field name="nama" />
+                <field name="password" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="base_first_view_form" model="ir.ui.view">
+        <field name="name">base.first.view.form</field>
+        <field name="model">base.first</field>
+        <field name="arch" type="xml">
+            <form string="">
+                <sheet>
+                    <group>
+                        <field name="nama" />
+                        <field name="password" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+</odoo>

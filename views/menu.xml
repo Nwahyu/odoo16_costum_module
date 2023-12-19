@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem
+        id="base_menu_root"
+        name="base addon"
+        sequence="10"/>
+
+        <menuitem
+            id="first_menu"
+            name="first"
+            action="base_first_action"
+            parent="base_menu_root"
+            sequence="10"/>
+
+</odoo>
