@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <data>
+        <record id="aff_trx_cron" model="ir.cron">
+            <field name="name">Cron komisi</field>
+            <field name="model_id" ref="model_aff_trx"/>
+            <field name="interval_number">1</field>
+            <field name="interval_type">minutes</field>
+            <field name="numbercall">0</field>
+            <field name="state">code</field>
+            <field name="code">model.itung_komisi()</field>
+        </record>
+        
+        <record id="ip_record_cron" model="ir.cron">
+            <field name="name">Cron clear ip record</field>
+            <field name="model_id" ref="model_aff_ip_record"/>
+            <field name="interval_number">1</field>
+            <field name="interval_type">days</field>
+            <field name="numbercall">-1</field>
+            <field name="state">code</field>
+            <field name="code">model.clear_record()</field>
+        </record>
+
+
+        <record id="reset_quota_pw" model="ir.cron">
+            <field name="name">cron reset quota email reset pw</field>
+            <field name="model_id" ref="model_res_partner"></field>
+            <field name="interval_number">1</field>
+            <field name="interval_type">days</field>
+            <field name="numbercall">0</field>
+            <field name="state">code</field>
+            <field name="code">model.cron_reset_quota_pw()</field>
+        </record>
+
+
+        <record id="acc_all_action_server" model="ir.actions.server">
+            <field name="name">Approve semua</field>
+            <field name="model_id" ref="model_aff_user"/>
+            <field name="binding_model_id" ref="model_aff_user"/>
+            <field name="state">code</field>
+            <field name="code">
+            for record in records:
+                if record.state != 'approve':
+                    record.action_aprove()
+            </field>
+        </record>
+
+        
+    </data>
+</odoo>

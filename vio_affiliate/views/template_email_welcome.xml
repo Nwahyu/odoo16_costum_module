@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+    <record id="welcome_aff_email" model="mail.template">
+        <field name="name">email welcome</field>
+        <field name="model_id" ref="vio_affiliate.model_aff_user" />
+        <!-- <field name="email_from">{{object.email}}</field> -->
+        <field name="email_to">{{object.email}}</field>
+        <field name="subject">Selamat Bergabung sebagai Vision Hero</field>
+        <field name="auto_delete" eval="False"/>
+        <field name="body_html" type="html">
+        <img src="https://lh3.googleusercontent.com/VKqEjahLMLSnguvgaJqiHcs727H1CJGLwR4azr3Qac9OAaXA-LTy9PwepJZTGkhNbpenX59MjcxenZNFTVeaqjWj6pkFSwagyM8=w839" class="img-fluid d-flex align-item-center"/>
+        <br/>
+        <p style="font-size: 200%;">Selamat, Pendaftaran sebagai Vision Hero telah berhasil</p>
+        <p>Beberapa ketentuan yang perlu anda perhatikan :</p>
+        <ul>
+            <li>Hanya akan melakukan pemasaran melalui tautan afiliasi atas produk-produk yang terdapat pada website VIO</li>
+            <li>Harus memposting konten orisinil (tidak boleh memposting ulang konten milik orang lain kecuali konten orisinil VIO Optical Clinic).</li>
+        </ul>
+        <!-- <p>Anda dapat login ke <btn class="btn btn-primary" href="/web/login">Disini</btn></p> -->
+        <p>Supaya anda terupdate dengan berbagai info menarik, yuk gabung ke <a href="https://chat.whatsapp.com/Ewa3BxmwWP57H5UP2sqg2W">Grup Vision Hero</a></p>
+        <p>Anda dapat login <a t-attf-href="#{object.website_id.domain}/web/login" class="btn" style="bg-color:#127BB3;"><strong>di sini</strong></a></p>
+        <br/>
+        <ul>
+            <li>Email anda    : <t t-out="object.email"/></li>
+            <li>Password anda : vio_user</li>
+        </ul>
+        <p>mohon untuk segera menganti password dan melengkapi data diri</p>
+        </field>
+    </record>
+
+
+
+    <function model="ir.model.data" name="write">
+        <function name="search" model="ir.model.data">
+            <value eval="[('name', '=', 'set_password_email'), ('module', '=', 'auth_signup')]" />
+        </function>
+        <value eval="{'noupdate': False}" />
+    </function>
+
+    <!-- <record id="auth_signup.set_password_email" model="mail.template">
+        <field name="email_from">{{object.company_id.email_formatted}}</field>
+        <field name="email_from">"VIO AFFILIATE" &lt;{{object.company_id.email}}&gt;</field>
+        <field name="email_to">{{object.email_formatted}}</field>
+        <field name="subject">Selamat Bergabung di VIO Affiliate</field>
+        <field name="auto_delete" eval="False"/>
+        <field name="body_html" type="html">
+        <h5>Selamat, Pendaftaran sebagai Vision Hero telah berhasil</h5>
+        <p>Beberapa ketentuan yang perlu anda perhatikan :</p>
+        <ul>
+            <li>Hanya akan melakukan pemasaran melalui tautan afiliasi atas produk-produk yang terdapat pada website VIO</li>
+            <li>Harus memposting konten orisinil (tidak boleh memposting ulang konten milik orang lain kecuali konten orisinil VIO Optical Clinic).</li>
+        </ul>
+        <p>Anda dapat login 
+        <a t-attf-href="#{object.website_id.domain}/web/login" class="btn" style="bg-color:#127BB3;"><h3>disini</h3></a>
+        </p>
+        <br/>
+        <ul>
+            <li>Email anda    : <t t-out="object.email_formatted"/></li>
+            <li>Password anda : vio_user</li>
+        </ul>
+
+        <p>mohon untuk segera menganti password dan melengkapi data diri</p>
+        </field>
+
+    </record>  -->
+    </data>
+</odoo>

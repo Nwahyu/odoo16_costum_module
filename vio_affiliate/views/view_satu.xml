@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="aff_user_view_tree" model="ir.ui.view">
+        <field name="name">aff.user.view.tree</field>
+        <field name="model">aff.user</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="" default_order="id desc">
+                <field name="create_date" string="tgl daftar"/>
+                <field name="is_pasien"/>
+                <field name="nama"/>
+                <field name="domisili_kota_id" />
+                <field name="email"/>
+                <field name="phone"/>
+                <field name="token"/>
+                <field name="parent_token"/>
+                <field name="saldo_ready" optional="hide"/>
+                <field name="partner_id" optional="hide"/>
+                <field name="race"/>
+                <field name="jumlah_klik"/>
+                <field name="state"/>
+                <field name="sosmed" optional="hide"/>
+                <field name="medsos_ig" optional="hide"/>
+                <field name="medsos_tiktok" optional="hide"/>
+                <field name="nama_bank"/>
+                <field name="nama_rek" optional="hide"/>
+                <field name="no_rek"/>
+                <field name="cabang_bank" optional="hide"/>
+                <field name="cabang_id" optional="hide"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="aff_user_view_search" model="ir.ui.view">
+        <field name="name">aff.user.view.search</field>
+        <field name="model">aff.user</field>
+        <field name="arch" type="xml">
+            <search string="">
+                <field name="nama" />
+                <field name="domisili_kota_id" />
+                <field name="email"/>
+                <field name="phone"/>
+                <!-- <filter name="filter_perhari" string="filter perhari" domain="['&amp;', ( 'create_date', '&gt;=', time.strftime('%Y-%m-%d 00:00:00') ), ( 'create_date', '&lt;=', time.strftime('%Y-%m-%d 23:59:59') )]" context="{'group_by': 'create_date'}" /> -->
+                <filter name="filter_perhari" string="filter perhari" domain="['&amp;', ( 'create_date', '&gt;=', time.strftime('%Y-%m-%d 00:00:00') ), ( 'create_date', '&lt;=', time.strftime('%Y-%m-%d 23:59:59') )]" />
+                <field name="token" />
+                <field name="parent_token"/>
+                <filter name="parent_token" string="leads" context="{'group_by': 'parent_token'}"/>
+                <!-- <filter name="filter_aff" string="filter_aff" domain="[('parent_token', '=', 'value')]" context="{'group_by': 'field_name'}" /> -->
+            </search>
+        </field>
+    </record>
+
+    <record id="aff_user_view_form" model="ir.ui.view">
+        <field name="name">aff.user.view.form</field>
+        <field name="model">aff.user</field>
+        <field name="arch" type="xml">
+            <form string="">
+                <header>
+                    <!-- <button name="action_aprove" string="Approve" type="object"/> -->
+                    <button name="action_aprove" string="Approve" type="object" attrs="{'invisible':['|',('state','=','approve'),('state','=','reject')]}"/>
+                    <button name="action_reject" string="Reject" type="object" attrs="{'invisible':['|',('state','=','approve'),('state','=','reject')]}"/>
+                    <button name="action_other" string="Other" type="object" attrs="{'invisible':['|',('state','=','approve'),('state','=','reject')]}"/>
+                    <field name="state" widget="statusbar"/>
+                </header>
+                <sheet>
+                    <group>
+                        <field name="nama"/>
+                        <field name="email"/>
+                        <field name="phone"/>
+                        <field name="domisili_kota_id" />
+                        <field name="is_pasien"/>
+                        <field name="token"/>
+                        <field name="race"/>
+                        <field name="saldo_ready"/>
+                        <field name="jumlah_klik"/>
+                        <field name="partner_id"/>
+                        <field name="sosmed"/>
+                        <field name="medsos_ig"/>
+                        <field name="medsos_tiktok"/>
+                        <field name="nama_bank"/>
+                        <field name="nama_rek"/>
+                        <field name="no_rek"/>
+                        <field name="cabang_bank"/>
+                    </group>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_ids" widget="mail_thread"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="aff_user_action" model="ir.actions.act_window">
+        <field name="name">Affiliator</field>
+        <field name="res_model">aff.user</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+
+    ==================================================================
+
+    <record id="domisili_view_tree" model="ir.ui.view">
+        <field name="name">domisili.view.tree</field>
+        <field name="model">domisili.kota</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="domisili" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="domisili_view_form" model="ir.ui.view">
+        <field name="name">domisili.view.form</field>
+        <field name="model">domisili.kota</field>
+        <field name="arch" type="xml">
+            <form string="">
+                <sheet>
+                    <group>
+                        <field name="domisili" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="domisili_action" model="ir.actions.act_window">
+        <field name="name">Action Name</field>
+        <field name="res_model">domisili.kota</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p>list domisili kota</p>
+        </field>
+    </record>
+
+</odoo>

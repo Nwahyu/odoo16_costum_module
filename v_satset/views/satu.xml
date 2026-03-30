@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="satset_idc10_view_tree" model="ir.ui.view">
+        <field name="name">satset.icd10.view.tree</field>
+        <field name="model">satset.icd10</field>
+        <field name="arch" type="xml">
+            <tree string="">
+                <field name="id_icd10"/>
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="satset_icd10_view_form" model="ir.ui.view">
+        <field name="name">satset.icd10.view.form</field>
+        <field name="model">satset.icd10</field>
+        <field name="arch" type="xml">
+            <form string="">
+                <sheet>
+                    <group>
+                        <field name="id_icd10"/>
+                        <field name="name"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="satset_icd10_action" model="ir.actions.act_window">
+        <field name="name">list ICD-10</field>
+        <field name="res_model">satset.icd10</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p>list ICD-10</p>
+        </field>
+    </record>
+
+
+    <!-- ===================================================== -->
+
+
+    <record id="satset_appointment_view_tree" model="ir.ui.view">
+        <field name="name">rme.view.tree</field>
+        <field name="model">satset.appointment</field>
+        <field name="arch" type="xml">
+            <tree string="">
+                <field name="name" />
+                <field name="appointment_id" />
+                <field name="nik" />
+                <field name="nama" />
+                <field name="doctor_id" />
+                <field name="health_record" />
+                <field name="status_kirim_data" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="satset_appointment_view_form" model="ir.ui.view">
+        <field name="name">satset.appointment.view.form</field>
+        <field name="model">satset.appointment</field>
+        <field name="arch" type="xml">
+            <form string="">
+            <!-- semua field readonly if dokter, see on py -->
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="appointment_id" />
+                            <field name="nik" />
+                            <field name="nama" />
+                            <field name="doctor_id" />
+                        </group>
+                        <group>
+                            <field name="status_kirim_data" />
+                            <field name="health_record" widget='pdf_viewer'/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="satset_appointment_action" model="ir.actions.act_window">
+        <field name="name">list rme</field>
+        <field name="res_model">satset.appointment</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p>list rme</p>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <templates xml:space="preserve">
+        <t t-name="eye_management.owlDashboardTemplate" owl="1">
+            <iframe
+                src="http://35.213.156.182:3000/public/dashboard/55f196f9-f83c-4986-b056-4d40506f6609"
+                frameborder="0"
+                width="100%"
+                height="100%"
+                allowtransparency
+            >
+            <h5>Browser tidak support iframe, harap upgdae ke browser yg lebih baru</h5>
+            </iframe>
+        </t>
+    </templates>

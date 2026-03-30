@@ -1,0 +1,35 @@
+# Minimal ignore list for Python/Odoo project
+
+# Python bytecode and artifacts
+__pycache__
+*.py[cod]
+*.pyc
+*$py.class
+*.so
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Odoo runtime outputs
+filestore/
+sessions/
+*.log
+
+# Editor/OS junk
+.vscode/
+.idea/
+.DS_Store
+._.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+*.orig
+*~
+*.swp
+*.swo

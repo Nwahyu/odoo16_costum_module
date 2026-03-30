@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+    <data>
+        <menuitem 
+            id="aff_vio_root" 
+            name="Affiliate" 
+            sequence="10"
+            />
+        <menuitem 
+            id="aff_user_menu"
+            parent="aff_vio_root" 
+            name="User"
+            action="aff_user_action"
+            sequence="10"
+            />
+        <menuitem 
+            id="aff_trx_menu"
+            parent="aff_vio_root" 
+            name="Transaksi"
+            action="aff_trx_action"
+            sequence="15"
+            />
+        
+        <!-- <menuitem
+            id="payout_trx_menu"
+            name="Payout"
+            parent="nama_parent_menu"
+        /> -->
+        <menuitem
+            id="payout_trx_menu"
+            name="Payout"
+            action="payout_trx_action"
+            parent="aff_vio_root"
+            sequence="20"/>
+
+        <menuitem
+            id="domisili_menu"
+            name="domisili"
+            action="domisili_action"
+            parent="aff_vio_root"
+            sequence="25"/>
+    </data>
+</odoo>

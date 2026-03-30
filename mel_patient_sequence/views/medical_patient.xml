@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="medical_patient_view_mel_patient_sequence">
+            <field name="name">medical.patient.view.mel.patient.sequence</field>
+            <field name="model">medical.patient</field>
+            <field name="inherit_id" ref="eye_management.medical_patient_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='no_hp']" position="before">
+                    <field name="card_number"/>
+                </xpath>
+                <xpath expr="//field[@name='no_hp']" position="after">
+                    <field name="home_number"/>
+                    <field name="office_number"/>
+                    <field name="mobile"/>
+                    <field name="sales_catergory"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

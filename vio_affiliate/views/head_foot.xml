@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="header_vio" name="header_web_vio" inherit_id="website.layout">
+        <xpath expr="//header" position="replace">
+            <header class="">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                    <div class="container-fluid items-center">
+                        <a class="navbar-brand" href="#">
+                            <img src="/vio_affiliate/static/src/img/logo-vio.webp" alt="adakah?" width="108" height="20" class="d-inline-block align-text-top"/>
+                            <!-- <img src="/vio_affiliate/static/src/img/logo-vio.webp" alt="VIO Optical Clinic" width="17" height="3" class="d-inline-block align-text-top"/> -->
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon oi oi-view-list"></span>
+                        </button>
+                        <div class="collapse navbar-collapse ms-auto" id="navbarNavAltMarkup">
+                            <div class="navbar-nav">
+                                <t t-foreach="website.menu_id.child_id" t-as="submenu">
+                                    <t t-call="website.submenu">
+                                        <t t-set="item_class" t-valuef="nav-item"/>
+                                        <t t-set="link_class" t-valuef="nav-link"/>
+                                    </t>
+                                </t>
+                                <t t-call="portal.placeholder_user_sign_in">
+                                    <t t-set="_item_class" t-valuef="nav-link d-xxl-none d-xl-none d-lg-none"/>
+                                </t>
+
+                                <t t-call="portal.user_dropdown">
+                                    <t t-set="_user_name" t-value="true"/>
+                                    <t t-set="_item_class" t-valuef="nav-link dropdown d-xxl-none d-xl-none d-lg-none"/>
+                                    <t t-set="_link_class" t-valuef=""/>
+                                </t>
+                            </div>
+                        </div>
+                        <t t-call="portal.placeholder_user_sign_in">
+                            <t t-set="_item_class" t-valuef="nav-link d-none d-md-none d-sm-none d-xxl-block d-xl-block d-lg-block"/>
+                        </t>
+                        <t t-call="portal.user_dropdown">
+                            <t t-set="_user_name" t-value="true"/>
+                            <t t-set="_item_class" t-valuef="nav-link dropdown d-none d-md-none d-sm-none d-xxl-block d-xl-block d-lg-block"/>
+                            <t t-set="_link_class" t-valuef=""/>
+                        </t>
+                    </div>
+                </nav>
+                <br/>
+            </header>
+        </xpath>
+    </template>
+
+
+    <template id="footer_vio" name="custom_filter" inherit_id="website.layout">
+        <xpath expr="//footer" position="replace">
+            <footer class="container-fluid pt-3">
+                <div class="d-none d-sm-block">
+                    <div class="row">
+                        <div class="col-9">
+                            <p>© 2025 VIO Optical Clinic | All Rights Reserved | Owned by PT Darsana Adijaya Optika</p>
+                        </div>
+                        <div class="col-3">
+                            <ul>
+                                <a style="color:black;" class="fa fa-whatsapp mx-2" aria-hidden="true" href="https://wa.me/6281717111172?text=Hallo%2C%0Asaya%20ingin%20bertanya%20tentang%20program%20Vision%20Hero%0A%23webaff"></a>
+                                <a style="color:black;" class="fa fa-facebook mx-2" aria-hidden="true" href="https://www.facebook.com/viooptical"></a>
+                                <a style="color:black;" href="https://twitter.com/VIOOPTICAL" class="fa fa-twitter mx-2" aria-hidden="true"></a>
+                                <a style="color:black;" href="https://www.instagram.com/viooptical" class="fa fa-instagram mx-2" aria-hidden="true"></a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-block d-sm-none fs-6">
+                    <div class="col">
+                        <div class="row text-center">
+                            <ul>
+                                <a style="color:black;" class="fa fa-whatsapp mx-2" aria-hidden="true" href="https://wa.me/6281717111172?text=Hallo%2C%0Asaya%20ingin%20bertanya%20tentang%20program%20Vision%20Hero%0A%23webaff"></a>
+                                <a style="color:black;" class="fa fa-facebook mx-2" aria-hidden="true" href="https://www.facebook.com/viooptical"></a>
+                                <a style="color:black;" href="https://twitter.com/VIOOPTICAL" class="fa fa-twitter mx-2" aria-hidden="true"></a>
+                                <a style="color:black;" href="https://www.instagram.com/viooptical" class="fa fa-instagram mx-2" aria-hidden="true"></a>
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <p>© 2025 VIO Optical Clinic | All Rights Reserved | Owned by PT Darsana Adijaya Optika</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </xpath>
+    </template>
+</odoo>

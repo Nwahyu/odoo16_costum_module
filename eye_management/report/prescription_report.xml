@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<template id="report_prescription_document">
+    <t t-call="web.basic_layout">
+        <t t-set="o" t-value="o.with_context(lang=o.pharmacy.lang)"/>
+        
+        <div class="header">
+            <div class="row">
+                <div  class="col-6" >
+                    <p t-field="o.user_id.partner_id.company_id.logo" t-options='{"widget": "image"}'/>
+                </div>
+                <div class="col-6" style="text-align: right; padding-right: 100px;">
+                    <p t-field="o.user_id.partner_id.company_id.name" />
+                    <p t-field="o.user_id.partner_id.company_id.website" />
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="page">
+            <div class="oe_structure"/>
+            
+            <h2>PRESCRIPTION REPORT</h2>
+            <div style="padding-bottom:50px;">
+            </div>
+            <div class="row mt32 mb32" id="informations">
+                <div t-if="o.patient_id" class="col-auto col-3 mw-100 mb-2">
+                    <strong>Prescription ID:</strong>
+                    <p class="m-0" t-field="o.name"/>
+                </div>
+                <div t-if="o.prescription_date " class="col-auto col-3 mw-100 mb-2">
+                    <strong>Prescription Date:</strong>
+                    <p class="m-0" t-field="o.prescription_date" t-options='{"widget": "date"}'/>
+                </div>
+                <div t-if="o.doctor.name" class="col-auto col-3 mw-100 mb-2">
+                    <strong>Prescribing Doctor:</strong>
+                    <p class="m-0" t-field="o.doctor.name" />
+                </div>
+                <div t-if="o.patient_id" class="col-auto col-3 mw-100 mb-2">
+                    <strong>Patient Name:</strong>
+                    <p class="m-0" t-field="o.patient_id.partner_id.name"/>
+                </div>
+            </div>
+            <div style="padding-bottom:50px;">
+            </div>
+
+            <table class="table table-sm" style="text-align:center;">
+                <thead>
+                    <tr>
+                        <th name="th_medicine"><strong>MEDICINE</strong></th>
+                        <th name="th_dose" ><strong>DOSE</strong></th>
+                        <th name="th_dose_unit" ><strong>DOSE UNIT</strong></th>
+                        <th name="th_form" ><strong>FORM</strong></th>
+                        <th name="th_frequency" ><strong>FREQUENCY</strong></th>
+                        <th name="th_duration" ><strong>DURATION</strong></th>
+                        <th name="th_duration_unit" ><strong>DURATION UNIT</strong></th>
+                        <th name="th_note" ><strong>NOTE</strong></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <t t-foreach="o.prescription_line" t-as="prescription_line">
+                        <tr t-att-class="'bg-200 font-weight-bold o_line_section' ">
+                            <t>
+                                <td >
+                                    <span t-field="prescription_line.medicament"/>
+                                </td>
+                                <td>
+                                    <span t-field="prescription_line.dose"/>
+                                </td>
+                                <td>
+                                    <span t-field="prescription_line.dose_unit"/>
+                                </td>
+                                <td>
+                                    <span t-field="prescription_line.form"/>
+                                </td>
+                                <td>
+                                    <span t-field="prescription_line.common_dosage"/>
+                                </td>
+                                <td>
+                                    <span t-field="prescription_line.duration"/>
+                                </td>
+                                <td>
+                                    <span t-field="prescription_line.duration_period"/>
+                                </td>
+                                <td>
+                                    <span t-field="prescription_line.short_comment"/>
+                                </td>
+                            </t>
+                            
+                        </tr>
+                    </t>
+                </tbody>
+            </table>
+             <div class="row">
+                <div class="col-6 text-left">
+                        <strong>Notes:</strong>
+                        <p class="m-0" t-field="o.notes" />
+                    </div>
+                <div class="col-6 text-right" style="padding-right: 194px;">
+                        <strong>Doctor Signature:</strong>
+                    </div>
+            </div>
+        </div>
+    </t>
+</template>
+
+<template id="report_prescription">
+    <t t-call="web.html_container">
+        <t t-foreach="docs" t-as="o">
+            <t t-call="eye_management.report_prescription_document" t-lang="o.pharmacy.lang"/>
+        </t>
+    </t>
+</template>
+<record id="report_prescription_doc" model="ir.actions.report">
+            <field name="name">Prescription</field>
+            <field name="model">medical.prescription.order</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">eye_management.report_prescription</field>
+            <field name="report_file">eye_management.report_prescription</field>
+            <field name="print_report_name">'Prescription'</field>
+            <field name="binding_model_id" ref="model_medical_prescription_order"/>
+            <field name="binding_type">report</field>
+        </record>
+</odoo>

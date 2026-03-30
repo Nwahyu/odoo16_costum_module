@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+    
+        <!-- <record model="product.product" id="treatment_26">
+            <field name="name">F</field>
+            <field name="is_treatment">1</field>
+            <field name="type">service</field>
+            <field name="list_price">50000</field>
+            <field name="standard_price">40000</field>
+            <field name="categ_id" ref="product.product_category_all"/>
+            <field name="part_type">eye_muscle</field>
+        </record> -->
+
+
+        <record model="product.product" id="fee_jasa">
+            <field name="name">FEE JASA</field>
+            <field name="is_result">1</field>
+            <field name="is_reasoning">1</field>
+            <field name="type">service</field>
+            <field name="list_price">0</field>
+            <field name="standard_price">0</field>
+            <field name="categ_id" ref="product.product_category_all"/>
+        </record>
+    
+    </data>
+</odoo>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="tag_kriteria_view_tree" model="ir.ui.view">
+        <field name="name">tag.kriteria.view.tree</field>
+        <field name="model">tag.kriteria</field>
+        <field name="arch" type="xml">
+            <tree string="">
+                <field name="nama" />
+                <field name="stage_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="tag_kriteria_view_form" model="ir.ui.view">
+        <field name="name">tag.kriteria.view.form</field>
+        <field name="model">tag.kriteria</field>
+        <field name="arch" type="xml">
+            <form string="">
+                <sheet>
+                    <group>
+                        <field name="nama" />
+                        <field name="stage_id"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="tag_kriteria_action" model="ir.actions.act_window">
+        <field name="name">tag kriteria</field>
+        <field name="res_model">tag.kriteria</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[]</field>
+        <field name="context">{}</field>
+        <field name="help" type="html">
+            <p>ini kriteria</p>
+        </field>
+    </record>
+
+    <!-- =========================================================== -->
+
+    <record id="tag_solusi_view_tree" model="ir.ui.view">
+        <field name="name">tag.solusi.view.tree</field>
+        <field name="model">tag.solusi</field>
+        <field name="arch" type="xml">
+            <tree string="">
+                <field name="nama" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="tag_solusi_view_form" model="ir.ui.view">
+        <field name="name">tag.solusi.view.form</field>
+        <field name="model">tag.solusi</field>
+        <field name="arch" type="xml">
+            <form string="">
+                <sheet>
+                    <group>
+                        <field name="nama" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="tag_solusi_action" model="ir.actions.act_window">
+        <field name="name">tag solusi</field>
+        <field name="res_model">tag.solusi</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[]</field>
+        <field name="context">{}</field>
+        <field name="help" type="html">
+            <p>ini soluisi</p>
+        </field>
+    </record>
+
+    <!-- =========================================================== -->
+
+    <record id="tag_race_view_tree" model="ir.ui.view">
+        <field name="name">tag.race.view.tree</field>
+        <field name="model">tag.race</field>
+        <field name="arch" type="xml">
+            <tree string="">
+                <field name="nama" />
+                <field name="race_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="tag_race_view_form" model="ir.ui.view">
+        <field name="name">tag.race.view.form</field>
+        <field name="model">tag.race</field>
+        <field name="arch" type="xml">
+            <form string="">
+                <sheet>
+                    <group>
+                        <field name="nama" />
+                        <field name="race_id"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="tag_race_action" model="ir.actions.act_window">
+        <field name="name">tag race</field>
+        <field name="res_model">tag.race</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[]</field>
+        <field name="context">{}</field>
+        <field name="help" type="html">
+            <p>ini krace</p>
+        </field>
+    </record>
+
+    <!-- ======================================================== -->
+
+    <record id="tag_race_tipe_view_tree" model="ir.ui.view">
+        <field name="name">tag.race.tipe.view.tree</field>
+        <field name="model">tag.race.tipe</field>
+        <field name="arch" type="xml">
+            <tree string="">
+                <field name="nama" />
+                <field name="is_active"/>
+                <field name="race_ids"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="tag_race_tipe_view_form" model="ir.ui.view">
+        <field name="name">tag.race.tipe.view.form</field>
+        <field name="model">tag.race.tipe</field>
+        <field name="arch" type="xml">
+            <form string="">
+                <sheet>
+                    <group>
+                        <field name="nama" />
+                        <field name="is_active"/>
+                        <field name="is_reff"/>
+                        <field name="race_ids">
+                            <tree editable="bottom">
+                                <field name="nama"/>
+                            </tree>
+                        </field>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="tag_race_tipe_action" model="ir.actions.act_window">
+        <field name="name">tag race.tipe</field>
+        <field name="res_model">tag.race.tipe</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[]</field>
+        <field name="context">{}</field>
+        <field name="help" type="html">
+            <p>ini krrace tipe</p>
+        </field>
+    </record>
+
+    <!-- ======================================================== -->
+
+    <record id="tag_tujuan_kedatangan_view_tree" model="ir.ui.view">
+        <field name="name">tag.tujuan.kedatangan.view.tree</field>
+        <field name="model">tag.tujuan.kedatangan</field>
+        <field name="arch" type="xml">
+            <tree string="">
+                <field name="name" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="tag_tujuan_kedatangan_view_form" model="ir.ui.view">
+        <field name="name">tag.tujuan.kedatangan.view.form</field>
+        <field name="model">tag.tujuan.kedatangan</field>
+        <field name="arch" type="xml">
+            <form string="">
+                <sheet>
+                    <group>
+                        <field name="name" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="tag_tujuan_kedatangan_action" model="ir.actions.act_window">
+        <field name="name">tag.tujuan.kedatangan</field>
+        <field name="res_model">tag.tujuan.kedatangan</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[]</field>
+        <field name="context">{}</field>
+        <field name="help" type="html">
+            <p>ini tujuan kedatangan</p>
+        </field>
+    </record>
+
+</odoo>

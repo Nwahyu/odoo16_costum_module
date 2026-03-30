@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <menuitem
+        id="satset_root_menu"
+        name="satu sehat"
+        sequence="10"/>
+
+    <menuitem
+        id="rme_menu"
+        name="list rme"
+        action="satset_appointment_action"
+        parent="satset_root_menu"
+        sequence="10"/>
+
+    <menuitem
+        id="id10_menu"
+        name="list icd-10"
+        action="satset_icd10_action"
+        parent="satset_root_menu"
+        sequence="10"/>
+</odoo>

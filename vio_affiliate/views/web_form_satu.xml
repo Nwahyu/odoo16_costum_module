@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="web_form_satu" name="Laman Pendaftaran">
+        <t t-call="website.layout">
+
+            <div id="wrap" class="oe_structure oe_empty">
+
+                <section class="s_banner pb96 o_colored_level s_parallax_no_overflow_hidden o_bg_img_opt_repeat pt0 o_half_screen_height oe_img_bg o_bg_img_center" data-scroll-background-ratio="0" data-snippet="s_banner" data-name="Banner" style="background-image: url(&quot;/web/image/621-d31973b4/Ifa-2.png&quot;);" data-original-id="619" data-original-src="/web/image/619-da56a7e8/Ifa-2.png" data-mimetype="image/png" data-resize-width="570" id="Mata-Minus" data-anchor="true">
+                    <div class="container">
+                        <div class="row s_nb_column_fixed">
+                            <div class="col-lg-6 jumbotron rounded pb32 o_colored_level o_cc o_cc1 pt0" data-name="Box" style="background-color: rgba(230, 224, 224, 0.52);">
+                                <h3 style="text-align: center;">
+                                    <font style="font-size: 62px;" class="o_default_snippet_text text-black">
+                                        <strong>
+                                            <span style="font-size: 36px;">Mata Minus&amp;nbsp;</span>
+                                        </strong>
+                                    </font>
+                                </h3>
+                                <h3 style="text-align: center;">
+                                    <font style="font-size: 62px;" class="o_default_snippet_text text-black">
+                                        <strong>
+                                            <span style="font-size: 36px;">Naik Terus??</span>
+                                        </strong>
+                                        <span style="font-size: 36px;">
+                                            <br/>
+                                        </span>
+                                    </font>
+                                </h3>
+                                <h2>
+                                    <font class="text-black">​</font>
+                                </h2>
+                                <p>
+                                    <br/>
+                                </p>
+                                <p style="text-align: center;">
+                                    <font class="text-o-color-4">Faktanya jumlah anak sekolah yang menderita mata minus dan perlu pemeriksaan lebih dini</font>
+                                    <font class="text-black">Faktanya jumlah anak sekolah yang menderita mata minus dan perlu pemeriksaan lebih dini</font>
+                                </p>
+                                <p style="text-align: center;">
+
+                                    <font class="text-black">
+                                        <span style="font-size: 36px;">35% - 40%&amp;nbsp;di tahun 2023</span>
+                                    </font>
+                                </p>
+                                <p style="text-align: center;">
+                                    <font class="text-o-color-4">&amp;nbsp;</font>&amp;nbsp;<br/>
+                                </p>
+                                <p style="text-align: center;">
+                                    <a class="mb-2 btn btn-custom text-o-color-4 btn-to-div" data-bs-original-title="hubungi kami" title="" style="border-width: 1px; border-style: solid; background-color: rgb(8, 82, 148);">Periksa Mata Sekarang</a>
+                                    <br/>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <section style="background-image: none;" class="o_colored_level">
+                <h1 class="text-center">Terapi Ortho-K Menurunkan Minus Tanpa Operasi<br/>
+                </h1>
+
+
+                <div class="d-none d-sm-block py-3">
+                    <div class="row">
+                        <div class="col m-5 text-center">
+                            <iframe class="text-center" width="320" height="240" src="https://www.youtube.com/embed/sWIf6th2dwU?list=PLu3wcQ51A_XxXTycEiA8amt4oO7q-G1Kp" title="apa itu ortho-k" frameborder="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"/>
+
+                        </div>
+                        <div class="col o_colored_level">
+                            <p>Ortho-K Therapy, Solusi Mata Minus</p>
+                            <p>Metode yang dapat menurunkan dan juga menghambat laju mata minus serta silinder. Metode ini sangat direkomendasikan untuk anak-anak yang memiliki mata minus dan silinder sejak dini.</p>
+                            <p>
+                                <strong>Terapi Ortho K</strong> membentuk ulang permukaan kornea mata menggunakan lensa kontak keras berbahan RGP (Rigid Gas Permeable). Lensa ini digunakan saat tidur di malam hari.</p>
+                            <p>
+
+                            </p>
+                            <div class="d-grid gap-2">
+
+                                <a class="btn btn-custom text-white btn-to-div" type="button" style="border-width: 1px; border-style: solid; background-color: rgb(8, 82, 148);" data-bs-original-title="" title="">Saya mau tanya tentang Ortho-K​​</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="d-block d-sm-none">
+                    <div class="col text-center">
+                        <div class="row">
+                            <iframe width="320" height="240" src="https://www.youtube.com/embed/sWIf6th2dwU?list=PLu3wcQ51A_XxXTycEiA8amt4oO7q-G1Kp" title="apa itu ortho-k" frameborder="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"/>
+                        </div>
+                        <div class="row">
+                            <p style="color:rgb(4, 159, 239);">Ortho-K Therapy, Solusi Minus Mata pada Anak</p>
+                            <br/>
+                            <p>Setiap orang tentu ingin memiliki penglihatan yang baik untuk lebih mudah mencapai harapan dan impian yang mereka inginkan. Karena setiap hari, selalu saja ada Anak yang merasa minder dengan masalah penglihatan yang mereka miliki.Sehingga kami pun menyadari bahwa tak ada seorang pun yang ingin merasa gagal dalam mencapai sesuatu karena terhalang masalah penglihatan. Bersama anda, VIO siap melakukan rencana perbaikan untuk mengatasi masalah penglihatan mereka.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="text-center bg-biru py-3 o_colored_level" style="background-image: none;">
+                <h3>
+                </h3>
+                <p class="text-white ">
+                    <span style="font-size: 24px;">Mau Diskon 500 ribu untuk Terapi Ortho K&amp;nbsp;atau Diskon&amp;nbsp;20% untuk pembelian kacamata??</span>
+                </p>
+            </section>
+
+            <div class="s_hr text-start pt32 pb32" data-snippet="s_hr" data-name="Separator">
+                <hr class="w-100 mx-auto" style="border-top-width: 1px; border-top-style: solid;"/>
+            </div>
+
+            <div class="container my-3 pb-3" id="div-page">
+                <h5 class="text-center text-danger">KLAIM SEKARANG!</h5>
+                <form action="/lead-daftar" method="post">
+                    <input type="hidden" class="form-control" id="token" name="token" t-att-value="token" required="1"/>
+                    <input type="hidden" class="form-control" id="csrf" name="csrf_token" required="1" t-att-value="request.csrf_token()"/>
+
+                    <div class="mb-3">
+                        <label for="namafield" class="form-label">Nama :</label>
+                        <input type="text" class="form-control" id="namafield" name="nama" aria-describedby="namahelp" placeholder="Jhon Doe" required="1"/>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="numberfield" class="form-label">no telepon :</label>
+                        <input type="number" class="form-control" id="numberfield" name="number" aria-describedby="numberhelp" placeholder="628xxxxx" required="1"/>
+                        <div id="numberhelp" class="form-text">Gunakan awalan 62 dan pastikan WhatsApp aktif</div>
+                    </div>
+                    <input type="hidden" class="form-control" id="emailfield" name="email" aria-describedby="emailhelp" placeholder="jhondoe@example.com" required="1" value="-"/>
+                    <button type="submit" class="btn bg-biru" style="background-color: rgb(8, 82, 148);">Submit</button>
+                </form>
+            </div>
+
+            <section class="bg-biru py-5 text-center o_colored_level" style="background-image: none;">
+                <h1 class="text-center">TESTIMONI PASIEN <bold>TERAPI ORTHO-K</bold>
+                </h1>
+
+                <iframe width="100%" height="240" class="rounded mx-auto d-block d-md-none" src="https://www.youtube.com/embed/5UKDQxM4Rbk" title="Video testimoni" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"/>
+                <div class="container align-items-center text-center px-1">
+
+
+                    <div class="row d-flex justify-content-evenly align-items-center">
+                        <div class="col">
+                            <img src="https://lh3.googleusercontent.com/pbgbZx0XBwUVFkdrO971AMhB3f61_pdMoQr3Wm-X9CVUehTSdcyE32JtgVepXIy7bIYRagoc_N2GF4LgOUnEONXnyKq6RyCj_pg=w267" class="img-thumbnail" alt="..." loading="lazy"/>
+                        </div>
+                        <div class="col">
+                            <img src="https://lh3.googleusercontent.com/GbBnJa7wq4rQhraW6aXUfpYaxTr47BZUP01-fmSMKPnWEVmZz3FpEhE-d49wn_dslpzwmKamH9n_Qv3XZVzNwkn1Q-wwSOJiqgw=w267" class="img-thumbnail" alt="..." loading="lazy"/>
+                        </div>
+                        <div class="col">
+                            <img src="https://lh3.googleusercontent.com/KHrqywITwi_CUm8tDam-SsFQT9ZBu2NLgyxM3iXg_0NCd3jZEuDuDWr6Qpo4GHsUXAE-z7wcbOZ8WQvf_1xWcNnmoOEMzlQ4WX0=w267" class="img-thumbnail" alt="..." loading="lazy"/>
+                        </div>
+                        <div class="col">
+                            <img src="https://lh3.googleusercontent.com/fh7hNifI12fS41WoXyJxYan792CR2t6yqWBOqd4FWsP6wOw1_UUg753AauuDXWtmeL23awlaj8zpe14Hpfszce27e52XOIAMrw=w267" class="img-thumbnail" alt="..." loading="lazy"/>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-danger btn-lg text-center text-white btn-to-div">INFO PROMO</button>
+            </section>
+
+            <section class="text-center py-5 o_colored_level" style="background-image: none;">
+                <h1>Kenapa harus VIO?</h1>
+                <div clas="col">
+                    <div class="row d-flex align-items-center justify-content-evenly">
+
+                        <div class="card my-2 o_colored_level" style="width: 18rem;">
+                            <img src="https://lh3.googleusercontent.com/Jt3C4DNHGDu-mKe33nOVetzWgVB4X1FshRpxeUc1r6usfwYWKOd-2bE7mOB6XurjDbaaM1YEwB4Q7BQPYUynrk3fz-oUNDTvCwJ8=w476" class="card-img-top" alt="..." loading="lazy"/>
+                            <div class="card-body">
+                                <h5 class="card-title">Pemeriksaan Mata Lengkap</h5>
+                                <p class="card-text">Didukung dengan alat pemeriksaan mata terbaik, kami melakukan pemeriksaan menyeluruh untuk kondisi kesehatan penglihatan pasien.VIO Optical Clinic bukan sekedar periksa mata biasa.</p>
+                            </div>
+                        </div>
+
+                        <div class="card my-2" style="width: 18rem;">
+                            <img src="https://lh3.googleusercontent.com/Yt8eqN9rUl2Sqf3R6bfFgtxn5VHbBMzhzOvQAespBxvLHUtOH9x5lcEzlH3sixjqJvWS5IkT133zzPgkTNaRbkg1F53JYpbtr1Hv=w816" class="card-img-top" alt="..." loading="lazy"/>
+                            <div class="card-body">
+                                <h5 class="card-title">Ditangani Oleh Dokter dan Eyecare Professional</h5>
+                                <p class="card-text">Anda akan merasakan lebih dari sekedar terbantu dengan standar pelayanan yang diberikan oleh tim eyecare profesional VIO. Anda bisa merasakan perbedaannya sejak pertama kali anda berkunjung ke VIO Optical Clinic.</p>
+                            </div>
+                        </div>
+
+                        <div class="card my-2" style="width: 18rem;">
+                            <img src="https://lh3.googleusercontent.com/-FpUAFrqA3Eq2DYee-oB-bFt24jwStqWNinlOMKbfZQ7ne0yFj3zeK6w1omRF7RbdMUe332LbSiIDkRTYH3RANBzMx7uFOpijZ7k=w476" class="card-img-top" alt="..." loading="lazy"/>
+                            <div class="card-body">
+                                <h5 class="card-title">Lokasi Kami</h5>
+                                <p class="card-text">Klinik mata anak VIO Optical Clinic yang telah berdiri sejak 2015, berlokasi di daerah publik yang mudah anda capai dengan berbekal panduan dari google maps. Selain itu VIO Optical Clinic buka setiap hari bahkan pada saat weekend.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            
+
+
+
+        </t>
+    </template>
+</odoo>

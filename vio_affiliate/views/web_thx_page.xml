@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="thx_page" name="thx_page">
+        <t t-call="website.layout">
+        <t t-set="title" t-value="'Thanks For U Interesting'"/>
+
+        <div id="wrap" class="oe_structure oe_empty">
+            <section class="s_cover parallax s_parallax_is_fixed bg-black-50 pt96 pb96 o_colored_level" data-scroll-background-ratio="1" data-snippet="s_cover" data-name="Cover" style="background-image: none;">
+                <span class="s_parallax_bg oe_img_bg" style="background-image: url('https://lh3.googleusercontent.com/lhENY2d7ItZj0tuQ3m4oUyBxL1oz5VzxJRv_ok40hIzOvb4CeAoqEwVSG81i-EOHZpP1nmI5mpl1e5zYS0LFVIdu4Sl9rHs5Lg=w1064'); background-position: 30% 71%;"/>
+                <div class="o_we_bg_filter bg-black-50"/>
+                <div class="container s_allow_columns">
+                    <h1 style="text-align: center;">
+                        <font style="font-size: 62px; font-weight: bold;" class="o_default_snippet_text">
+                            <t t-esc="headline" />
+                        </font>
+                    </h1>
+                    <p class="lead o_default_snippet_text" style="text-align: center;">
+                        <t t-esc="p_head"/>
+                    </p>
+                    <t t-if="btn['cond']">
+                        <p style="text-align: center;">
+                            <a class="btn btn-primary mb-2 o_default_snippet_text" data-bs-original-title="" title="" aria-describedby="popover476845" t-att-href="btn['href']">
+                                <t t-esc="btn['txt']"/>
+                            </a>
+                        </p>
+                    </t>
+                </div>
+            </section>
+            <!-- <section class="s_text_block pt40 pb40 o_colored_level" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+        <div class="s_allow_columns container">
+            <p class="o_default_snippet_text"><t t-esc="penjelasan"/>
+            </p>    
+        </div>
+    </section> -->
+        </div>
+
+        </t>
+    </template>
+
+</odoo>

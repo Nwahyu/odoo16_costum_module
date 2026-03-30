@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="web_list_lead" name="web_list_lead">
+        <t t-call="portal.portal_layout">
+        <t t-set="title" t-value="'list affiliate'"/>
+        <t t-set="no_breadcrumbs" t-value="True"/>
+            <div class="grid justify-items-center">
+                <div class="w-full max-w-6xl justify-between items-center">
+                    <header class="flex flex-col justify-between gap-4 mb-6">
+                        <h2 class="text-xl font-bold">Daftar Pengguna Referral</h2>
+                    </header>
+                    <ul class="list-disc list-inside px-2 font-light">
+                        <li>Komisi yang bisa ditarik hanya transaksi dengan status approve, anda bisa lihat total saldo anda pada halaman home.</li>
+                        <li>Komisi dicairkan setiap bulannya ke rekening pengguna dengan minimum komisi 100rb</li>
+                    </ul>
+
+                    <!-- Table -->
+                    <div class="overflow-x-auto">
+                        <table class="min-w-full divide-y divide-neutral-gray/30 rounded-md">
+                            <thead class="bg-vio-blue text-white">
+                                <tr>
+                                    <th scope="col"
+                                        class="px-4 py-3 text-left text-sm font-semibold uppercase tracking-wider">Nama
+                                    </th>
+                                    <th scope="col"
+                                        class="px-4 py-3 text-left text-sm font-semibold uppercase tracking-wider">
+                                        Reward</th>
+                                    <th scope="col"
+                                        class="px-4 py-3 text-left text-sm font-semibold uppercase tracking-wider">
+                                        Status</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-neutral-gray/20">
+                                <t t-foreach="lead" t-as="lead_data">
+                                <tr class="odd:bg-bg-light even:bg-white hover:bg-vio-blue-light/10">
+                                    <td class="px-4 py-3 whitespace-nowrap font-medium"><t t-out="lead_data.nama"/></td>
+                                    <td class="px-4 py-3">250</td>
+                                    <td class="px-4 py-3">
+                                        <t t-if="lead_data.state == 'register'">
+                                            <span
+                                                class="inline-flex items-center gap-1 bg-neutral-gray/10 text-neutral-gray px-2 py-1 text-xs font-semibold rounded-full">
+                                                <svg class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                                    stroke-width="2">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M5 13l4 4L19 7" />
+                                                </svg>
+                                                Register
+                                            </span>
+                                        </t>
+                                        <t t-else="lead_data.state == 'approve'">
+                                            <span
+                                                class="inline-flex items-center gap-1 bg-action-green/10 text-action-green px-2 py-1 text-xs font-semibold rounded-full">
+                                                <svg class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                                    stroke-width="2">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M5 13l4 4L19 7" />
+                                                </svg>
+                                                Approved
+                                            </span>
+                                        </t>
+                                    </td>
+                                </tr>
+                                </t>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </t>
+    </template>
+
+</odoo>

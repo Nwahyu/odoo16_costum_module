@@ -1,0 +1,196 @@
+.select
+{
+	display: block;
+	
+	border-bottom-right-radius:2em;
+	border-bottom-left-radius:2em;
+	padding: 0.7em 0.7em 0.7em 0.7em;
+	margin-top: -0.1em;
+	border: 1px solid white;
+	border-bottom: 6px solid royalblue;
+	border-collapse: separate; 
+	
+	
+}
+
+#anatomy
+{
+	
+	position: absolute;
+	
+}
+.pname
+{
+	display: inline;
+	font-size : 1.2em;
+	float : left;
+}
+
+#close_button {
+   
+    float:right;
+    display:inline-block;
+    padding:2px 5px;
+    background-color: black;
+    color: white;
+    margin-top: 15px;
+    margin-right: 5px;
+}
+
+.del
+{
+	float:right;
+	display:inline-block;
+    
+}
+
+
+#operation_table_body div{
+    overflow-y:scroll;
+    height: 250px;
+    border: 1px solid #dddddd
+}
+
+
+#left_eye
+{
+    
+    
+	height: 144px;
+	width: 202px;
+	border-top-right-radius:1em;
+	
+}
+
+
+#right_eye
+{	
+	
+	height: 144px;
+	width: 202px;
+	border-top-left-radius:1em;
+	
+}
+
+.eye
+{
+	display: inline-block;
+	
+}
+
+
+#left_eye:hover
+{
+	height: 174px;
+	width: 232px;
+}
+
+#right_eye:hover
+{
+	height: 174px;
+	width: 222px;
+}
+
+#choice
+{
+	font-size : 1.4em;
+	color: darkblue;
+}
+#part
+{
+	background-color: #82F89D;
+	font-size : 1.4em;
+	
+}
+
+#part_selected
+{
+	background-color: white;
+	color: darkblue;
+	display: inline;
+	font-size : 1.4em;
+	
+}
+
+area
+{
+	display: inline;
+	outline: none;
+	float: none;
+}
+
+map
+{ 
+	display: inline; 
+	outline: none;
+	float: none;
+	
+}
+
+#operation_table_main {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 33.33%;
+    float : right;
+    margin-right: 100px;
+    margin-top: 20px;
+    height: 300px;
+    
+    
+}
+
+#date, #treatment, #cost, #procedure, #part_of_eye, #which_eye, #ids, #doctor {
+    border: 1px solid black;
+    text-align: left;
+    margin-left: 10px;
+    padding-left: 10px;
+    padding: 5px;
+      
+}	
+
+#state{
+	border: 1px solid black;
+    text-align: left;
+    padding: 5px;
+	
+}
+
+ .invisible_id
+{
+	display: none;
+}
+
+#operation_table td 
+{
+	border: 1px solid #dddddd;
+    text-align: left;
+    padding: 5px;
+    height : 20px;
+}
+
+#operation_part td 
+{
+	border: 1px solid #dddddd;
+    text-align: left;
+    padding: 5px;
+    margin-left: 10px;
+    padding-left: 10px;
+    height : 20px;
+}
+
+#operation_part_main {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 70%;
+    margin-top: 20px;
+    margin-bottom: 10em;
+    
+    
+}
+
+.selected_row{
+	background-color:#D8E8EA;
+}
+
+
+html .o_web_client > .o_action_manager {overflow: auto;}

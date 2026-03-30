@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data noupdate="0">
+        <!-- Lab -->
+        <record id="lab_domba_mas" model="res.partner">
+          <field name="name">Domba Mas</field>
+          <field name="company_type">company</field>
+          <field name="supplier_rank">1</field>
+          <field name="is_lab">True</field>
+        </record>
+        <record id="lab_domba_mas_faset_vio" model="res.partner">
+          <field name="name">Domba Mas - Faset VIO</field>
+          <field name="company_type">company</field>
+          <field name="supplier_rank">1</field>
+          <field name="is_lab">True</field>
+        </record>
+        <record id="lab_essilor" model="res.partner">
+          <field name="name">Essilor</field>
+          <field name="company_type">company</field>
+          <field name="supplier_rank">1</field>
+          <field name="is_lab">True</field>
+        </record>
+        <record id="lab_essilor_faset_vio" model="res.partner">
+          <field name="name">Essilor - Faset VIO</field>
+          <field name="company_type">company</field>
+          <field name="supplier_rank">1</field>
+          <field name="is_lab">True</field>
+        </record>
+        <record id="lab_hoya" model="res.partner">
+          <field name="name">Hoya</field>
+          <field name="company_type">company</field>
+          <field name="supplier_rank">1</field>
+          <field name="is_lab">True</field>
+        </record>
+        <record id="lab_hoya_faset_vio" model="res.partner">
+          <field name="name">Hoya - Faset VIO</field>
+          <field name="company_type">company</field>
+          <field name="supplier_rank">1</field>
+          <field name="is_lab">True</field>
+        </record>
+        <record id="lab_huaming" model="res.partner">
+          <field name="name">Huaming</field>
+          <field name="company_type">company</field>
+          <field name="supplier_rank">1</field>
+          <field name="is_lab">True</field>
+        </record>
+        <record id="lab_huaming_faset_vio" model="res.partner">
+          <field name="name">Huaming - Faset VIO</field>
+          <field name="company_type">company</field>
+          <field name="supplier_rank">1</field>
+          <field name="is_lab">True</field>
+        </record>
+        <record id="lab_ilt" model="res.partner">
+          <field name="name">ILT</field>
+          <field name="company_type">company</field>
+          <field name="supplier_rank">1</field>
+          <field name="is_lab">True</field>
+        </record>
+        <record id="lab_ilt_faset_vio" model="res.partner">
+          <field name="name">ILT - Faset VIO</field>
+          <field name="company_type">company</field>
+          <field name="supplier_rank">1</field>
+          <field name="is_lab">True</field>
+        </record>
+        <record id="lab_polycore" model="res.partner">
+          <field name="name">Polycore</field>
+          <field name="company_type">company</field>
+          <field name="supplier_rank">1</field>
+          <field name="is_lab">True</field>
+        </record>
+        <record id="lab_polycore_faset_vio" model="res.partner">
+          <field name="name">Polycore - Faset VIO</field>
+          <field name="company_type">company</field>
+          <field name="supplier_rank">1</field>
+          <field name="is_lab">True</field>
+        </record>
+        <record id="lab_sap" model="res.partner">
+          <field name="name">SAP</field>
+          <field name="company_type">company</field>
+          <field name="supplier_rank">1</field>
+          <field name="is_lab">True</field>
+        </record>
+        <record id="lab_timur_raya" model="res.partner">
+          <field name="name">TIMUR RAYA</field>
+          <field name="company_type">company</field>
+          <field name="supplier_rank">1</field>
+          <field name="is_lab">True</field>
+        </record>
+        <record id="lab_tol" model="res.partner">
+          <field name="name">TOL</field>
+          <field name="company_type">company</field>
+          <field name="supplier_rank">1</field>
+          <field name="is_lab">True</field>
+        </record>
+
+    </data>
+</odoo>

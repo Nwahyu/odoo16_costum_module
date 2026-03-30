@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<data>
+		<template id="inherited_assets" inherit_id="web.assets_backend"
+			name="Inherited assets backend">
+			<xpath expr="." position="inside">
+				<script type="text/javascript" src="/eye_management/static/src/js/eye_chart.js"></script>
+				<link rel="stylesheet" href="/eye_management/static/src/css/eye_css.css" />
+				<script type="text/javascript" src="/eye_management/static/src/js/maphilight.js"></script>
+				<script type="text/javascript" src="/eye_management/static/src/js/widgets.js"></script>
+			</xpath>
+		</template>
+	</data>
+</odoo>
+
+
+
+<!-- <template id="assets_backend" name="your_module_name assets" inherit_id="web.assets_backend">
+    <xpath expr="." position="inside">
+        <link rel="stylesheet" href="/your_module_name/static/src/css/calendar.css"/>
+    </xpath>
+</template> -->

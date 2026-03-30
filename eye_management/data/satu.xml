@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- <record id="pindah_status_ke_status_by" model="ir.actions.server">
+    <field name="name">pindah status</field>
+        <field name="model_id" ref="model_medical_appointment"></field>
+        <field name="binding_model_id" ref="model_medical_appointment"></field>
+        <field name="state">code</field>
+        <field name="code">
+        for record in records:
+            record.pindah_status()
+        </field>
+    </record> -->
+</odoo>

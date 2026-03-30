@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- State -->
+        <record id="view_state_city_tree" model="ir.ui.view">
+            <field name="name">state.city.tree</field>
+            <field name="model">state.city</field>
+            <field name="arch" type="xml">
+                <tree string="State" editable="bottom">
+                    <field name="name"/>
+                    <field name="code"/>
+                    <field name="state_id" options="{'no_create': True, 'no_open': True}"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_state_city_form" model="ir.ui.view">
+            <field name="name">state.city.form</field>
+            <field name="model">state.city</field>
+            <field name="arch" type="xml">
+                <form string="State">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="code"/>
+                            <field name="state_id" options='{"no_open": True, "no_create": True}'/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_state_city_search" model="ir.ui.view">
+            <field name="name">state.city.search</field>
+            <field name="model">state.city</field>
+            <field name="arch" type="xml">
+                <search string="State">
+                    <field name="name"/>
+                    <field name="state_id"/>
+                    <group string="Group By">
+                        <filter name="groupby_state" string="state" context="{'group_by': 'state_id'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
+        <record id="action_state_city" model="ir.actions.act_window">
+            <field name="name">City</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">state.city</field>
+            <field name="view_id" ref="view_state_city_tree"/>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Create a City
+                </p><p>
+                    City belong to state and are part of your contacts' addresses.
+                </p>
+            </field>
+        </record>
+
+        <menuitem id="menu_state_city"
+        action="mel_state_city.action_state_city"
+        parent="contacts.menu_localisation"
+        sequence="4"/>
+
+    </data>
+</odoo>

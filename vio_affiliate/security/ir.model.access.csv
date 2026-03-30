@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_aff_user,access_aff_user,model_aff_user,,1,1,1,1
+access_aff_trx,access_aff_trx,model_aff_trx,,1,1,1,1
+access_domisili_kota,access_domisili_kota,model_domisili_kota,,1,1,1,1
+access_payout_trx,access_payout_trx,model_payout_trx,,1,1,1,1
+access_aff_ip_record,access_aff_ip_record,model_aff_ip_record,,1,1,1,1
+access_cabang_cabang,access_cabang_cabang,model_cabang_cabang,,1,1,1,1

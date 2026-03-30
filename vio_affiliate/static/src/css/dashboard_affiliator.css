@@ -1,0 +1,26 @@
+/**
+ * Dashboard Affiliator CSS
+ * Handles animation delays for dashboard elements
+ */
+
+/* Animation delays for statistics cards */
+.stats-card.primary.animate-fade-in-up {
+    animation-delay: 0.1s;
+}
+
+.stats-card.info.animate-fade-in-up {
+    animation-delay: 0.2s;
+}
+
+.stats-card.success.animate-fade-in-up {
+    animation-delay: 0.3s;
+}
+
+.stats-card.warning.animate-fade-in-up {
+    animation-delay: 0.4s;
+}
+
+/* Animation delay for branches section */
+.dashboard-card.animate-fade-in-up {
+    animation-delay: 0.5s;
+}

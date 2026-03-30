@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_satset_appointment_non,access_satset_appointment,model_satset_appointment,group_satset_non,1,0,1,0
+access_satset_appointment_admin,access_satset_appointment,model_satset_appointment,group_satset_admin,1,1,1,1
+access_satset_appointment_dokter,access_satset_appointment,model_satset_appointment,group_satset_dokter,1,0,0,0
+access_satset_icd10,access_satset_icd10,model_satset_icd10,,1,1,1,1

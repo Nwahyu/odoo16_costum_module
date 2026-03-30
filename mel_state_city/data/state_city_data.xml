@@ -1,0 +1,2633 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data noupdate="0">
+        
+        <!-- PULAU SUMATRA -->
+        <!-- ACEH -->
+        <record id="sc_aceh_kota_1" model="state.city">
+          <field name="name">Kota Banda Aceh</field>
+          <field name="state_id">613</field>
+          <field name="code">AC-01</field>
+        </record>
+        <record id="sc_aceh_kota_2" model="state.city">
+          <field name="name">Kota Langsa</field>
+          <field name="state_id">613</field>
+          <field name="code">AC-02</field>
+        </record>
+        <record id="sc_aceh_kota_3" model="state.city">
+          <field name="name">Kota Lhokseumawe</field>
+          <field name="state_id">613</field>
+          <field name="code">AC-03</field>
+        </record>
+        <record id="sc_aceh_kota_4" model="state.city">
+          <field name="name">Kota Sabang</field>
+          <field name="state_id">613</field>
+          <field name="code">AC-04</field>
+        </record>
+        <record id="sc_aceh_kota_5" model="state.city">
+          <field name="name">Kota Subulussalam</field>
+          <field name="state_id">613</field>
+          <field name="code">AC-05</field>
+        </record>
+        <record id="sc_aceh_kab_6" model="state.city">
+          <field name="name">Kabupaten Aceh Barat</field>
+          <field name="state_id">613</field>
+          <field name="code">AC-06</field>
+        </record>
+        <record id="sc_aceh_kab_7" model="state.city">
+          <field name="name">Kabupaten Aceh Barat Daya</field>
+          <field name="state_id">613</field>
+          <field name="code">AC-07</field>
+        </record>
+        <record id="sc_aceh_kab_8" model="state.city">
+          <field name="name">Kabupaten Aceh Besar</field>
+          <field name="state_id">613</field>
+          <field name="code">AC-08</field>
+        </record>
+        <record id="sc_aceh_kab_9" model="state.city">
+          <field name="name">Kabupaten Aceh Jaya</field>
+          <field name="state_id">613</field>
+          <field name="code">AC-09</field>
+        </record>
+        <record id="sc_aceh_kab_10" model="state.city">
+          <field name="name">Kabupaten Aceh Selatan</field>
+          <field name="state_id">613</field>
+          <field name="code">AC-10</field>
+        </record>
+        <record id="sc_aceh_kab_11" model="state.city">
+          <field name="name">Kabupaten Aceh Singkil</field>
+          <field name="state_id">613</field>
+          <field name="code">AC-11</field>
+        </record>
+        <record id="sc_aceh_kab_12" model="state.city">
+          <field name="name">Kabupaten Aceh Tamiang</field>
+          <field name="state_id">613</field>
+          <field name="code">AC-12</field>
+        </record>
+        <record id="sc_aceh_kab_13" model="state.city">
+          <field name="name">Kabupaten Aceh Tengah</field>
+          <field name="state_id">613</field>
+          <field name="code">AC-13</field>
+        </record>
+        <record id="sc_aceh_kab_14" model="state.city">
+          <field name="name">Kabupaten Aceh Tenggara</field>
+          <field name="state_id">613</field>
+          <field name="code">AC-14</field>
+        </record>
+        <record id="sc_aceh_kab_15" model="state.city">
+          <field name="name">Kabupaten Aceh Timur</field>
+          <field name="state_id">613</field>
+          <field name="code">AC-15</field>
+        </record>
+        <record id="sc_aceh_kab_16" model="state.city">
+          <field name="name">Kabupaten Aceh Utara</field>
+          <field name="state_id">613</field>
+          <field name="code">AC-16</field>
+        </record>
+        <record id="sc_aceh_kab_17" model="state.city">
+          <field name="name">Kabupaten Bener Meriah</field>
+          <field name="state_id">613</field>
+          <field name="code">AC-17</field>
+        </record>
+        <record id="sc_aceh_kab_18" model="state.city">
+          <field name="name">Kabupaten Bireuen</field>
+          <field name="state_id">613</field>
+          <field name="code">AC-18</field>
+        </record>
+        <record id="sc_aceh_kab_19" model="state.city">
+          <field name="name">Kabupaten Gayo Lues</field>
+          <field name="state_id">613</field>
+          <field name="code">AC-19</field>
+        </record>
+        <record id="sc_aceh_kab_20" model="state.city">
+          <field name="name">Kabupaten Nagan Raya</field>
+          <field name="state_id">613</field>
+          <field name="code">AC-20</field>
+        </record>
+        <record id="sc_aceh_kab_21" model="state.city">
+          <field name="name">Kabupaten Pidie</field>
+          <field name="state_id">613</field>
+          <field name="code">AC-21</field>
+        </record>
+        <record id="sc_aceh_kab_22" model="state.city">
+          <field name="name">Kabupaten Pidie Jaya</field>
+          <field name="state_id">613</field>
+          <field name="code">AC-22</field>
+        </record>
+        <record id="sc_aceh_kab_23" model="state.city">
+          <field name="name">Kabupaten Simeulue</field>
+          <field name="state_id">613</field>
+          <field name="code">AC-23</field>
+        </record>
+        
+        <!-- SUMUT -->
+        <record id="sc_sumut_kota_1" model="state.city">
+          <field name="name">Kota Binjai</field>
+          <field name="state_id">648</field>
+          <field name="code">SU-01</field>
+        </record>
+        <record id="sc_sumut_kota_2" model="state.city">
+          <field name="name">Kota Gunungsitoli</field>
+          <field name="state_id">648</field>
+          <field name="code">SU-02</field>
+        </record>
+        <record id="sc_sumut_kota_3" model="state.city">
+          <field name="name">Kota Medan</field>
+          <field name="state_id">648</field>
+          <field name="code">SU-03</field>
+        </record>
+        <record id="sc_sumut_kota_4" model="state.city">
+          <field name="name">Kota Padangsidimpuan</field>
+          <field name="state_id">648</field>
+          <field name="code">SU-04</field>
+        </record>
+        <record id="sc_sumut_kota_5" model="state.city">
+          <field name="name">Kota Pematangsiantar</field>
+          <field name="state_id">648</field>
+          <field name="code">SU-05</field>
+        </record>
+        <record id="sc_sumut_kota_6" model="state.city">
+          <field name="name">Kota Sibolga</field>
+          <field name="state_id">648</field>
+          <field name="code">SU-06</field>
+        </record>
+        <record id="sc_sumut_kota_7" model="state.city">
+          <field name="name">Kota Tanjungbalai</field>
+          <field name="state_id">648</field>
+          <field name="code">SU-07</field>
+        </record>
+        <record id="sc_sumut_kota_8" model="state.city">
+          <field name="name">Kota Tebing Tinggi</field>
+          <field name="state_id">648</field>
+          <field name="code">SU-08</field>
+        </record>
+        <record id="sc_sumut_kab_9" model="state.city">
+          <field name="name">Kabupaten Asahan</field>
+          <field name="state_id">648</field>
+          <field name="code">SU-09</field>
+        </record>
+        <record id="sc_sumut_kab_10" model="state.city">
+          <field name="name">Kabupaten Batu Bara</field>
+          <field name="state_id">648</field>
+          <field name="code">SU-10</field>
+        </record>
+        <record id="sc_sumut_kab_11" model="state.city">
+          <field name="name">Kabupaten Dairi</field>
+          <field name="state_id">648</field>
+          <field name="code">SU-11</field>
+        </record>
+        <record id="sc_sumut_kab_12" model="state.city">
+          <field name="name">Kabupaten Deli Serdang</field>
+          <field name="state_id">648</field>
+          <field name="code">SU-12</field>
+        </record>
+        <record id="sc_sumut_kab_13" model="state.city">
+          <field name="name">Kabupaten Humbang Hasundutan</field>
+          <field name="state_id">648</field>
+          <field name="code">SU-13</field>
+        </record>
+        <record id="sc_sumut_kab_14" model="state.city">
+          <field name="name">Kabupaten Karo</field>
+          <field name="state_id">648</field>
+          <field name="code">SU-14</field>
+        </record>
+        <record id="sc_sumut_kab_15" model="state.city">
+          <field name="name">Kabupaten Labuhanbatu</field>
+          <field name="state_id">648</field>
+          <field name="code">SU-15</field>
+        </record>
+        <record id="sc_sumut_kab_16" model="state.city">
+          <field name="name">Kabupaten Labuhanbatu Selatan</field>
+          <field name="state_id">648</field>
+          <field name="code">SU-16</field>
+        </record>
+        <record id="sc_sumut_kab_17" model="state.city">
+          <field name="name">Kabupaten Labuhanbatu Utara</field>
+          <field name="state_id">648</field>
+          <field name="code">SU-17</field>
+        </record>
+        <record id="sc_sumut_kab_18" model="state.city">
+          <field name="name">Kabupaten Langkat</field>
+          <field name="state_id">648</field>
+          <field name="code">SU-18</field>
+        </record>
+        <record id="sc_sumut_kab_19" model="state.city">
+          <field name="name">Kabupaten Mandailing Natal</field>
+          <field name="state_id">648</field>
+          <field name="code">SU-19</field>
+        </record>
+        <record id="sc_sumut_kab_20" model="state.city">
+          <field name="name">Kabupaten Nias</field>
+          <field name="state_id">648</field>
+          <field name="code">SU-20</field>
+        </record>
+        <record id="sc_sumut_kab_21" model="state.city">
+          <field name="name">Kabupaten Nias Barat</field>
+          <field name="state_id">648</field>
+          <field name="code">SU-21</field>
+        </record>
+        <record id="sc_sumut_kab_22" model="state.city">
+          <field name="name">Kabupaten Nias Selatan</field>
+          <field name="state_id">648</field>
+          <field name="code">SU-22</field>
+        </record>
+        <record id="sc_sumut_kab_23" model="state.city">
+          <field name="name">Kabupaten Nias Utara</field>
+          <field name="state_id">648</field>
+          <field name="code">SU-23</field>
+        </record>
+        <record id="sc_sumut_kab_24" model="state.city">
+          <field name="name">Kabupaten Padang Lawas</field>
+          <field name="state_id">648</field>
+          <field name="code">SU-24</field>
+        </record>
+        <record id="sc_sumut_kab_25" model="state.city">
+          <field name="name">Kabupaten Padang Lawas Utara</field>
+          <field name="state_id">648</field>
+          <field name="code">SU-25</field>
+        </record>
+        <record id="sc_sumut_kab_26" model="state.city">
+          <field name="name">Kabupaten Pakpak Bharat</field>
+          <field name="state_id">648</field>
+          <field name="code">SU-26</field>
+        </record>
+        <record id="sc_sumut_kab_27" model="state.city">
+          <field name="name">Kabupaten Samosir</field>
+          <field name="state_id">648</field>
+          <field name="code">SU-27</field>
+        </record>
+        <record id="sc_sumut_kab_28" model="state.city">
+          <field name="name">Kabupaten Serdang Bedagai</field>
+          <field name="state_id">648</field>
+          <field name="code">SU-28</field>
+        </record>
+        <record id="sc_sumut_kab_29" model="state.city">
+          <field name="name">Kabupaten Simalungun</field>
+          <field name="state_id">648</field>
+          <field name="code">SU-29</field>
+        </record>
+        <record id="sc_sumut_kab_30" model="state.city">
+          <field name="name">Kabupaten Tapanuli Selatan</field>
+          <field name="state_id">648</field>
+          <field name="code">SU-30</field>
+        </record>
+        <record id="sc_sumut_kab_31" model="state.city">
+          <field name="name">Kabupaten Tapanuli Tengah</field>
+          <field name="state_id">648</field>
+          <field name="code">SU-31</field>
+        </record>
+        <record id="sc_sumut_kab_32" model="state.city">
+          <field name="name">Kabupaten Tapanuli Utara</field>
+          <field name="state_id">648</field>
+          <field name="code">SU-32</field>
+        </record>
+        <record id="sc_sumut_kab_33" model="state.city">
+          <field name="name">Kabupaten Toba</field>
+          <field name="state_id">648</field>
+          <field name="code">SU-33</field>
+        </record>
+        
+        <!-- RIAU -->
+        <record id="sc_riau_kota_1" model="state.city">
+          <field name="name">Kota Dumai</field>
+          <field name="state_id">640</field>
+          <field name="code">RI-01</field>
+        </record>
+        <record id="sc_riau_kota_2" model="state.city">
+          <field name="name">Kota Pekanbaru</field>
+          <field name="state_id">640</field>
+          <field name="code">RI-02</field>
+        </record>
+        <record id="sc_riau_kab_3" model="state.city">
+          <field name="name">Kabupaten Bengkalis</field>
+          <field name="state_id">640</field>
+          <field name="code">RI-03</field>
+        </record>
+        <record id="sc_riau_kab_4" model="state.city">
+          <field name="name">Kabupaten Indragiri Hilir</field>
+          <field name="state_id">640</field>
+          <field name="code">RI-04</field>
+        </record>
+        <record id="sc_riau_kab_5" model="state.city">
+          <field name="name">Kabupaten Indragiri Hulu</field>
+          <field name="state_id">640</field>
+          <field name="code">RI-05</field>
+        </record>
+        <record id="sc_riau_kab_6" model="state.city">
+          <field name="name">Kabupaten Kampar</field>
+          <field name="state_id">640</field>
+          <field name="code">RI-06</field>
+        </record>
+        <record id="sc_riau_kab_7" model="state.city">
+          <field name="name">Kabupaten Kepulauan Meranti</field>
+          <field name="state_id">640</field>
+          <field name="code">RI-07</field>
+        </record>
+        <record id="sc_riau_kab_8" model="state.city">
+          <field name="name">Kabupaten Kuantan Singingi</field>
+          <field name="state_id">640</field>
+          <field name="code">RI-08</field>
+        </record>
+        <record id="sc_riau_kab_9" model="state.city">
+          <field name="name">Kabupaten Pelalawan</field>
+          <field name="state_id">640</field>
+          <field name="code">RI-09</field>
+        </record>
+        <record id="sc_riau_kab_10" model="state.city">
+          <field name="name">Kabupaten Rokan Hilir</field>
+          <field name="state_id">640</field>
+          <field name="code">RI-10</field>
+        </record>
+        <record id="sc_riau_kab_11" model="state.city">
+          <field name="name">Kabupaten Rokan Hulu</field>
+          <field name="state_id">640</field>
+          <field name="code">RI-11</field>
+        </record>
+        <record id="sc_riau_kab_12" model="state.city">
+          <field name="name">Kabupaten Siak</field>
+          <field name="state_id">640</field>
+          <field name="code">RI-12</field>
+        </record>
+        
+        <!-- KEP RIAU -->
+        <record id="sc_kep_riau_kota_1" model="state.city">
+          <field name="name">Kota Batam</field>
+          <field name="state_id">629</field>
+          <field name="code">KR-01</field>
+        </record>
+        <record id="sc_kep_riau_kota_2" model="state.city">
+          <field name="name">Kota Tanjungpinang</field>
+          <field name="state_id">629</field>
+          <field name="code">KR-02</field>
+        </record>
+        <record id="sc_kep_riau_kab_3" model="state.city">
+          <field name="name">Kabupaten Bintan</field>
+          <field name="state_id">629</field>
+          <field name="code">KR-03</field>
+        </record>
+        <record id="sc_kep_riau_kab_4" model="state.city">
+          <field name="name">Kabupaten Karimun</field>
+          <field name="state_id">629</field>
+          <field name="code">KR-04</field>
+        </record>
+        <record id="sc_kep_riau_kab_5" model="state.city">
+          <field name="name">Kabupaten Kepulauan Anambas</field>
+          <field name="state_id">629</field>
+          <field name="code">KR-05</field>
+        </record>
+        <record id="sc_kep_riau_kab_6" model="state.city">
+          <field name="name">Kabupaten Lingga</field>
+          <field name="state_id">629</field>
+          <field name="code">KR-06</field>
+        </record>
+        <record id="sc_kep_riau_kab_7" model="state.city">
+          <field name="name">Kabupaten Natuna</field>
+          <field name="state_id">629</field>
+          <field name="code">KR-07</field>
+        </record>
+        
+        <!-- SUMATRA BARAT -->
+        <record id="sc_sumbar_kota_1" model="state.city">
+          <field name="name">Kota Bukittinggi</field>
+          <field name="state_id">646</field>
+          <field name="code">SB-01</field>
+        </record>
+        <record id="sc_sumbar_kota_2" model="state.city">
+          <field name="name">Kota Padang</field>
+          <field name="state_id">646</field>
+          <field name="code">SB-02</field>
+        </record>
+        <record id="sc_sumbar_kota_3" model="state.city">
+          <field name="name">Kota Padang Panjang</field>
+          <field name="state_id">646</field>
+          <field name="code">SB-03</field>
+        </record>
+        <record id="sc_sumbar_kota_4" model="state.city">
+          <field name="name">Kota Pariaman</field>
+          <field name="state_id">646</field>
+          <field name="code">SB-04</field>
+        </record>
+        <record id="sc_sumbar_kota_5" model="state.city">
+          <field name="name">Kota Payakumbuh</field>
+          <field name="state_id">646</field>
+          <field name="code">SB-05</field>
+        </record>
+        <record id="sc_sumbar_kota_6" model="state.city">
+          <field name="name">Kota Sawahlunto</field>
+          <field name="state_id">646</field>
+          <field name="code">SB-06</field>
+        </record>
+        <record id="sc_sumbar_kota_7" model="state.city">
+          <field name="name">Kota Solok</field>
+          <field name="state_id">646</field>
+          <field name="code">SB-07</field>
+        </record>
+        <record id="sc_sumbar_kab_8" model="state.city">
+          <field name="name">Kabupaten Agam</field>
+          <field name="state_id">646</field>
+          <field name="code">SB-08</field>
+        </record>
+        <record id="sc_sumbar_kab_9" model="state.city">
+          <field name="name">Kabupaten Dharmasraya</field>
+          <field name="state_id">646</field>
+          <field name="code">SB-09</field>
+        </record>
+        <record id="sc_sumbar_kab_10" model="state.city">
+          <field name="name">Kabupaten Kepulauan Mentawai</field>
+          <field name="state_id">646</field>
+          <field name="code">SB-10</field>
+        </record>
+        <record id="sc_sumbar_kab_11" model="state.city">
+          <field name="name">Kabupaten Lima Puluh Kota</field>
+          <field name="state_id">646</field>
+          <field name="code">SB-11</field>
+        </record>
+        <record id="sc_sumbar_kab_12" model="state.city">
+          <field name="name">Kabupaten Padang Pariaman</field>
+          <field name="state_id">646</field>
+          <field name="code">SB-12</field>
+        </record>
+        <record id="sc_sumbar_kab_13" model="state.city">
+          <field name="name">Kabupaten Pasaman</field>
+          <field name="state_id">646</field>
+          <field name="code">SB-13</field>
+        </record>
+        <record id="sc_sumbar_kab_14" model="state.city">
+          <field name="name">Kabupaten Pasaman Barat</field>
+          <field name="state_id">646</field>
+          <field name="code">SB-14</field>
+        </record>
+        <record id="sc_sumbar_kab_15" model="state.city">
+          <field name="name">Kabupaten Pesisir Selatan</field>
+          <field name="state_id">646</field>
+          <field name="code">SB-15</field>
+        </record>
+        <record id="sc_sumbar_kab_16" model="state.city">
+          <field name="name">Kabupaten Sijunjung</field>
+          <field name="state_id">646</field>
+          <field name="code">SB-16</field>
+        </record>
+        <record id="sc_sumbar_kab_17" model="state.city">
+          <field name="name">Kabupaten Solok</field>
+          <field name="state_id">646</field>
+          <field name="code">SB-17</field>
+        </record>
+        <record id="sc_sumbar_kab_18" model="state.city">
+          <field name="name">Kabupaten Solok Selatan</field>
+          <field name="state_id">646</field>
+          <field name="code">SB-18</field>
+        </record>
+        <record id="sc_sumbar_kab_19" model="state.city">
+          <field name="name">Kabupaten Tanah Datar</field>
+          <field name="state_id">646</field>
+          <field name="code">SB-19</field>
+        </record>
+        
+        <!-- JAMBI-->
+        <record id="sc_jambi_kota_1" model="state.city">
+          <field name="name">Kota Jambi</field>
+          <field name="state_id">620</field>
+          <field name="code">JA-01</field>
+        </record>
+        <record id="sc_jambi_kota_2" model="state.city">
+          <field name="name">Kota Sungai Penuh</field>
+          <field name="state_id">620</field>
+          <field name="code">JA-02</field>
+        </record>
+        <record id="sc_jambi_kab_3" model="state.city">
+          <field name="name">Kabupaten Batanghari</field>
+          <field name="state_id">620</field>
+          <field name="code">JA-03</field>
+        </record>
+        <record id="sc_jambi_kab_4" model="state.city">
+          <field name="name">Kabupaten Bungo</field>
+          <field name="state_id">620</field>
+          <field name="code">JA-04</field>
+        </record>
+        <record id="sc_jambi_kab_5" model="state.city">
+          <field name="name">Kabupaten Kerinci</field>
+          <field name="state_id">620</field>
+          <field name="code">JA-05</field>
+        </record>
+        <record id="sc_jambi_kab_6" model="state.city">
+          <field name="name">Kabupaten Merangin</field>
+          <field name="state_id">620</field>
+          <field name="code">JA-06</field>
+        </record>
+        <record id="sc_jambi_kab_7" model="state.city">
+          <field name="name">Kabupaten Muaro Jambi</field>
+          <field name="state_id">620</field>
+          <field name="code">JA-07</field>
+        </record>
+        <record id="sc_jambi_kab_8" model="state.city">
+          <field name="name">Kabupaten Sarolangun</field>
+          <field name="state_id">620</field>
+          <field name="code">JA-08</field>
+        </record>
+        <record id="sc_jambi_kab_9" model="state.city">
+          <field name="name">Kabupaten Tanjung Jabung Barat</field>
+          <field name="state_id">620</field>
+          <field name="code">JA-09</field>
+        </record>
+        <record id="sc_jambi_kab_10" model="state.city">
+          <field name="name">Kabupaten Tanjung Jabung Timur</field>
+          <field name="state_id">620</field>
+          <field name="code">JA-10</field>
+        </record>
+        <record id="sc_jambi_kab_11" model="state.city">
+          <field name="name">Kabupaten Tebo</field>
+          <field name="state_id">620</field>
+          <field name="code">JA-11</field>
+        </record>
+        
+        <!-- BENGKULU-->
+        <record id="sc_bengkulu_kota_1" model="state.city">
+          <field name="name">Kota Bengkulu</field>
+          <field name="state_id">617</field>
+          <field name="code">BE-01</field>
+        </record>
+        <record id="sc_bengkulu_kab_2" model="state.city">
+          <field name="name">Kabupaten Bengkulu Selatan</field>
+          <field name="state_id">617</field>
+          <field name="code">BE-02</field>
+        </record>
+        <record id="sc_bengkulu_kab_3" model="state.city">
+          <field name="name">Kabupaten Bengkulu Tengah</field>
+          <field name="state_id">617</field>
+          <field name="code">BE-03</field>
+        </record>
+        <record id="sc_bengkulu_kab_4" model="state.city">
+          <field name="name">Kabupaten Bengkulu Utara</field>
+          <field name="state_id">617</field>
+          <field name="code">BE-04</field>
+        </record>
+        <record id="sc_bengkulu_kab_5" model="state.city">
+          <field name="name">Kabupaten Kaur</field>
+          <field name="state_id">617</field>
+          <field name="code">BE-05</field>
+        </record>
+        <record id="sc_bengkulu_kab_6" model="state.city">
+          <field name="name">Kabupaten Kepahiang</field>
+          <field name="state_id">617</field>
+          <field name="code">BE-06</field>
+        </record>
+        <record id="sc_bengkulu_kab_7" model="state.city">
+          <field name="name">Kabupaten Lebong</field>
+          <field name="state_id">617</field>
+          <field name="code">BE-07</field>
+        </record>
+        <record id="sc_bengkulu_kab_8" model="state.city">
+          <field name="name">Kabupaten Mukomuko</field>
+          <field name="state_id">617</field>
+          <field name="code">BE-08</field>
+        </record>
+        <record id="sc_bengkulu_kab_9" model="state.city">
+          <field name="name">Kabupaten Rejang Lebong</field>
+          <field name="state_id">617</field>
+          <field name="code">BE-09</field>
+        </record>
+        <record id="sc_bengkulu_kab_10" model="state.city">
+          <field name="name">Kabupaten Seluma</field>
+          <field name="state_id">617</field>
+          <field name="code">BE-10</field>
+        </record>
+        
+        <!-- SUMATERA SELATAN -->
+        <record id="sc_sumsel_kota_1" model="state.city">
+          <field name="name">Kota Lubuk Linggau</field>
+          <field name="state_id">647</field>
+          <field name="code">SS-01</field>
+        </record>
+        <record id="sc_sumsel_kota_2" model="state.city">
+          <field name="name">Kota Pagaralam</field>
+          <field name="state_id">647</field>
+          <field name="code">SS-02</field>
+        </record>
+        <record id="sc_sumsel_kota_3" model="state.city">
+          <field name="name">Kota Palembang</field>
+          <field name="state_id">647</field>
+          <field name="code">SS-03</field>
+        </record>
+        <record id="sc_sumsel_kota_4" model="state.city">
+          <field name="name">Kota Prabumulih</field>
+          <field name="state_id">647</field>
+          <field name="code">SS-04</field>
+        </record>
+        <record id="sc_sumsel_kab_5" model="state.city">
+          <field name="name">Kabupaten Banyuasin</field>
+          <field name="state_id">647</field>
+          <field name="code">SS-05</field>
+        </record>
+        <record id="sc_sumsel_kab_6" model="state.city">
+          <field name="name">Kabupaten Empat Lawang</field>
+          <field name="state_id">647</field>
+          <field name="code">SS-06</field>
+        </record>
+        <record id="sc_sumsel_kab_7" model="state.city">
+          <field name="name">Kabupaten Lahat</field>
+          <field name="state_id">647</field>
+          <field name="code">SS-07</field>
+        </record>
+        <record id="sc_sumsel_kab_8" model="state.city">
+          <field name="name">Kabupaten Muara Enim</field>
+          <field name="state_id">647</field>
+          <field name="code">SS-08</field>
+        </record>
+        <record id="sc_sumsel_kab_9" model="state.city">
+          <field name="name">Kabupaten Musi Banyuasin</field>
+          <field name="state_id">647</field>
+          <field name="code">SS-09</field>
+        </record>
+        <record id="sc_sumsel_kab_10" model="state.city">
+          <field name="name">Kabupaten Musi Rawas</field>
+          <field name="state_id">647</field>
+          <field name="code">SS-10</field>
+        </record>
+        <record id="sc_sumsel_kab_11" model="state.city">
+          <field name="name">Kabupaten Musi Rawas Utara</field>
+          <field name="state_id">647</field>
+          <field name="code">SS-11</field>
+        </record>
+        <record id="sc_sumsel_kab_12" model="state.city">
+          <field name="name">Kabupaten Ogan Ilir</field>
+          <field name="state_id">647</field>
+          <field name="code">SS-12</field>
+        </record>
+        <record id="sc_sumsel_kab_13" model="state.city">
+          <field name="name">Kabupaten Ogan Komering Ilir</field>
+          <field name="state_id">647</field>
+          <field name="code">SS-13</field>
+        </record>
+        <record id="sc_sumsel_kab_14" model="state.city">
+          <field name="name">Kabupaten Ogan Komering Ulu</field>
+          <field name="state_id">647</field>
+          <field name="code">SS-14</field>
+        </record>
+        <record id="sc_sumsel_kab_15" model="state.city">
+          <field name="name">Kabupaten Ogan Komering Ulu Selatan</field>
+          <field name="state_id">647</field>
+          <field name="code">SS-15</field>
+        </record>
+        <record id="sc_sumsel_kab_16" model="state.city">
+          <field name="name">Kabupaten Ogan Komering Ulu Timur</field>
+          <field name="state_id">647</field>
+          <field name="code">SS-16</field>
+        </record>
+        <record id="sc_sumsel_kab_17" model="state.city">
+          <field name="name">Kabupaten Penukal Abab Lematang Ilir</field>
+          <field name="state_id">647</field>
+          <field name="code">SS-17</field>
+        </record>
+        
+        <!-- BANGKA BELITUNG -->
+        <record id="sc_bangka_belitung_kota_1" model="state.city">
+          <field name="name">Kota Pangkalpinang</field>
+          <field name="state_id">615</field>
+          <field name="code">BB-01</field>
+        </record>
+        <record id="sc_bangka_belitung_kab_2" model="state.city">
+          <field name="name">Kabupaten Bangka</field>
+          <field name="state_id">615</field>
+          <field name="code">BB-02</field>
+        </record>
+        <record id="sc_bangka_belitung_kab_3" model="state.city">
+          <field name="name">Kabupaten Bangka Barat</field>
+          <field name="state_id">615</field>
+          <field name="code">BB-03</field>
+        </record>
+        <record id="sc_bangka_belitung_kab_4" model="state.city">
+          <field name="name">Kabupaten Bangka Selatan</field>
+          <field name="state_id">615</field>
+          <field name="code">BB-04</field>
+        </record>
+        <record id="sc_bangka_belitung_kab_5" model="state.city">
+          <field name="name">Kabupaten Bangka Tengah</field>
+          <field name="state_id">615</field>
+          <field name="code">BB-05</field>
+        </record>
+        <record id="sc_bangka_belitung_kab_6" model="state.city">
+          <field name="name">Kabupaten Belitung</field>
+          <field name="state_id">615</field>
+          <field name="code">BB-06</field>
+        </record>
+        <record id="sc_bangka_belitung_kab_7" model="state.city">
+          <field name="name">Kabupaten Belitung Timur</field>
+          <field name="state_id">615</field>
+          <field name="code">BB-07</field>
+        </record>
+        
+        <!-- LAMPUNG -->
+        <record id="sc_lampung_kota_1" model="state.city">
+          <field name="name">Kota Bandar Lampung</field>
+          <field name="state_id">630</field>
+          <field name="code">LA-01</field>
+        </record>
+        <record id="sc_lampung_kota_2" model="state.city">
+          <field name="name">Kota Metro</field>
+          <field name="state_id">630</field>
+          <field name="code">LA-02</field>
+        </record>
+        <record id="sc_lampung_kab_3" model="state.city">
+          <field name="name">Kabupaten Lampung Barat</field>
+          <field name="state_id">630</field>
+          <field name="code">LA-03</field>
+        </record>
+        <record id="sc_lampung_kab_4" model="state.city">
+          <field name="name">Kabupaten Lampung Selatan</field>
+          <field name="state_id">630</field>
+          <field name="code">LA-04</field>
+        </record>
+        <record id="sc_lampung_kab_5" model="state.city">
+          <field name="name">Kabupaten Lampung Tengah</field>
+          <field name="state_id">630</field>
+          <field name="code">LA-05</field>
+        </record>
+        <record id="sc_lampung_kab_6" model="state.city">
+          <field name="name">Kabupaten Lampung Timur</field>
+          <field name="state_id">630</field>
+          <field name="code">LA-06</field>
+        </record>
+        <record id="sc_lampung_kab_7" model="state.city">
+          <field name="name">Kabupaten Lampung Utara</field>
+          <field name="state_id">630</field>
+          <field name="code">LA-07</field>
+        </record>
+        <record id="sc_lampung_kab_8" model="state.city">
+          <field name="name">Kabupaten Mesuji</field>
+          <field name="state_id">630</field>
+          <field name="code">LA-08</field>
+        </record>
+        <record id="sc_lampung_kab_9" model="state.city">
+          <field name="name">Kabupaten Pesawaran</field>
+          <field name="state_id">630</field>
+          <field name="code">LA-09</field>
+        </record>
+        <record id="sc_lampung_kab_10" model="state.city">
+          <field name="name">Kabupaten Pesisir Barat</field>
+          <field name="state_id">630</field>
+          <field name="code">LA-10</field>
+        </record>
+        <record id="sc_lampung_kab_11" model="state.city">
+          <field name="name">Kabupaten Pringsewu</field>
+          <field name="state_id">630</field>
+          <field name="code">LA-11</field>
+        </record>
+        <record id="sc_lampung_kab_12" model="state.city">
+          <field name="name">Kabupaten Tanggamus</field>
+          <field name="state_id">630</field>
+          <field name="code">LA-12</field>
+        </record>
+        <record id="sc_lampung_kab_13" model="state.city">
+          <field name="name">Kabupaten Tulang Bawang</field>
+          <field name="state_id">630</field>
+          <field name="code">LA-13</field>
+        </record>
+        <record id="sc_lampung_kab_14" model="state.city">
+          <field name="name">Kabupaten Tulang Bawang Barat</field>
+          <field name="state_id">630</field>
+          <field name="code">LA-14</field>
+        </record>
+        <record id="sc_lampung_kab_15" model="state.city">
+          <field name="name">Kabupaten Way Kanan</field>
+          <field name="state_id">630</field>
+          <field name="code">LA-15</field>
+        </record>
+
+        <!-- BANTEN -->
+        <record id="sc_banten_kota_1" model="state.city">
+          <field name="name">Kota Cilegon</field>
+          <field name="state_id">616</field>
+          <field name="code">BT-01</field>
+        </record>
+        <record id="sc_banten_kota_2" model="state.city">
+          <field name="name">Kota Serang</field>
+          <field name="state_id">616</field>
+          <field name="code">BT-02</field>
+        </record>
+        <record id="sc_banten_kota_3" model="state.city">
+          <field name="name">Kota Tangerang</field>
+          <field name="state_id">616</field>
+          <field name="code">BT-03</field>
+        </record>
+        <record id="sc_banten_kota_4" model="state.city">
+          <field name="name">Kota Tangerang Selatan</field>
+          <field name="state_id">616</field>
+          <field name="code">BT-04</field>
+        </record>
+        <record id="sc_banten_kab_5" model="state.city">
+          <field name="name">Kabupaten Lebak</field>
+          <field name="state_id">616</field>
+          <field name="code">BT-05</field>
+        </record>
+        <record id="sc_banten_kab_6" model="state.city">
+          <field name="name">Kabupaten Pandeglang</field>
+          <field name="state_id">616</field>
+          <field name="code">BT-06</field>
+        </record>
+        <record id="sc_banten_kab_7" model="state.city">
+          <field name="name">Kabupaten Serang</field>
+          <field name="state_id">616</field>
+          <field name="code">BT-07</field>
+        </record>
+        <record id="sc_banten_kab_8" model="state.city">
+          <field name="name">Kabupaten Tangerang</field>
+          <field name="state_id">616</field>
+          <field name="code">BT-08</field>
+        </record>
+
+        <!-- JAKARTA -->
+        <record id="sc_jakarta_kota_1" model="state.city">
+          <field name="name">Kota Jakarta Barat</field>
+          <field name="state_id">619</field>
+          <field name="code">JK-01</field>
+        </record>
+        <record id="sc_jakarta_kota_2" model="state.city">
+          <field name="name">Kota Jakarta Pusat</field>
+          <field name="state_id">619</field>
+          <field name="code">JK-02</field>
+        </record>
+        <record id="sc_jakarta_kota_3" model="state.city">
+          <field name="name">Kota Jakarta Selatan</field>
+          <field name="state_id">619</field>
+          <field name="code">JK-03</field>
+        </record>
+        <record id="sc_jakarta_kota_4" model="state.city">
+          <field name="name">Kota Jakarta Timur</field>
+          <field name="state_id">619</field>
+          <field name="code">JK-04</field>
+        </record>
+        <record id="sc_jakarta_kota_5" model="state.city">
+          <field name="name">Kota Jakarta Utara</field>
+          <field name="state_id">619</field>
+          <field name="code">JK-05</field>
+        </record>
+        <record id="sc_jakarta_kota_6" model="state.city">
+          <field name="name">Kota Daerah Khusus Ibukota Jakarta</field>
+          <field name="state_id">619</field>
+          <field name="code">JK-06</field>
+        </record>
+        <record id="sc_jakarta_kab_7" model="state.city">
+          <field name="name">Kabupaten Kepulauan Seribu</field>
+          <field name="state_id">619</field>
+          <field name="code">JK-07</field>
+        </record>
+
+        <!-- PULAU JAWA -->
+        <!-- JAWA BARAT -->
+        <record id="sc_jabar_kota_1" model="state.city">
+          <field name="name">Kota Bandung</field>
+          <field name="state_id">621</field>
+          <field name="code">JB-01</field>
+        </record>
+        <record id="sc_jabar_kota_2" model="state.city">
+          <field name="name">Kota Banjar</field>
+          <field name="state_id">621</field>
+          <field name="code">JB-02</field>
+        </record>
+        <record id="sc_jabar_kota_3" model="state.city">
+          <field name="name">Kota Bekasi</field>
+          <field name="state_id">621</field>
+          <field name="code">JB-03</field>
+        </record>
+        <record id="sc_jabar_kota_4" model="state.city">
+          <field name="name">Kota Bogor</field>
+          <field name="state_id">621</field>
+          <field name="code">JB-04</field>
+        </record>
+        <record id="sc_jabar_kota_5" model="state.city">
+          <field name="name">Kota Cimahi</field>
+          <field name="state_id">621</field>
+          <field name="code">JB-05</field>
+        </record>
+        <record id="sc_jabar_kota_6" model="state.city">
+          <field name="name">Kota Cirebon</field>
+          <field name="state_id">621</field>
+          <field name="code">JB-06</field>
+        </record>
+        <record id="sc_jabar_kota_7" model="state.city">
+          <field name="name">Kota Depok</field>
+          <field name="state_id">621</field>
+          <field name="code">JB-07</field>
+        </record>
+        <record id="sc_jabar_kota_8" model="state.city">
+          <field name="name">Kota Sukabumi</field>
+          <field name="state_id">621</field>
+          <field name="code">JB-08</field>
+        </record>
+        <record id="sc_jabar_kota_9" model="state.city">
+          <field name="name">Kota Tasikmalaya</field>
+          <field name="state_id">621</field>
+          <field name="code">JB-09</field>
+        </record>
+        <record id="sc_jabar_kab_10" model="state.city">
+          <field name="name">Kabupaten Bandung</field>
+          <field name="state_id">621</field>
+          <field name="code">JB-10</field>
+        </record>
+        <record id="sc_jabar_kab_11" model="state.city">
+          <field name="name">Kabupaten Bandung Barat</field>
+          <field name="state_id">621</field>
+          <field name="code">JB-11</field>
+        </record>
+        <record id="sc_jabar_kab_12" model="state.city">
+          <field name="name">Kabupaten Bekasi</field>
+          <field name="state_id">621</field>
+          <field name="code">JB-12</field>
+        </record>
+        <record id="sc_jabar_kab_13" model="state.city">
+          <field name="name">Kabupaten Bogor</field>
+          <field name="state_id">621</field>
+          <field name="code">JB-13</field>
+        </record>
+        <record id="sc_jabar_kab_14" model="state.city">
+          <field name="name">Kabupaten Ciamis</field>
+          <field name="state_id">621</field>
+          <field name="code">JB-14</field>
+        </record>
+        <record id="sc_jabar_kab_15" model="state.city">
+          <field name="name">Kabupaten Cianjur</field>
+          <field name="state_id">621</field>
+          <field name="code">JB-15</field>
+        </record>
+        <record id="sc_jabar_kab_16" model="state.city">
+          <field name="name">Kabupaten Cirebon</field>
+          <field name="state_id">621</field>
+          <field name="code">JB-16</field>
+        </record>
+        <record id="sc_jabar_kab_17" model="state.city">
+          <field name="name">Kabupaten Garut</field>
+          <field name="state_id">621</field>
+          <field name="code">JB-17</field>
+        </record>
+        <record id="sc_jabar_kab_18" model="state.city">
+          <field name="name">Kabupaten Indramayu</field>
+          <field name="state_id">621</field>
+          <field name="code">JB-18</field>
+        </record>
+        <record id="sc_jabar_kab_19" model="state.city">
+          <field name="name">Kabupaten Karawang</field>
+          <field name="state_id">621</field>
+          <field name="code">JB-19</field>
+        </record>
+        <record id="sc_jabar_kab_20" model="state.city">
+          <field name="name">Kabupaten Kuningan</field>
+          <field name="state_id">621</field>
+          <field name="code">JB-20</field>
+        </record>
+        <record id="sc_jabar_kab_21" model="state.city">
+          <field name="name">Kabupaten Majalengka</field>
+          <field name="state_id">621</field>
+          <field name="code">JB-21</field>
+        </record>
+        <record id="sc_jabar_kab_22" model="state.city">
+          <field name="name">Kabupaten Pangandaran</field>
+          <field name="state_id">621</field>
+          <field name="code">JB-22</field>
+        </record>
+        <record id="sc_jabar_kab_23" model="state.city">
+          <field name="name">Kabupaten Purwakarta</field>
+          <field name="state_id">621</field>
+          <field name="code">JB-23</field>
+        </record>
+        <record id="sc_jabar_kab_24" model="state.city">
+          <field name="name">Kabupaten Subang</field>
+          <field name="state_id">621</field>
+          <field name="code">JB-24</field>
+        </record>
+        <record id="sc_jabar_kab_25" model="state.city">
+          <field name="name">Kabupaten Sukabumi</field>
+          <field name="state_id">621</field>
+          <field name="code">JB-25</field>
+        </record>
+        <record id="sc_jabar_kab_26" model="state.city">
+          <field name="name">Kabupaten Sumedang</field>
+          <field name="state_id">621</field>
+          <field name="code">JB-26</field>
+        </record>
+        <record id="sc_jabar_kab_27" model="state.city">
+          <field name="name">Kabupaten Tasikmalaya</field>
+          <field name="state_id">621</field>
+          <field name="code">JB-27</field>
+        </record>
+
+        <!-- JAWA Tengah -->
+        <record id="sc_jateng_kota_1" model="state.city">
+            <field name="name">Kota Magelang</field>
+            <field name="state_id">622</field>
+            <field name="code">JT-01</field>
+        </record>
+        <record id="sc_jateng_kota_2" model="state.city">
+            <field name="name">Kota Pekalongan</field>
+            <field name="state_id">622</field>
+            <field name="code">JT-02</field>
+        </record>
+        <record id="sc_jateng_kota_3" model="state.city">
+            <field name="name">Kota Salatiga</field>
+            <field name="state_id">622</field>
+            <field name="code">JT-03</field>
+        </record>
+        <record id="sc_jateng_kota_4" model="state.city">
+            <field name="name">Kota Semarang</field>
+            <field name="state_id">622</field>
+            <field name="code">JT-04</field>
+        </record>
+        <record id="sc_jateng_kota_5" model="state.city">
+            <field name="name">Kota Surakarta</field>
+            <field name="state_id">622</field>
+            <field name="code">JT-05</field>
+        </record>
+        <record id="sc_jateng_kota_6" model="state.city">
+            <field name="name">Kota Tegal</field>
+            <field name="state_id">622</field>
+            <field name="code">JT-06</field>
+        </record>
+        <record id="sc_jateng_kab_7" model="state.city">
+            <field name="name">Kabupaten Banjarnegara</field>
+            <field name="state_id">622</field>
+            <field name="code">JT-07</field>
+        </record>
+        <record id="sc_jateng_kab_8" model="state.city">
+            <field name="name">Kabupaten Banyumas</field>
+            <field name="state_id">622</field>
+            <field name="code">JT-08</field>
+        </record>
+        <record id="sc_jateng_kab_9" model="state.city">
+            <field name="name">Kabupaten Batang</field>
+            <field name="state_id">622</field>
+            <field name="code">JT-09</field>
+        </record>
+        <record id="sc_jateng_kab_10" model="state.city">
+            <field name="name">Kabupaten Blora</field>
+            <field name="state_id">622</field>
+            <field name="code">JT-10</field>
+        </record>
+        <record id="sc_jateng_kab_11" model="state.city">
+            <field name="name">Kabupaten Boyolali</field>
+            <field name="state_id">622</field>
+            <field name="code">JT-11</field>
+        </record>
+        <record id="sc_jateng_kab_12" model="state.city">
+            <field name="name">Kabupaten Brebes</field>
+            <field name="state_id">622</field>
+            <field name="code">JT-12</field>
+        </record>
+        <record id="sc_jateng_kab_13" model="state.city">
+            <field name="name">Kabupaten Cilacap</field>
+            <field name="state_id">622</field>
+            <field name="code">JT-13</field>
+        </record>
+        <record id="sc_jateng_kab_14" model="state.city">
+            <field name="name">Kabupaten Demak</field>
+            <field name="state_id">622</field>
+            <field name="code">JT-14</field>
+        </record>
+        <record id="sc_jateng_kab_15" model="state.city">
+            <field name="name">Kabupaten Grobogan</field>
+            <field name="state_id">622</field>
+            <field name="code">JT-15</field>
+        </record>
+        <record id="sc_jateng_kab_16" model="state.city">
+            <field name="name">Kabupaten Jepara</field>
+            <field name="state_id">622</field>
+            <field name="code">JT-16</field>
+        </record>
+        <record id="sc_jateng_kab_17" model="state.city">
+            <field name="name">Kabupaten Karanganyar</field>
+            <field name="state_id">622</field>
+            <field name="code">JT-17</field>
+        </record>
+        <record id="sc_jateng_kab_18" model="state.city">
+            <field name="name">Kabupaten Kebumen</field>
+            <field name="state_id">622</field>
+            <field name="code">JT-18</field>
+        </record>
+        <record id="sc_jateng_kab_19" model="state.city">
+            <field name="name">Kabupaten Kendal</field>
+            <field name="state_id">622</field>
+            <field name="code">JT-19</field>
+        </record>
+        <record id="sc_jateng_kab_20" model="state.city">
+            <field name="name">Kabupaten Klaten</field>
+            <field name="state_id">622</field>
+            <field name="code">JT-20</field>
+        </record>
+        <record id="sc_jateng_kab_21" model="state.city">
+            <field name="name">Kabupaten Kudus</field>
+            <field name="state_id">622</field>
+            <field name="code">JT-21</field>
+        </record>
+        <record id="sc_jateng_kab_22" model="state.city">
+            <field name="name">Kabupaten Magelang</field>
+            <field name="state_id">622</field>
+            <field name="code">JT-22</field>
+        </record>
+        <record id="sc_jateng_kab_23" model="state.city">
+            <field name="name">Kabupaten Pati</field>
+            <field name="state_id">622</field>
+            <field name="code">JT-23</field>
+        </record>
+        <record id="sc_jateng_kab_24" model="state.city">
+            <field name="name">Kabupaten Pekalongan</field>
+            <field name="state_id">622</field>
+            <field name="code">JT-24</field>
+        </record>
+        <record id="sc_jateng_kab_25" model="state.city">
+            <field name="name">Kabupaten Pemalang</field>
+            <field name="state_id">622</field>
+            <field name="code">JT-25</field>
+        </record>
+        <record id="sc_jateng_kab_26" model="state.city">
+            <field name="name">Kabupaten Purbalingga</field>
+            <field name="state_id">622</field>
+            <field name="code">JT-26</field>
+        </record>
+        <record id="sc_jateng_kab_27" model="state.city">
+            <field name="name">Kabupaten Purworejo</field>
+            <field name="state_id">622</field>
+            <field name="code">JT-27</field>
+        </record>
+        <record id="sc_jateng_kab_28" model="state.city">
+            <field name="name">Kabupaten Rembang</field>
+            <field name="state_id">622</field>
+            <field name="code">JT-28</field>
+        </record>
+        <record id="sc_jateng_kab_29" model="state.city">
+            <field name="name">Kabupaten Semarang</field>
+            <field name="state_id">622</field>
+            <field name="code">JT-29</field>
+        </record>
+        <record id="sc_jateng_kab_30" model="state.city">
+            <field name="name">Kabupaten Sragen</field>
+            <field name="state_id">622</field>
+            <field name="code">JT-30</field>
+        </record>
+        <record id="sc_jateng_kab_31" model="state.city">
+            <field name="name">Kabupaten Sukoharjo</field>
+            <field name="state_id">622</field>
+            <field name="code">JT-31</field>
+        </record>
+        <record id="sc_jateng_kab_32" model="state.city">
+            <field name="name">Kabupaten Tegal</field>
+            <field name="state_id">622</field>
+            <field name="code">JT-32</field>
+        </record>
+        <record id="sc_jateng_kab_33" model="state.city">
+            <field name="name">Kabupaten Temanggung</field>
+            <field name="state_id">622</field>
+            <field name="code">JT-33</field>
+        </record>
+        <record id="sc_jateng_kab_34" model="state.city">
+            <field name="name">Kabupaten Wonogiri</field>
+            <field name="state_id">622</field>
+            <field name="code">JT-34</field>
+        </record>
+        <record id="sc_jateng_kab_35" model="state.city">
+            <field name="name">Kabupaten Wonosobo</field>
+            <field name="state_id">622</field>
+            <field name="code">JT-35</field>
+        </record>
+
+        <!-- JAWA TIMUR -->
+        <record id="sc_jatim_kota_1" model="state.city">
+            <field name="name">Kota Batu</field>
+            <field name="state_id">623</field>
+            <field name="code">JI-01</field>
+        </record>
+        <record id="sc_jatim_kota_2" model="state.city">
+            <field name="name">Kota Blitar</field>
+            <field name="state_id">623</field>
+            <field name="code">JI-02</field>
+        </record>
+        <record id="sc_jatim_kota_3" model="state.city">
+            <field name="name">Kota Kediri</field>
+            <field name="state_id">623</field>
+            <field name="code">JI-03</field>
+        </record>
+        <record id="sc_jatim_kota_4" model="state.city">
+            <field name="name">Kota Madiun</field>
+            <field name="state_id">623</field>
+            <field name="code">JI-04</field>
+        </record>
+        <record id="sc_jatim_kota_5" model="state.city">
+            <field name="name">Kota Malang</field>
+            <field name="state_id">623</field>
+            <field name="code">JI-05</field>
+        </record>
+        <record id="sc_jatim_kota_6" model="state.city">
+            <field name="name">Kota Mojokerto</field>
+            <field name="state_id">623</field>
+            <field name="code">JI-06</field>
+        </record>
+        <record id="sc_jatim_kota_7" model="state.city">
+            <field name="name">Kota Pasuruan</field>
+            <field name="state_id">623</field>
+            <field name="code">JI-07</field>
+        </record>
+        <record id="sc_jatim_kota_8" model="state.city">
+            <field name="name">Kota Probolinggo</field>
+            <field name="state_id">623</field>
+            <field name="code">JI-08</field>
+        </record>
+        <record id="sc_jatim_kota_9" model="state.city">
+            <field name="name">Kota Surabaya</field>
+            <field name="state_id">623</field>
+            <field name="code">JI-09</field>
+        </record>
+        <record id="sc_jatim_kab_10" model="state.city">
+            <field name="name">Kabupaten Bangkalan</field>
+            <field name="state_id">623</field>
+            <field name="code">JI-10</field>
+        </record>
+        <record id="sc_jatim_kab_11" model="state.city">
+            <field name="name">Kabupaten Banyuwangi</field>
+            <field name="state_id">623</field>
+            <field name="code">JI-11</field>
+        </record>
+        <record id="sc_jatim_kab_12" model="state.city">
+            <field name="name">Kabupaten Blitar</field>
+            <field name="state_id">623</field>
+            <field name="code">JI-12</field>
+        </record>
+        <record id="sc_jatim_kab_13" model="state.city">
+            <field name="name">Kabupaten Bojonegoro</field>
+            <field name="state_id">623</field>
+            <field name="code">JI-13</field>
+        </record>
+        <record id="sc_jatim_kab_14" model="state.city">
+            <field name="name">Kabupaten Bondowoso</field>
+            <field name="state_id">623</field>
+            <field name="code">JI-14</field>
+        </record>
+        <record id="sc_jatim_kab_15" model="state.city">
+            <field name="name">Kabupaten Gresik</field>
+            <field name="state_id">623</field>
+            <field name="code">JI-15</field>
+        </record>
+        <record id="sc_jatim_kab_16" model="state.city">
+            <field name="name">Kabupaten Jember</field>
+            <field name="state_id">623</field>
+            <field name="code">JI-16</field>
+        </record>
+        <record id="sc_jatim_kab_17" model="state.city">
+            <field name="name">Kabupaten Jombang</field>
+            <field name="state_id">623</field>
+            <field name="code">JI-17</field>
+        </record>
+        <record id="sc_jatim_kab_18" model="state.city">
+            <field name="name">Kabupaten Kediri</field>
+            <field name="state_id">623</field>
+            <field name="code">JI-18</field>
+        </record>
+        <record id="sc_jatim_kab_19" model="state.city">
+            <field name="name">Kabupaten Lamongan</field>
+            <field name="state_id">623</field>
+            <field name="code">JI-19</field>
+        </record>
+        <record id="sc_jatim_kab_20" model="state.city">
+            <field name="name">Kabupaten Lumajang</field>
+            <field name="state_id">623</field>
+            <field name="code">JI-20</field>
+        </record>
+        <record id="sc_jatim_kab_21" model="state.city">
+            <field name="name">Kabupaten Madiun</field>
+            <field name="state_id">623</field>
+            <field name="code">JI-21</field>
+        </record>
+        <record id="sc_jatim_kab_22" model="state.city">
+            <field name="name">Kabupaten Magetan</field>
+            <field name="state_id">623</field>
+            <field name="code">JI-22</field>
+        </record>
+        <record id="sc_jatim_kab_23" model="state.city">
+            <field name="name">Kabupaten Malang</field>
+            <field name="state_id">623</field>
+            <field name="code">JI-23</field>
+        </record>
+        <record id="sc_jatim_kab_24" model="state.city">
+            <field name="name">Kabupaten Mojokerto</field>
+            <field name="state_id">623</field>
+            <field name="code">JI-24</field>
+        </record>
+        <record id="sc_jatim_kab_25" model="state.city">
+            <field name="name">Kabupaten Nganjuk</field>
+            <field name="state_id">623</field>
+            <field name="code">JI-25</field>
+        </record>
+        <record id="sc_jatim_kab_26" model="state.city">
+            <field name="name">Kabupaten Ngawi</field>
+            <field name="state_id">623</field>
+            <field name="code">JI-26</field>
+        </record>
+        <record id="sc_jatim_kab_27" model="state.city">
+            <field name="name">Kabupaten Pacitan</field>
+            <field name="state_id">623</field>
+            <field name="code">JI-27</field>
+        </record>
+        <record id="sc_jatim_kab_28" model="state.city">
+            <field name="name">Kabupaten Pamekasan</field>
+            <field name="state_id">623</field>
+            <field name="code">JI-28</field>
+        </record>
+        <record id="sc_jatim_kab_29" model="state.city">
+            <field name="name">Kabupaten Pasuruan</field>
+            <field name="state_id">623</field>
+            <field name="code">JI-29</field>
+        </record>
+        <record id="sc_jatim_kab_30" model="state.city">
+            <field name="name">Kabupaten Ponorogo</field>
+            <field name="state_id">623</field>
+            <field name="code">JI-30</field>
+        </record>
+        <record id="sc_jatim_kab_31" model="state.city">
+            <field name="name">Kabupaten Probolinggo</field>
+            <field name="state_id">623</field>
+            <field name="code">JI-31</field>
+        </record>
+        <record id="sc_jatim_kab_32" model="state.city">
+            <field name="name">Kabupaten Sampang</field>
+            <field name="state_id">623</field>
+            <field name="code">JI-32</field>
+        </record>
+        <record id="sc_jatim_kab_33" model="state.city">
+            <field name="name">Kabupaten Sidoarjo</field>
+            <field name="state_id">623</field>
+            <field name="code">JI-33</field>
+        </record>
+        <record id="sc_jatim_kab_34" model="state.city">
+            <field name="name">Kabupaten Situbondo</field>
+            <field name="state_id">623</field>
+            <field name="code">JI-34</field>
+        </record>
+        <record id="sc_jatim_kab_35" model="state.city">
+            <field name="name">Kabupaten Sumenep</field>
+            <field name="state_id">623</field>
+            <field name="code">JI-35</field>
+        </record>
+        <record id="sc_jatim_kab_36" model="state.city">
+            <field name="name">Kabupaten Trenggalek</field>
+            <field name="state_id">623</field>
+            <field name="code">JI-36</field>
+        </record>
+        <record id="sc_jatim_kab_37" model="state.city">
+            <field name="name">Kabupaten Tuban</field>
+            <field name="state_id">623</field>
+            <field name="code">JI-37</field>
+        </record>
+        <record id="sc_jatim_kab_38" model="state.city">
+            <field name="name">Kabupaten Tulungagung</field>
+            <field name="state_id">623</field>
+            <field name="code">JI-38</field>
+        </record>
+
+        <!-- YOGYAKARTA -->
+        <record id="sc_yogyakarta_kota_1" model="state.city">
+            <field name="name">Kota Yogyakarta</field>
+            <field name="state_id">649</field>
+            <field name="code">YO-01</field>
+        </record>
+        <record id="sc_yogyakarta_kab_2" model="state.city">
+            <field name="name">Kabupaten Bantul</field>
+            <field name="state_id">649</field>
+            <field name="code">YO-02</field>
+        </record>
+        <record id="sc_yogyakarta_kab_3" model="state.city">
+            <field name="name">Kabupaten Gunungkidul</field>
+            <field name="state_id">649</field>
+            <field name="code">YO-03</field>
+        </record>
+        <record id="sc_yogyakarta_kab_4" model="state.city">
+            <field name="name">Kabupaten Kulon Progo</field>
+            <field name="state_id">649</field>
+            <field name="code">YO-04</field>
+        </record>
+        <record id="sc_yogyakarta_kab_5" model="state.city">
+            <field name="name">Kabupaten Sleman</field>
+            <field name="state_id">649</field>
+            <field name="code">YO-05</field>
+        </record>
+
+        <!-- BALI -->
+        <record id="sc_bali_kota_1" model="state.city">
+            <field name="name">Kota Denpasar</field>
+            <field name="state_id">614</field>
+            <field name="code">BA-01</field>
+        </record>
+        <record id="sc_bali_kab_2" model="state.city">
+            <field name="name">Kabupaten Badung</field>
+            <field name="state_id">614</field>
+            <field name="code">BA-02</field>
+        </record>
+        <record id="sc_bali_kab_3" model="state.city">
+            <field name="name">Kabupaten Bangli</field>
+            <field name="state_id">614</field>
+            <field name="code">BA-03</field>
+        </record>
+        <record id="sc_bali_kab_4" model="state.city">
+            <field name="name">Kabupaten Buleleng</field>
+            <field name="state_id">614</field>
+            <field name="code">BA-04</field>
+        </record>
+        <record id="sc_bali_kab_5" model="state.city">
+            <field name="name">Kabupaten Gianyar</field>
+            <field name="state_id">614</field>
+            <field name="code">BA-05</field>
+        </record>
+        <record id="sc_bali_kab_6" model="state.city">
+            <field name="name">Kabupaten Jembrana</field>
+            <field name="state_id">614</field>
+            <field name="code">BA-06</field>
+        </record>
+        <record id="sc_bali_kab_7" model="state.city">
+            <field name="name">Kabupaten Karangasem</field>
+            <field name="state_id">614</field>
+            <field name="code">BA-07</field>
+        </record>
+        <record id="sc_bali_kab_8" model="state.city">
+            <field name="name">Kabupaten Klungkung</field>
+            <field name="state_id">614</field>
+            <field name="code">BA-08</field>
+        </record>
+        <record id="sc_bali_kab_9" model="state.city">
+            <field name="name">Kabupaten Tabanan</field>
+            <field name="state_id">614</field>
+            <field name="code">BA-09</field>
+        </record>
+
+        <!-- NTB -->
+        <record id="sc_ntb_kota_1" model="state.city">
+            <field name="name">Kota Bima</field>
+            <field name="state_id">633</field>
+            <field name="code">NB-01</field>
+        </record>
+        <record id="sc_ntb_kota_2" model="state.city">
+            <field name="name">Kota Mataram</field>
+            <field name="state_id">633</field>
+            <field name="code">NB-02</field>
+        </record>
+        <record id="sc_ntb_kab_3" model="state.city">
+            <field name="name">Kabupaten Bima</field>
+            <field name="state_id">633</field>
+            <field name="code">NB-03</field>
+        </record>
+        <record id="sc_ntb_kab_4" model="state.city">
+            <field name="name">Kabupaten Dompu</field>
+            <field name="state_id">633</field>
+            <field name="code">NB-04</field>
+        </record>
+        <record id="sc_ntb_kab_5" model="state.city">
+            <field name="name">Kabupaten Lombok Barat</field>
+            <field name="state_id">633</field>
+            <field name="code">NB-05</field>
+        </record>
+        <record id="sc_ntb_kab_6" model="state.city">
+            <field name="name">Kabupaten Lombok Tengah</field>
+            <field name="state_id">633</field>
+            <field name="code">NB-06</field>
+        </record>
+        <record id="sc_ntb_kab_7" model="state.city">
+            <field name="name">Kabupaten Lombok Timur</field>
+            <field name="state_id">633</field>
+            <field name="code">NB-07</field>
+        </record>
+        <record id="sc_ntb_kab_8" model="state.city">
+            <field name="name">Kabupaten Lombok Utara</field>
+            <field name="state_id">633</field>
+            <field name="code">NB-08</field>
+        </record>
+        <record id="sc_ntb_kab_9" model="state.city">
+            <field name="name">Kabupaten Sumbawa</field>
+            <field name="state_id">633</field>
+            <field name="code">NB-09</field>
+        </record>
+        <record id="sc_ntb_kab_10" model="state.city">
+            <field name="name">Kabupaten Sumbawa Barat</field>
+            <field name="state_id">633</field>
+            <field name="code">NB-10</field>
+        </record>
+
+        <!-- NTT -->
+        <record id="sc_ntt_kota_1" model="state.city">
+            <field name="name">Kota Kupang</field>
+            <field name="state_id">634</field>
+            <field name="code">NT-01</field>
+        </record>
+        <record id="sc_ntt_kab_2" model="state.city">
+            <field name="name">Kabupaten Alor</field>
+            <field name="state_id">634</field>
+            <field name="code">NT-02</field>
+        </record>
+        <record id="sc_ntt_kab_3" model="state.city">
+            <field name="name">Kabupaten Belu</field>
+            <field name="state_id">634</field>
+            <field name="code">NT-03</field>
+        </record>
+        <record id="sc_ntt_kab_4" model="state.city">
+            <field name="name">Kabupaten Ende</field>
+            <field name="state_id">634</field>
+            <field name="code">NT-04</field>
+        </record>
+        <record id="sc_ntt_kab_5" model="state.city">
+            <field name="name">Kabupaten Flores Timur</field>
+            <field name="state_id">634</field>
+            <field name="code">NT-05</field>
+        </record>
+        <record id="sc_ntt_kab_6" model="state.city">
+            <field name="name">Kabupaten Kupang</field>
+            <field name="state_id">634</field>
+            <field name="code">NT-06</field>
+        </record>
+        <record id="sc_ntt_kab_7" model="state.city">
+            <field name="name">Kabupaten Lembata</field>
+            <field name="state_id">634</field>
+            <field name="code">NT-07</field>
+        </record>
+        <record id="sc_ntt_kab_8" model="state.city">
+            <field name="name">Kabupaten Malaka</field>
+            <field name="state_id">634</field>
+            <field name="code">NT-08</field>
+        </record>
+        <record id="sc_ntt_kab_9" model="state.city">
+            <field name="name">Kabupaten Manggarai</field>
+            <field name="state_id">634</field>
+            <field name="code">NT-09</field>
+        </record>
+        <record id="sc_ntt_kab_10" model="state.city">
+            <field name="name">Kabupaten Manggarai Barat</field>
+            <field name="state_id">634</field>
+            <field name="code">NT-10</field>
+        </record>
+        <record id="sc_ntt_kab_11" model="state.city">
+            <field name="name">Kabupaten Manggarai Timur</field>
+            <field name="state_id">634</field>
+            <field name="code">NT-11</field>
+        </record>
+        <record id="sc_ntt_kab_12" model="state.city">
+            <field name="name">Kabupaten Nagekeo</field>
+            <field name="state_id">634</field>
+            <field name="code">NT-12</field>
+        </record>
+        <record id="sc_ntt_kab_13" model="state.city">
+            <field name="name">Kabupaten Ngada</field>
+            <field name="state_id">634</field>
+            <field name="code">NT-13</field>
+        </record>
+        <record id="sc_ntt_kab_14" model="state.city">
+            <field name="name">Kabupaten Rote Ndao</field>
+            <field name="state_id">634</field>
+            <field name="code">NT-14</field>
+        </record>
+        <record id="sc_ntt_kab_15" model="state.city">
+            <field name="name">Kabupaten Sabu Raijua</field>
+            <field name="state_id">634</field>
+            <field name="code">NT-15</field>
+        </record>
+        <record id="sc_ntt_kab_16" model="state.city">
+            <field name="name">Kabupaten Sikka</field>
+            <field name="state_id">634</field>
+            <field name="code">NT-16</field>
+        </record>
+        <record id="sc_ntt_kab_17" model="state.city">
+            <field name="name">Kabupaten Sumba Barat</field>
+            <field name="state_id">634</field>
+            <field name="code">NT-17</field>
+        </record>
+        <record id="sc_ntt_kab_18" model="state.city">
+            <field name="name">Kabupaten Sumba Barat Daya</field>
+            <field name="state_id">634</field>
+            <field name="code">NT-18</field>
+        </record>
+        <record id="sc_ntt_kab_19" model="state.city">
+            <field name="name">Kabupaten Sumba Tengah</field>
+            <field name="state_id">634</field>
+            <field name="code">NT-19</field>
+        </record>
+        <record id="sc_ntt_kab_20" model="state.city">
+            <field name="name">Kabupaten Sumba Timur</field>
+            <field name="state_id">634</field>
+            <field name="code">NT-20</field>
+        </record>
+        <record id="sc_ntt_kab_21" model="state.city">
+            <field name="name">Kabupaten Timor Tengah Selatan</field>
+            <field name="state_id">634</field>
+            <field name="code">NT-21</field>
+        </record>
+        <record id="sc_ntt_kab_22" model="state.city">
+            <field name="name">Kabupaten Timor Tengah Utara</field>
+            <field name="state_id">634</field>
+            <field name="code">NT-22</field>
+        </record>
+
+        
+        <!-- PULAU KALIMANTAN -->
+        <!-- KALIMANTAN BARAT -->
+        <record id="sc_kalbar_kota_1" model="state.city">
+            <field name="name">Kota Pontianak</field>
+            <field name="state_id">624</field>
+            <field name="code">KB-01</field>
+        </record>
+        <record id="sc_kalbar_kota_2" model="state.city">
+            <field name="name">Kota Singkawang</field>
+            <field name="state_id">624</field>
+            <field name="code">KB-02</field>
+        </record>
+        <record id="sc_kalbar_kab_3" model="state.city">
+            <field name="name">Kabupaten Bengkayang</field>
+            <field name="state_id">624</field>
+            <field name="code">KB-03</field>
+        </record>
+        <record id="sc_kalbar_kab_4" model="state.city">
+            <field name="name">Kabupaten Kapuas Hulu</field>
+            <field name="state_id">624</field>
+            <field name="code">KB-04</field>
+        </record>
+        <record id="sc_kalbar_kab_5" model="state.city">
+            <field name="name">Kabupaten Kayong Utara</field>
+            <field name="state_id">624</field>
+            <field name="code">KB-05</field>
+        </record>
+        <record id="sc_kalbar_kab_6" model="state.city">
+            <field name="name">Kabupaten Ketapang</field>
+            <field name="state_id">624</field>
+            <field name="code">KB-06</field>
+        </record>
+        <record id="sc_kalbar_kab_7" model="state.city">
+            <field name="name">Kabupaten Kubu Raya</field>
+            <field name="state_id">624</field>
+            <field name="code">KB-07</field>
+        </record>
+        <record id="sc_kalbar_kab_8" model="state.city">
+            <field name="name">Kabupaten Landak</field>
+            <field name="state_id">624</field>
+            <field name="code">KB-08</field>
+        </record>
+        <record id="sc_kalbar_kab_9" model="state.city">
+            <field name="name">Kabupaten Melawi</field>
+            <field name="state_id">624</field>
+            <field name="code">KB-09</field>
+        </record>
+        <record id="sc_kalbar_kab_10" model="state.city">
+            <field name="name">Kabupaten Mempawah</field>
+            <field name="state_id">624</field>
+            <field name="code">KB-10</field>
+        </record>
+        <record id="sc_kalbar_kab_11" model="state.city">
+            <field name="name">Kabupaten Sambas</field>
+            <field name="state_id">624</field>
+            <field name="code">KB-11</field>
+        </record>
+        <record id="sc_kalbar_kab_12" model="state.city">
+            <field name="name">Kabupaten Sanggau</field>
+            <field name="state_id">624</field>
+            <field name="code">KB-12</field>
+        </record>
+        <record id="sc_kalbar_kab_13" model="state.city">
+            <field name="name">Kabupaten Sekadau</field>
+            <field name="state_id">624</field>
+            <field name="code">KB-13</field>
+        </record>
+        <record id="sc_kalbar_kab_14" model="state.city">
+            <field name="name">Kabupaten Sintang</field>
+            <field name="state_id">624</field>
+            <field name="code">KB-14</field>
+        </record>
+
+        <!-- KALIMANTAN SELATAN -->
+        <record id="sc_kalsel_kota_1" model="state.city">
+            <field name="name">Kota Banjarbaru</field>
+            <field name="state_id">625</field>
+            <field name="code">KS-01</field>
+        </record>
+        <record id="sc_kalsel_kota_2" model="state.city">
+            <field name="name">Kota Banjarmasin</field>
+            <field name="state_id">625</field>
+            <field name="code">KS-02</field>
+        </record>
+        <record id="sc_kalsel_kab_3" model="state.city">
+            <field name="name">Kabupaten Balangan</field>
+            <field name="state_id">625</field>
+            <field name="code">KS-03</field>
+        </record>
+        <record id="sc_kalsel_kab_4" model="state.city">
+            <field name="name">Kabupaten Banjar</field>
+            <field name="state_id">625</field>
+            <field name="code">KS-04</field>
+        </record>
+        <record id="sc_kalsel_kab_5" model="state.city">
+            <field name="name">Kabupaten Barito Kuala</field>
+            <field name="state_id">625</field>
+            <field name="code">KS-05</field>
+        </record>
+        <record id="sc_kalsel_kab_6" model="state.city">
+            <field name="name">Kabupaten Hulu Sungai Selatan</field>
+            <field name="state_id">625</field>
+            <field name="code">KS-06</field>
+        </record>
+        <record id="sc_kalsel_kab_7" model="state.city">
+            <field name="name">Kabupaten Hulu Sungai Tengah</field>
+            <field name="state_id">625</field>
+            <field name="code">KS-07</field>
+        </record>
+        <record id="sc_kalsel_kab_8" model="state.city">
+            <field name="name">Kabupaten Hulu Sungai Utara</field>
+            <field name="state_id">625</field>
+            <field name="code">KS-08</field>
+        </record>
+        <record id="sc_kalsel_kab_9" model="state.city">
+            <field name="name">Kabupaten Kotabaru</field>
+            <field name="state_id">625</field>
+            <field name="code">KS-09</field>
+        </record>
+        <record id="sc_kalsel_kab_10" model="state.city">
+            <field name="name">Kabupaten Tabalong</field>
+            <field name="state_id">625</field>
+            <field name="code">KS-10</field>
+        </record>
+        <record id="sc_kalsel_kab_11" model="state.city">
+            <field name="name">Kabupaten Tanah Bumbu</field>
+            <field name="state_id">625</field>
+            <field name="code">KS-11</field>
+        </record>
+        <record id="sc_kalsel_kab_12" model="state.city">
+            <field name="name">Kabupaten Tanah Laut</field>
+            <field name="state_id">625</field>
+            <field name="code">KS-12</field>
+        </record>
+        <record id="sc_kalsel_kab_13" model="state.city">
+            <field name="name">Kabupaten Tapin</field>
+            <field name="state_id">625</field>
+            <field name="code">KS-13</field>
+        </record>
+        
+        <!-- KALIMANTAN TENGAH -->
+        <record id="sc_kalteng_kota_1" model="state.city">
+            <field name="name">Kota Palangka Raya</field>
+            <field name="state_id">626</field>
+            <field name="code">KT-01</field>
+        </record>
+        <record id="sc_kalteng_kab_2" model="state.city">
+            <field name="name">Kabupaten Barito Selatan</field>
+            <field name="state_id">626</field>
+            <field name="code">KT-02</field>
+        </record>
+        <record id="sc_kalteng_kab_3" model="state.city">
+            <field name="name">Kabupaten Barito Timur</field>
+            <field name="state_id">626</field>
+            <field name="code">KT-03</field>
+        </record>
+        <record id="sc_kalteng_kab_4" model="state.city">
+            <field name="name">Kabupaten Barito Utara</field>
+            <field name="state_id">626</field>
+            <field name="code">KT-04</field>
+        </record>
+        <record id="sc_kalteng_kab_5" model="state.city">
+            <field name="name">Kabupaten Gunung Mas</field>
+            <field name="state_id">626</field>
+            <field name="code">KT-05</field>
+        </record>
+        <record id="sc_kalteng_kab_6" model="state.city">
+            <field name="name">Kabupaten Kapuas</field>
+            <field name="state_id">626</field>
+            <field name="code">KT-06</field>
+        </record>
+        <record id="sc_kalteng_kab_7" model="state.city">
+            <field name="name">Kabupaten Katingan</field>
+            <field name="state_id">626</field>
+            <field name="code">KT-07</field>
+        </record>
+        <record id="sc_kalteng_kab_8" model="state.city">
+            <field name="name">Kabupaten Kotawaringin Barat</field>
+            <field name="state_id">626</field>
+            <field name="code">KT-08</field>
+        </record>
+        <record id="sc_kalteng_kab_9" model="state.city">
+            <field name="name">Kabupaten Kotawaringin Timur</field>
+            <field name="state_id">626</field>
+            <field name="code">KT-09</field>
+        </record>
+        <record id="sc_kalteng_kab_10" model="state.city">
+            <field name="name">Kabupaten Lamandau</field>
+            <field name="state_id">626</field>
+            <field name="code">KT-10</field>
+        </record>
+        <record id="sc_kalteng_kab_11" model="state.city">
+            <field name="name">Kabupaten Murung Raya</field>
+            <field name="state_id">626</field>
+            <field name="code">KT-11</field>
+        </record>
+        <record id="sc_kalteng_kab_12" model="state.city">
+            <field name="name">Kabupaten Pulang Pisau</field>
+            <field name="state_id">626</field>
+            <field name="code">KT-12</field>
+        </record>
+        <record id="sc_kalteng_kab_13" model="state.city">
+            <field name="name">Kabupaten Seruyan</field>
+            <field name="state_id">626</field>
+            <field name="code">KT-13</field>
+        </record>
+        <record id="sc_kalteng_kab_14" model="state.city">
+            <field name="name">Kabupaten Sukamara</field>
+            <field name="state_id">626</field>
+            <field name="code">KT-14</field>
+        </record>
+
+        <!-- KALIMANTAN TIMUR -->
+        <record id="sc_kaltim_kota_1" model="state.city">
+            <field name="name">Kota Balikpapan</field>
+            <field name="state_id">627</field>
+            <field name="code">KI-01</field>
+        </record>
+        <record id="sc_kaltim_kota_2" model="state.city">
+            <field name="name">Kota Bontang</field>
+            <field name="state_id">627</field>
+            <field name="code">KI-02</field>
+        </record>
+        <record id="sc_kaltim_kota_3" model="state.city">
+            <field name="name">Kota Samarinda</field>
+            <field name="state_id">627</field>
+            <field name="code">KI-03</field>
+        </record>
+        <record id="sc_kaltim_kab_4" model="state.city">
+            <field name="name">Kabupaten Berau</field>
+            <field name="state_id">627</field>
+            <field name="code">KI-04</field>
+        </record>
+        <record id="sc_kaltim_kab_5" model="state.city">
+            <field name="name">Kabupaten Kutai Barat</field>
+            <field name="state_id">627</field>
+            <field name="code">KI-05</field>
+        </record>
+        <record id="sc_kaltim_kab_6" model="state.city">
+            <field name="name">Kabupaten Kutai Kartanegara</field>
+            <field name="state_id">627</field>
+            <field name="code">KI-06</field>
+        </record>
+        <record id="sc_kaltim_kab_7" model="state.city">
+            <field name="name">Kabupaten Kutai Timur</field>
+            <field name="state_id">627</field>
+            <field name="code">KI-07</field>
+        </record>
+        <record id="sc_kaltim_kab_8" model="state.city">
+            <field name="name">Kabupaten Mahakam Ulu</field>
+            <field name="state_id">627</field>
+            <field name="code">KI-08</field>
+        </record>
+        <record id="sc_kaltim_kab_9" model="state.city">
+            <field name="name">Kabupaten Paser</field>
+            <field name="state_id">627</field>
+            <field name="code">KI-09</field>
+        </record>
+        <record id="sc_kaltim_kab_10" model="state.city">
+            <field name="name">Kabupaten Penajam Paser Utara</field>
+            <field name="state_id">627</field>
+            <field name="code">KI-10</field>
+        </record>
+
+        <!-- KALIMANTAN UTARA -->
+        <record id="sc_kalut_kota_1" model="state.city">
+            <field name="name">Kota Tarakan</field>
+            <field name="state_id">628</field>
+            <field name="code">KU-01</field>
+        </record>
+        <record id="sc_kalut_kab_2" model="state.city">
+            <field name="name">Kabupaten Bulungan</field>
+            <field name="state_id">628</field>
+            <field name="code">KU-02</field>
+        </record>
+        <record id="sc_kalut_kab_3" model="state.city">
+            <field name="name">Kabupaten Malinau</field>
+            <field name="state_id">628</field>
+            <field name="code">KU-03</field>
+        </record>
+        <record id="sc_kalut_kab_4" model="state.city">
+            <field name="name">Kabupaten Nunukan</field>
+            <field name="state_id">628</field>
+            <field name="code">KU-04</field>
+        </record>
+        <record id="sc_kalut_kab_5" model="state.city">
+            <field name="name">Kabupaten Tana Tidung</field>
+            <field name="state_id">628</field>
+            <field name="code">KU-05</field>
+        </record>
+
+        <!-- PULAU SULAWESI -->
+        <!-- GORONTALO -->
+        <record id="sc_gorontalo_kota_1" model="state.city">
+            <field name="name">Kota Gorontalo</field>
+            <field name="state_id">618</field>
+            <field name="code">GO-01</field>
+        </record>
+        <record id="sc_gorontalo_kab_2" model="state.city">
+            <field name="name">Kabupaten Boalemo</field>
+            <field name="state_id">618</field>
+            <field name="code">GO-02</field>
+        </record>
+        <record id="sc_gorontalo_kab_3" model="state.city">
+            <field name="name">Kabupaten Bone Bolango</field>
+            <field name="state_id">618</field>
+            <field name="code">GO-03</field>
+        </record>
+        <record id="sc_gorontalo_kab_4" model="state.city">
+            <field name="name">Kabupaten Gorontalo</field>
+            <field name="state_id">618</field>
+            <field name="code">GO-04</field>
+        </record>
+        <record id="sc_gorontalo_kab_5" model="state.city">
+            <field name="name">Kabupaten Gorontalo Utara</field>
+            <field name="state_id">618</field>
+            <field name="code">GO-05</field>
+        </record>
+        <record id="sc_gorontalo_kab_6" model="state.city">
+            <field name="name">Kabupaten Pohuwato</field>
+            <field name="state_id">618</field>
+            <field name="code">GO-06</field>
+        </record>
+
+        <!-- SULAWESI BARAT -->
+        <record id="sc_sulbar_kab_1" model="state.city">
+            <field name="name">Kabupaten Majene</field>
+            <field name="state_id">641</field>
+            <field name="code">SR-01</field>
+        </record>
+        <record id="sc_sulbar_kab_2" model="state.city">
+            <field name="name">Kabupaten Mamasa</field>
+            <field name="state_id">641</field>
+            <field name="code">SR-02</field>
+        </record>
+        <record id="sc_sulbar_kab_3" model="state.city">
+            <field name="name">Kabupaten Mamuju</field>
+            <field name="state_id">641</field>
+            <field name="code">SR-03</field>
+        </record>
+        <record id="sc_sulbar_kab_4" model="state.city">
+            <field name="name">Kabupaten Mamuju Tengah</field>
+            <field name="state_id">641</field>
+            <field name="code">SR-04</field>
+        </record>
+        <record id="sc_sulbar_kab_5" model="state.city">
+            <field name="name">Kabupaten Pasangkayu</field>
+            <field name="state_id">641</field>
+            <field name="code">SR-05</field>
+        </record>
+        <record id="sc_sulbar_kab_6" model="state.city">
+            <field name="name">Kabupaten Polewali Mandar</field>
+            <field name="state_id">641</field>
+            <field name="code">SR-06</field>
+        </record>
+        
+        <!-- SULAWESI SELATAN -->
+        <record id="sc_sulsel_kota_1" model="state.city">
+            <field name="name">Kota Makassar</field>
+            <field name="state_id">642</field>
+            <field name="code">SN-01</field>
+        </record>
+        <record id="sc_sulsel_kota_2" model="state.city">
+            <field name="name">Kota Palopo</field>
+            <field name="state_id">642</field>
+            <field name="code">SN-02</field>
+        </record>
+        <record id="sc_sulsel_kota_3" model="state.city">
+            <field name="name">Kota Parepare</field>
+            <field name="state_id">642</field>
+            <field name="code">SN-03</field>
+        </record>
+        <record id="sc_sulsel_kab_4" model="state.city">
+            <field name="name">Kabupaten Bantaeng</field>
+            <field name="state_id">642</field>
+            <field name="code">SN-04</field>
+        </record>
+        <record id="sc_sulsel_kab_5" model="state.city">
+            <field name="name">Kabupaten Barru</field>
+            <field name="state_id">642</field>
+            <field name="code">SN-05</field>
+        </record>
+        <record id="sc_sulsel_kab_6" model="state.city">
+            <field name="name">Kabupaten Bone</field>
+            <field name="state_id">642</field>
+            <field name="code">SN-06</field>
+        </record>
+        <record id="sc_sulsel_kab_7" model="state.city">
+            <field name="name">Kabupaten Bulukumba</field>
+            <field name="state_id">642</field>
+            <field name="code">SN-07</field>
+        </record>
+        <record id="sc_sulsel_kab_8" model="state.city">
+            <field name="name">Kabupaten Enrekang</field>
+            <field name="state_id">642</field>
+            <field name="code">SN-08</field>
+        </record>
+        <record id="sc_sulsel_kab_9" model="state.city">
+            <field name="name">Kabupaten Gowa</field>
+            <field name="state_id">642</field>
+            <field name="code">SN-09</field>
+        </record>
+        <record id="sc_sulsel_kab_10" model="state.city">
+            <field name="name">Kabupaten Jeneponto</field>
+            <field name="state_id">642</field>
+            <field name="code">SN-10</field>
+        </record>
+        <record id="sc_sulsel_kab_11" model="state.city">
+            <field name="name">Kabupaten Kepulauan Selayar</field>
+            <field name="state_id">642</field>
+            <field name="code">SN-11</field>
+        </record>
+        <record id="sc_sulsel_kab_12" model="state.city">
+            <field name="name">Kabupaten Luwu</field>
+            <field name="state_id">642</field>
+            <field name="code">SN-12</field>
+        </record>
+        <record id="sc_sulsel_kab_13" model="state.city">
+            <field name="name">Kabupaten Luwu Timur</field>
+            <field name="state_id">642</field>
+            <field name="code">SN-13</field>
+        </record>
+        <record id="sc_sulsel_kab_14" model="state.city">
+            <field name="name">Kabupaten Luwu Utara</field>
+            <field name="state_id">642</field>
+            <field name="code">SN-14</field>
+        </record>
+        <record id="sc_sulsel_kab_15" model="state.city">
+            <field name="name">Kabupaten Maros</field>
+            <field name="state_id">642</field>
+            <field name="code">SN-15</field>
+        </record>
+        <record id="sc_sulsel_kab_16" model="state.city">
+            <field name="name">Kabupaten Pangkajene dan Kepulauan</field>
+            <field name="state_id">642</field>
+            <field name="code">SN-16</field>
+        </record>
+        <record id="sc_sulsel_kab_17" model="state.city">
+            <field name="name">Kabupaten Pinrang</field>
+            <field name="state_id">642</field>
+            <field name="code">SN-17</field>
+        </record>
+        <record id="sc_sulsel_kab_18" model="state.city">
+            <field name="name">Kabupaten Sidenreng Rappang</field>
+            <field name="state_id">642</field>
+            <field name="code">SN-18</field>
+        </record>
+        <record id="sc_sulsel_kab_19" model="state.city">
+            <field name="name">Kabupaten Sinjai</field>
+            <field name="state_id">642</field>
+            <field name="code">SN-19</field>
+        </record>
+        <record id="sc_sulsel_kab_20" model="state.city">
+            <field name="name">Kabupaten Soppeng</field>
+            <field name="state_id">642</field>
+            <field name="code">SN-20</field>
+        </record>
+        <record id="sc_sulsel_kab_21" model="state.city">
+            <field name="name">Kabupaten Takalar</field>
+            <field name="state_id">642</field>
+            <field name="code">SN-21</field>
+        </record>
+        <record id="sc_sulsel_kab_22" model="state.city">
+            <field name="name">Kabupaten Tana Toraja</field>
+            <field name="state_id">642</field>
+            <field name="code">SN-22</field>
+        </record>
+        <record id="sc_sulsel_kab_23" model="state.city">
+            <field name="name">Kabupaten Toraja Utara</field>
+            <field name="state_id">642</field>
+            <field name="code">SN-23</field>
+        </record>
+        <record id="sc_sulsel_kab_24" model="state.city">
+            <field name="name">Kabupaten Wajo</field>
+            <field name="state_id">642</field>
+            <field name="code">SN-24</field>
+        </record>
+        
+        <!-- SULAWESI TENGAH -->
+        <record id="sc_sulteng_kota_1" model="state.city">
+            <field name="name">Kota Palu</field>
+            <field name="state_id">643</field>
+            <field name="code">ST-01</field>
+        </record>
+        <record id="sc_sulteng_kab_2" model="state.city">
+            <field name="name">Kabupaten Banggai</field>
+            <field name="state_id">643</field>
+            <field name="code">ST-02</field>
+        </record>
+        <record id="sc_sulteng_kab_3" model="state.city">
+            <field name="name">Kabupaten Banggai Kepulauan</field>
+            <field name="state_id">643</field>
+            <field name="code">ST-03</field>
+        </record>
+        <record id="sc_sulteng_kab_4" model="state.city">
+            <field name="name">Kabupaten Banggai Laut</field>
+            <field name="state_id">643</field>
+            <field name="code">ST-04</field>
+        </record>
+        <record id="sc_sulteng_kab_5" model="state.city">
+            <field name="name">Kabupaten Buol</field>
+            <field name="state_id">643</field>
+            <field name="code">ST-05</field>
+        </record>
+        <record id="sc_sulteng_kab_6" model="state.city">
+            <field name="name">Kabupaten Donggala</field>
+            <field name="state_id">643</field>
+            <field name="code">ST-06</field>
+        </record>
+        <record id="sc_sulteng_kab_7" model="state.city">
+            <field name="name">Kabupaten Morowali</field>
+            <field name="state_id">643</field>
+            <field name="code">ST-07</field>
+        </record>
+        <record id="sc_sulteng_kab_8" model="state.city">
+            <field name="name">Kabupaten Morowali Utara</field>
+            <field name="state_id">643</field>
+            <field name="code">ST-08</field>
+        </record>
+        <record id="sc_sulteng_kab_9" model="state.city">
+            <field name="name">Kabupaten Parigi Moutong</field>
+            <field name="state_id">643</field>
+            <field name="code">ST-09</field>
+        </record>
+        <record id="sc_sulteng_kab_10" model="state.city">
+            <field name="name">Kabupaten Poso</field>
+            <field name="state_id">643</field>
+            <field name="code">ST-10</field>
+        </record>
+        <record id="sc_sulteng_kab_11" model="state.city">
+            <field name="name">Kabupaten Sigi</field>
+            <field name="state_id">643</field>
+            <field name="code">ST-11</field>
+        </record>
+        <record id="sc_sulteng_kab_12" model="state.city">
+            <field name="name">Kabupaten Tojo Una-Una</field>
+            <field name="state_id">643</field>
+            <field name="code">ST-12</field>
+        </record>
+        <record id="sc_sulteng_kab_13" model="state.city">
+            <field name="name">Kabupaten Tolitoli</field>
+            <field name="state_id">643</field>
+            <field name="code">ST-13</field>
+        </record>
+        
+        <!-- SULAWESI TENGGARA -->
+        <record id="sc_sultengg_kota_1" model="state.city">
+            <field name="name">Kota Baubau</field>
+            <field name="state_id">644</field>
+            <field name="code">SG-01</field>
+        </record>
+        <record id="sc_sultengg_kota_2" model="state.city">
+            <field name="name">Kota Kendari</field>
+            <field name="state_id">644</field>
+            <field name="code">SG-02</field>
+        </record>
+        <record id="sc_sultengg_kab_3" model="state.city">
+            <field name="name">Kabupaten Bombana</field>
+            <field name="state_id">644</field>
+            <field name="code">SG-03</field>
+        </record>
+        <record id="sc_sultengg_kab_4" model="state.city">
+            <field name="name">Kabupaten Buton</field>
+            <field name="state_id">644</field>
+            <field name="code">SG-04</field>
+        </record>
+        <record id="sc_sultengg_kab_5" model="state.city">
+            <field name="name">Kabupaten Buton Selatan</field>
+            <field name="state_id">644</field>
+            <field name="code">SG-05</field>
+        </record>
+        <record id="sc_sultengg_kab_6" model="state.city">
+            <field name="name">Kabupaten Buton Tengah</field>
+            <field name="state_id">644</field>
+            <field name="code">SG-06</field>
+        </record>
+        <record id="sc_sultengg_kab_7" model="state.city">
+            <field name="name">Kabupaten Buton Utara</field>
+            <field name="state_id">644</field>
+            <field name="code">SG-07</field>
+        </record>
+        <record id="sc_sultengg_kab_8" model="state.city">
+            <field name="name">Kabupaten Kolaka</field>
+            <field name="state_id">644</field>
+            <field name="code">SG-08</field>
+        </record>
+        <record id="sc_sultengg_kab_9" model="state.city">
+            <field name="name">Kabupaten Kolaka Timur</field>
+            <field name="state_id">644</field>
+            <field name="code">SG-09</field>
+        </record>
+        <record id="sc_sultengg_kab_10" model="state.city">
+            <field name="name">Kabupaten Kolaka Utara</field>
+            <field name="state_id">644</field>
+            <field name="code">SG-10</field>
+        </record>
+        <record id="sc_sultengg_kab_11" model="state.city">
+            <field name="name">Kabupaten Konawe</field>
+            <field name="state_id">644</field>
+            <field name="code">SG-11</field>
+        </record>
+        <record id="sc_sultengg_kab_12" model="state.city">
+            <field name="name">Kabupaten Konawe Kepulauan</field>
+            <field name="state_id">644</field>
+            <field name="code">SG-12</field>
+        </record>
+        <record id="sc_sultengg_kab_13" model="state.city">
+            <field name="name">Kabupaten Konawe Selatan</field>
+            <field name="state_id">644</field>
+            <field name="code">SG-13</field>
+        </record>
+        <record id="sc_sultengg_kab_14" model="state.city">
+            <field name="name">Kabupaten Konawe Utara</field>
+            <field name="state_id">644</field>
+            <field name="code">SG-14</field>
+        </record>
+        <record id="sc_sultengg_kab_15" model="state.city">
+            <field name="name">Kabupaten Muna</field>
+            <field name="state_id">644</field>
+            <field name="code">SG-15</field>
+        </record>
+        <record id="sc_sultengg_kab_16" model="state.city">
+            <field name="name">Kabupaten Muna Barat</field>
+            <field name="state_id">644</field>
+            <field name="code">SG-16</field>
+        </record>
+        <record id="sc_sultengg_kab_17" model="state.city">
+            <field name="name">Kabupaten Wakatobi</field>
+            <field name="state_id">644</field>
+            <field name="code">SG-17</field>
+        </record>
+        
+        <!-- SULAWESI UTARA -->
+        <record id="sc_sulut_kota_1" model="state.city">
+            <field name="name">Kota Bitung</field>
+            <field name="state_id">645</field>
+            <field name="code">SA-01</field>
+        </record>
+        <record id="sc_sulut_kota_2" model="state.city">
+            <field name="name">Kota Kotamobagu</field>
+            <field name="state_id">645</field>
+            <field name="code">SA-02</field>
+        </record>
+        <record id="sc_sulut_kota_3" model="state.city">
+            <field name="name">Kota Manado</field>
+            <field name="state_id">645</field>
+            <field name="code">SA-03</field>
+        </record>
+        <record id="sc_sulut_kota_4" model="state.city">
+            <field name="name">Kota Tomohon</field>
+            <field name="state_id">645</field>
+            <field name="code">SA-04</field>
+        </record>
+        <record id="sc_sulut_kab_5" model="state.city">
+            <field name="name">Kabupaten Bolaang Mongondow</field>
+            <field name="state_id">645</field>
+            <field name="code">SA-05</field>
+        </record>
+        <record id="sc_sulut_kab_6" model="state.city">
+            <field name="name">Kabupaten Bolaang Mongondow Selatan</field>
+            <field name="state_id">645</field>
+            <field name="code">SA-06</field>
+        </record>
+        <record id="sc_sulut_kab_7" model="state.city">
+            <field name="name">Kabupaten Bolaang Mongondow Timur</field>
+            <field name="state_id">645</field>
+            <field name="code">SA-07</field>
+        </record>
+        <record id="sc_sulut_kab_8" model="state.city">
+            <field name="name">Kabupaten Bolaang Mongondow Utara</field>
+            <field name="state_id">645</field>
+            <field name="code">SA-08</field>
+        </record>
+        <record id="sc_sulut_kab_9" model="state.city">
+            <field name="name">Kabupaten Kepulauan Sangihe</field>
+            <field name="state_id">645</field>
+            <field name="code">SA-09</field>
+        </record>
+        <record id="sc_sulut_kab_10" model="state.city">
+            <field name="name">Kabupaten Kepulauan Siau Tagulandang Biaro</field>
+            <field name="state_id">645</field>
+            <field name="code">SA-10</field>
+        </record>
+        <record id="sc_sulut_kab_11" model="state.city">
+            <field name="name">Kabupaten Kepulauan Talaud</field>
+            <field name="state_id">645</field>
+            <field name="code">SA-11</field>
+        </record>
+        <record id="sc_sulut_kab_12" model="state.city">
+            <field name="name">Kabupaten Minahasa</field>
+            <field name="state_id">645</field>
+            <field name="code">SA-12</field>
+        </record>
+        <record id="sc_sulut_kab_13" model="state.city">
+            <field name="name">Kabupaten Minahasa Selatan</field>
+            <field name="state_id">645</field>
+            <field name="code">SA-13</field>
+        </record>
+        <record id="sc_sulut_kab_14" model="state.city">
+            <field name="name">Kabupaten Minahasa Tenggara</field>
+            <field name="state_id">645</field>
+            <field name="code">SA-14</field>
+        </record>
+        <record id="sc_sulut_kab_15" model="state.city">
+            <field name="name">Kabupaten Minahasa Utara</field>
+            <field name="state_id">645</field>
+            <field name="code">SA-15</field>
+        </record>
+        
+        
+        <!-- PULAU MALUKU -->
+        <!-- MALUKU -->
+        <record id="sc_maluku_kota_1" model="state.city">
+            <field name="name">Kota Ambon</field>
+            <field name="state_id">631</field>
+            <field name="code">MA-01</field>
+        </record>
+        <record id="sc_maluku_kota_2" model="state.city">
+            <field name="name">Kota Tual</field>
+            <field name="state_id">631</field>
+            <field name="code">MA-02</field>
+        </record>
+        <record id="sc_maluku_kab_3" model="state.city">
+            <field name="name">Kabupaten Buru</field>
+            <field name="state_id">631</field>
+            <field name="code">MA-03</field>
+        </record>
+        <record id="sc_maluku_kab_4" model="state.city">
+            <field name="name">Kabupaten Buru Selatan</field>
+            <field name="state_id">631</field>
+            <field name="code">MA-04</field>
+        </record>
+        <record id="sc_maluku_kab_5" model="state.city">
+            <field name="name">Kabupaten Kepulauan Aru</field>
+            <field name="state_id">631</field>
+            <field name="code">MA-05</field>
+        </record>
+        <record id="sc_maluku_kab_6" model="state.city">
+            <field name="name">Kabupaten Kepulauan Tanimbar</field>
+            <field name="state_id">631</field>
+            <field name="code">MA-06</field>
+        </record>
+        <record id="sc_maluku_kab_7" model="state.city">
+            <field name="name">Kabupaten Maluku Barat Daya</field>
+            <field name="state_id">631</field>
+            <field name="code">MA-07</field>
+        </record>
+        <record id="sc_maluku_kab_8" model="state.city">
+            <field name="name">Kabupaten Maluku Tengah</field>
+            <field name="state_id">631</field>
+            <field name="code">MA-08</field>
+        </record>
+        <record id="sc_maluku_kab_9" model="state.city">
+            <field name="name">Kabupaten Maluku Tenggara</field>
+            <field name="state_id">631</field>
+            <field name="code">MA-09</field>
+        </record>
+        <record id="sc_maluku_kab_10" model="state.city">
+            <field name="name">Kabupaten Seram Bagian Barat</field>
+            <field name="state_id">631</field>
+            <field name="code">MA-10</field>
+        </record>
+        <record id="sc_maluku_kab_11" model="state.city">
+            <field name="name">Kabupaten Seram Bagian Timur</field>
+            <field name="state_id">631</field>
+            <field name="code">MA-11</field>
+        </record>
+
+        <!-- MALUKU UTARA-->
+        <record id="sc_malut_kota_1" model="state.city">
+            <field name="name">Kota Ternate</field>
+            <field name="state_id">632</field>
+            <field name="code">MU-01</field>
+        </record>
+        <record id="sc_malut_kota_2" model="state.city">
+            <field name="name">Kota Tidore Kepulauan</field>
+            <field name="state_id">632</field>
+            <field name="code">MU-02</field>
+        </record>
+        <record id="sc_malut_kab_3" model="state.city">
+            <field name="name">Kabupaten Halmahera Barat</field>
+            <field name="state_id">632</field>
+            <field name="code">MU-03</field>
+        </record>
+        <record id="sc_malut_kab_4" model="state.city">
+            <field name="name">Kabupaten Halmahera Selatan</field>
+            <field name="state_id">632</field>
+            <field name="code">MU-04</field>
+        </record>
+        <record id="sc_malut_kab_5" model="state.city">
+            <field name="name">Kabupaten Halmahera Tengah</field>
+            <field name="state_id">632</field>
+            <field name="code">MU-05</field>
+        </record>
+        <record id="sc_malut_kab_6" model="state.city">
+            <field name="name">Kabupaten Halmahera Timur</field>
+            <field name="state_id">632</field>
+            <field name="code">MU-06</field>
+        </record>
+        <record id="sc_malut_kab_7" model="state.city">
+            <field name="name">Kabupaten Halmahera Utara</field>
+            <field name="state_id">632</field>
+            <field name="code">MU-07</field>
+        </record>
+        <record id="sc_malut_kab_8" model="state.city">
+            <field name="name">Kabupaten Kepulauan Sula</field>
+            <field name="state_id">632</field>
+            <field name="code">MU-08</field>
+        </record>
+        <record id="sc_malut_kab_9" model="state.city">
+            <field name="name">Kabupaten Pulau Morotai</field>
+            <field name="state_id">632</field>
+            <field name="code">MU-09</field>
+        </record>
+        <record id="sc_malut_kab_10" model="state.city">
+            <field name="name">Kabupaten Pulau Taliabu</field>
+            <field name="state_id">632</field>
+            <field name="code">MU-10</field>
+        </record>
+
+        <!-- PULAU PAPUA -->
+        <!-- PAPUA -->
+        <record id="sc_papua_kota_1" model="state.city">
+            <field name="name">Kota Jayapura</field>
+            <field name="state_id">635</field>
+            <field name="code">PA-01</field>
+        </record>
+        <record id="sc_papua_kab_2" model="state.city">
+            <field name="name">Kabupaten Biak Numfor</field>
+            <field name="state_id">635</field>
+            <field name="code">PA-02</field>
+        </record>
+        <record id="sc_papua_kab_3" model="state.city">
+            <field name="name">Kabupaten Jayapura</field>
+            <field name="state_id">635</field>
+            <field name="code">PA-03</field>
+        </record>
+        <record id="sc_papua_kab_4" model="state.city">
+            <field name="name">Kabupaten Keerom</field>
+            <field name="state_id">635</field>
+            <field name="code">PA-04</field>
+        </record>
+        <record id="sc_papua_kab_5" model="state.city">
+            <field name="name">Kabupaten Kepulauan Yapen</field>
+            <field name="state_id">635</field>
+            <field name="code">PA-05</field>
+        </record>
+        <record id="sc_papua_kab_6" model="state.city">
+            <field name="name">Kabupaten Mamberamo Raya</field>
+            <field name="state_id">635</field>
+            <field name="code">PA-06</field>
+        </record>
+        <record id="sc_papua_kab_7" model="state.city">
+            <field name="name">Kabupaten Sarmi</field>
+            <field name="state_id">635</field>
+            <field name="code">PA-07</field>
+        </record>
+        <record id="sc_papua_kab_8" model="state.city">
+            <field name="name">Kabupaten Supiori</field>
+            <field name="state_id">635</field>
+            <field name="code">PA-08</field>
+        </record>
+        <record id="sc_papua_kab_9" model="state.city">
+            <field name="name">Kabupaten Waropen</field>
+            <field name="state_id">635</field>
+            <field name="code">PA-09</field>
+        </record>
+        
+        <!-- PAPUA BARAT -->
+        <record id="sc_papbar_kab_1" model="state.city">
+            <field name="name">Kabupaten Fakfak</field>
+            <field name="state_id">636</field>
+            <field name="code">PB-01</field>
+        </record>
+        <record id="sc_papbar_kab_2" model="state.city">
+            <field name="name">Kabupaten Kaimana</field>
+            <field name="state_id">636</field>
+            <field name="code">PB-02</field>
+        </record>
+        <record id="sc_papbar_kab_3" model="state.city">
+            <field name="name">Kabupaten Manokwari</field>
+            <field name="state_id">636</field>
+            <field name="code">PB-03</field>
+        </record>
+        <record id="sc_papbar_kab_4" model="state.city">
+            <field name="name">Kabupaten Manokwari Selatan</field>
+            <field name="state_id">636</field>
+            <field name="code">PB-04</field>
+        </record>
+        <record id="sc_papbar_kab_5" model="state.city">
+            <field name="name">Kabupaten Pegunungan Arfak</field>
+            <field name="state_id">636</field>
+            <field name="code">PB-05</field>
+        </record>
+        <record id="sc_papbar_kab_6" model="state.city">
+            <field name="name">Kabupaten Teluk Bintuni</field>
+            <field name="state_id">636</field>
+            <field name="code">PB-06</field>
+        </record>
+        <record id="sc_papbar_kab_7" model="state.city">
+            <field name="name">Kabupaten Teluk Wondama</field>
+            <field name="state_id">636</field>
+            <field name="code">PB-07</field>
+        </record>
+
+        <!-- PAPUA PEGUNUNGAN -->
+        <record id="sc_pappeg_kab_1" model="state.city">
+            <field name="name">Kabupaten Jayawijaya</field>
+            <field name="state_id">639</field>
+            <field name="code">PP-01</field>
+        </record>
+        <record id="sc_pappeg_kab_2" model="state.city">
+            <field name="name">Kabupaten Lanny Jaya</field>
+            <field name="state_id">639</field>
+            <field name="code">PP-02</field>
+        </record>
+        <record id="sc_pappeg_kab_3" model="state.city">
+            <field name="name">Kabupaten Mamberamo Tengah</field>
+            <field name="state_id">639</field>
+            <field name="code">PP-03</field>
+        </record>
+        <record id="sc_pappeg_kab_4" model="state.city">
+            <field name="name">Kabupaten Nduga</field>
+            <field name="state_id">639</field>
+            <field name="code">PP-04</field>
+        </record>
+        <record id="sc_pappeg_kab_5" model="state.city">
+            <field name="name">Kabupaten Pegunungan Bintang</field>
+            <field name="state_id">639</field>
+            <field name="code">PP-05</field>
+        </record>
+        <record id="sc_pappeg_kab_6" model="state.city">
+            <field name="name">Kabupaten Tolikara</field>
+            <field name="state_id">639</field>
+            <field name="code">PP-06</field>
+        </record>
+        <record id="sc_pappeg_kab_7" model="state.city">
+            <field name="name">Kabupaten Yalimo</field>
+            <field name="state_id">639</field>
+            <field name="code">PP-07</field>
+        </record>
+        <record id="sc_pappeg_kab_8" model="state.city">
+            <field name="name">Kabupaten Yahukimo</field>
+            <field name="state_id">639</field>
+            <field name="code">PP-08</field>
+        </record>
+
+        <!-- PAPUA SELATAN -->
+        <record id="sc_papsel_kab_1" model="state.city">
+            <field name="name">Kabupaten Asmat</field>
+            <field name="state_id">637</field>
+            <field name="code">PS-01</field>
+        </record>
+        <record id="sc_papsel_kab_2" model="state.city">
+            <field name="name">Kabupaten Boven Digoel</field>
+            <field name="state_id">637</field>
+            <field name="code">PS-02</field>
+        </record>
+        <record id="sc_papsel_kab_3" model="state.city">
+            <field name="name">Kabupaten Mappi</field>
+            <field name="state_id">637</field>
+            <field name="code">PS-03</field>
+        </record>
+        <record id="sc_papsel_kab_4" model="state.city">
+            <field name="name">Kabupaten Merauke</field>
+            <field name="state_id">637</field>
+            <field name="code">PS-04</field>
+        </record>
+
+        <!-- PAPUA TENGAH -->
+        <record id="sc_papteng_kab_1" model="state.city">
+            <field name="name">Kabupaten Deiyai</field>
+            <field name="state_id">638</field>
+            <field name="code">PT-01</field>
+        </record>
+        <record id="sc_papteng_kab_2" model="state.city">
+            <field name="name">Kabupaten Dogiyai</field>
+            <field name="state_id">638</field>
+            <field name="code">PT-02</field>
+        </record>
+        <record id="sc_papteng_kab_3" model="state.city">
+            <field name="name">Kabupaten Intan Jaya</field>
+            <field name="state_id">638</field>
+            <field name="code">PT-03</field>
+        </record>
+        <record id="sc_papteng_kab_4" model="state.city">
+            <field name="name">Kabupaten Mimika</field>
+            <field name="state_id">638</field>
+            <field name="code">PT-04</field>
+        </record>
+        <record id="sc_papteng_kab_5" model="state.city">
+            <field name="name">Kabupaten Nabire</field>
+            <field name="state_id">638</field>
+            <field name="code">PT-05</field>
+        </record>
+        <record id="sc_papteng_kab_6" model="state.city">
+            <field name="name">Kabupaten Paniai</field>
+            <field name="state_id">638</field>
+            <field name="code">PT-06</field>
+        </record>
+        <record id="sc_papteng_kab_7" model="state.city">
+            <field name="name">Kabupaten Puncak</field>
+            <field name="state_id">638</field>
+            <field name="code">PT-07</field>
+        </record>
+        <record id="sc_papteng_kab_8" model="state.city">
+            <field name="name">Kabupaten Puncak Jaya</field>
+            <field name="state_id">638</field>
+            <field name="code">PT-08</field>
+        </record>
+
+    </data>
+</odoo>

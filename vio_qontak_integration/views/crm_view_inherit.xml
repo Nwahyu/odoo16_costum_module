@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="lead_qontak_inherit_crm_lead" model="ir.ui.view">
+        <field name="name">crm.lead.view.form.inherit</field>
+        <field name="model">crm.lead</field>
+        <field name="inherit_id" ref="crm.crm_lead_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group/group[4]" position="replace">
+                <!-- <group attrs="{'invisible': [('type', '=', 'lead')]}"> -->
+                <group>
+                    <field name="user_id"
+                        context="{'default_sales_team_id': team_id}" widget="many2one_avatar_user"/>
+                    <!-- <label for="date_deadline">Expected Closing</label>
+                    <div class="o_lead_opportunity_form_inline_fields">
+                        <field name="date_deadline" nolabel="1" class="oe_inline"/>
+                        <field name="priority" widget="priority" nolabel="1" class="oe_inline align-top"/>
+                    </div> -->
+                    
+                    <field name="kriteria_id" />
+                    <field name="solusi_id" />
+                    <field name="race_id" />
+                </group>
+            </xpath>
+
+            <xpath expr="//notebook/page[1]" position="before">
+
+                <page name="data_qontak" string="data dari qontak">
+                    <group name="id_qontak" string="string">
+                        <field name="room_id" placeholder="room_id"/>
+                        <field name="resolved" placeholder="id agent"/>
+                        <field name="tujuan_id"/>
+                    </group>
+                </page>
+            </xpath>
+
+<!-- <div class="oe_title" invisible="1"> -->
+            <xpath expr="//div[@class='oe_title']" position="replace">
+                <h1><field class="text-break" name="name" placeholder="e.g. Product Pricing"/></h1>
+                <field name="probability" invisible="1"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="kanban_crm_id_inherit_crm_lead" model="ir.ui.view">
+        <field name="name">crm.lead.view.kanban.inherit</field>
+        <field name="model">crm.lead</field>
+        <field name="inherit_id" ref="crm.crm_case_kanban_view_leads"/>
+        <field name="arch" type="xml">
+            <xpath expr="//kanban/templates/t/div/div[@class='oe_kanban_footer']" position="replace">
+                <div class="o_kanban_record_bottom">
+                    <div class="oe_kanban_bottom_left">
+                        <field name="phone"/>
+                        <field name="priority" widget="priority" groups="base.group_user"/>
+                        <!--<field name="activity_ids" widget="kanban_activity"/>-->
+                    </div>
+                    <div class="oe_kanban_bottom_right">
+                        <field name="user_id" widget="many2one_avatar_user"/>
+                    </div>
+                </div>
+            </xpath>
+        </field>
+    </record>
+    <record id="filter_crm_inherit_filter_crm" model="ir.ui.view">
+        <field name="name">crm.lead.view.filter.inherit</field>
+        <field name="model">crm.lead</field>
+        <field name="inherit_id" ref="crm.view_crm_case_opportunities_filter"/>
+        <field name="arch" type="xml">
+            <xpath expr="//filter[@name='assigned_to_me']" position="replace">
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <menuitem
+        id="rme_vio_root_menu"
+        name="RME Vio"
+        sequence="10"/>
+
+    <menuitem
+        id="rme_list_menu"
+        name="RME List"
+        action="vio_rme_action"
+        parent="rme_vio_root_menu"
+        sequence="10"/>
+
+</odoo>

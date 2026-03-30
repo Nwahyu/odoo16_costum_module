@@ -1,0 +1,169 @@
+<odoo>
+    <data>
+        <!--  Template untuk tampilan halaman website  -->
+        <template id="aff_form_aff" name="Home">
+            <t t-call="website.layout">
+                <t t-set="title" t-value="'Vision Hero Register'"/>
+                <t t-set="head">
+                    <link href="/vio_affiliate/static/src/css/form_register.css" rel="stylesheet"/>
+                </t>
+
+                <div class="container-fluid pt-3 px-2 px-md-4">
+                    <div class="form-container flex-column my-3 my-md-5">
+                        <!-- Enhanced Header -->
+                        <div class="form-header text-center mb-4 mb-md-5">
+                            <h1 class="form-title">Form Pendaftaran Vision Hero</h1>
+                            <p class="form-subtitle">Bergabunglah bersama kami dan jadilah bagian dari Vision Hero</p>
+                        </div>
+
+                        <!-- Progress Indicator -->
+                        <div class="progress-indicator mb-4 mb-md-5" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" aria-label="Form completion progress">
+                            <div class="progress-bar" id="formProgress"></div>
+                            <span class="progress-text" id="progressText">0% Selesai</span>
+                        </div>
+
+                        <form class="oe_website_form" action="/affiliate/join/" method="post" novalidate="novalidate">
+                            <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+
+                            <!-- Form Field: Nama Lengkap -->
+                            <div class="form-group py-2 py-md-3 position-relative">
+                                <label for="nama" class="form-label required-field">
+                                    Nama Lengkap
+                                    <span class="required-indicator" aria-label="wajib diisi">*</span>
+                                </label>
+                                <input type="text" class="form-control form-control-lg" id="nama" name="name" required="1" aria-required="true" aria-describedby="namaHelp namaError" placeholder="Masukkan nama lengkap Anda"/>
+                                <div class="form-text text-muted" id="namaHelp">Nama sesuai dengan kartu identitas</div>
+                                <div class="invalid-feedback" id="namaError" role="alert"></div>
+                            </div>
+
+                            <!-- Form Field: Email -->
+                            <div class="form-group py-2 py-md-3 position-relative">
+                                <label for="email" class="form-label required-field">
+                                    Email
+                                    <span class="required-indicator" aria-label="wajib diisi">*</span>
+                                </label>
+                                <input type="email" class="form-control form-control-lg" id="email" name="email" required="1" aria-required="true" aria-describedby="emailHelp emailError" placeholder="contoh@email.com"/>
+                                <div class="form-text text-muted" id="emailHelp">Harap isi dengan benar, informasi akan kami kirim melalui email tersebut</div>
+                                <div class="invalid-feedback" id="emailError" role="alert"></div>
+                            </div>
+
+                            <!-- Form Field: Nomor Telepon -->
+                            <div class="form-group py-2 py-md-3 position-relative">
+                                <label for="phone" class="form-label required-field">
+                                    Nomor Telepon (Aktif WhatsApp)
+                                    <span class="required-indicator" aria-label="wajib diisi">*</span>
+                                </label>
+                                <input type="tel" class="form-control " id="phone" name="phone" placeholder="8123456789" required="1" pattern=".{9,}" aria-required="true" aria-describedby="phoneHelp phoneError" aria-label="Nomor telepon WhatsApp"/>
+                                <div class="form-text text-muted" id="phoneHelp">Prefix 62 akan otomatis ditambahkan (contoh: 0812 → 62812)</div>
+                                <div class="invalid-feedback" id="phoneError" role="alert"></div>
+                                <div class="phone-preview mt-2" id="phonePreview" aria-live="polite"></div>
+                            </div>
+
+                            <!-- Form Field: Sosial Media -->
+                            <div class="form-group py-2 py-md-3 position-relative">
+                                <label for="sosmed" class="form-label">
+                                    Link Sosial Media (Instagram)
+                                </label>
+                                <div class="input-group input-group-lg">
+                                    <span class="input-group-text bg-light" id="link_sosmed">instagram.com/@</span>
+                                    <input type="text" class="form-control" id="sosmed" name="sosmed" aria-describedby="sosmedHelp sosmedError" placeholder="username_instagram"/>
+                                </div>
+                                <div class="form-text text-muted" id="sosmedHelp">Jika tidak ada, diisi <strong>-</strong>
+                                </div>
+                                <div class="invalid-feedback" id="sosmedError" role="alert"></div>
+                            </div>
+
+                            <!-- Form Field: Sumber Info -->
+                            <div class="form-group py-2 py-md-3 position-relative">
+                                <label for="race" class="form-label required-field">
+                                    Anda tahu Vio darimana?
+                                    <span class="required-indicator" aria-label="wajib diisi">*</span>
+                                </label>
+                                <input type="text" class="form-control form-control-lg" id="race" name="race" required="1" aria-required="true" aria-describedby="raceHelp raceError" placeholder="Contoh: Media sosial, teman, dll"/>
+                                <div class="form-text text-muted" id="raceHelp">Sebutkan sumber informasi Anda tentang Vio</div>
+                                <div class="invalid-feedback" id="raceError" role="alert"></div>
+                            </div>
+
+                            <!-- Form Field: Domisili -->
+                            <div class="form-group py-2 py-md-3 position-relative">
+                                <label for="domisili_id" class="form-label required-field">
+                                    Domisili
+                                    <span class="required-indicator" aria-label="wajib diisi">*</span>
+                                </label>
+                                <select name="domisili_id" class="form-control form-control-lg" required="1" aria-required="true" aria-describedby="domisiliHelp domisiliError" id="domisili_id">
+                                    <option value="">Pilih domisili</option>
+                                    <t t-foreach="domisili" t-as="dom">
+                                        <option t-esc="dom.domisili" t-att-value="dom.id"></option>
+                                    </t>
+                                </select>
+                                <div class="form-text text-muted" id="domisiliHelp">Pilih kota domisili Anda</div>
+                                <div class="invalid-feedback" id="domisiliError" role="alert"></div>
+                            </div>
+
+                            <!-- Form Field: Cabang VIO -->
+                            <div class="form-group py-2 py-md-3 position-relative">
+                                <label for="cabang_id" class="form-label required-field">
+                                    Cabang VIO
+                                    <span class="required-indicator" aria-label="wajib diisi">*</span>
+                                </label>
+                                <select name="cabang_id" class="form-control form-control-lg" required="1" aria-required="true" aria-describedby="cabangHelp cabangError" id="cabang_id">
+                                    <option value="">Pilih cabang VIO</option>
+                                    <t t-foreach="cabang" t-as="cbg">
+                                        <option t-esc="cbg.name" t-att-value="cbg.id"></option>
+                                    </t>
+                                </select>
+                                <div class="form-text text-muted" id="cabangHelp">Pilih cabang VIO tempat Anda terdaftar</div>
+                                <div class="invalid-feedback" id="cabangError" role="alert"></div>
+                            </div>
+
+                            <!-- Checkbox: Pasien Sebelumnya -->
+                            <div class="form-check py-2 py-md-3 form-check-lg">
+                                <input class="form-check-input" type="checkbox" id="checkdefaultpasien" name="is_pasien" aria-describedby="pasienHelp"/>
+                                <label class="form-check-label" for="checkdefaultpasien">
+                                    Apakah Anda/keluarga merupakan pasien Vio sebelumnya?
+                                </label>
+                                <div class="form-text text-muted" id="pasienHelp">Centang jika Anda atau keluarga pernah menjadi pasien Vio</div>
+                            </div>
+
+                            <!-- Checkbox: Persetujuan Kebijakan -->
+                            <div class="form-check py-2 py-md-3 form-check-lg position-relative">
+                                <input class="form-check-input" type="checkbox" id="checkaccterm" name="is_acc_term" required="1" aria-required="true" aria-describedby="termHelp termError"/>
+                                <label class="form-check-label required-field" for="checkaccterm">
+                                    Saya menyetujui mengikuti kebijakan Vio
+                                    <span class="required-indicator" aria-label="wajib dicentang">*</span>
+                                </label>
+                                <div class="form-text text-muted" id="termHelp">Harap baca dan setujui kebijakan kami sebelum melanjutkan</div>
+                                <div class="invalid-feedback" id="termError" role="alert"></div>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <div class="form-actions mt-4 mt-md-5">
+                                <button type="submit" class="btn btn-primary btn-lg btn-submit w-100" id="submitBtn" aria-label="Kirim formulir pendaftaran">
+                                    <span class="btn-text">Daftar Sekarang</span>
+                                    <span class="btn-icon ms-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                            <line x1="5" y1="12" x2="19" y2="12"/>
+                                            <polyline points="12 5 19 12 12 19"/>
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                        </form>
+
+                        <!-- Error Alert Container -->
+                        <div class="alert alert-danger d-none mt-3" id="formErrorAlert" role="alert" aria-live="assertive">
+                            <strong>Error!</strong> Mohon perbaiki kesalahan pada formulir sebelum mengirim.
+                        </div>
+
+                        <!-- Success Alert Container -->
+                        <div class="alert alert-success d-none mt-3" id="formSuccessAlert" role="alert" aria-live="polite">
+                            <strong>Berhasil!</strong> Formulir Anda telah terkirim. Kami akan menghubungi Anda segera.
+                        </div>
+                    </div>
+                </div>
+
+                <script src="/vio_affiliate/static/src/js/form_register.js"></script>
+            </t>
+        </template>
+    </data>
+</odoo>

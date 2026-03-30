@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="inherited_portal_home" name="ini_portal_home" inherit_id="portal.portal_my_home">
+        <xpath expr="//p[@class='o_portal_no_doc_message d-none']" position="replace">
+        </xpath>
+
+
+        <xpath expr="//div[@id='oe_structure_portal_my_home_2']" position="inside">
+            
+<!-- 
+            <div class="row dashboard-row justify-content-center">
+                <div class="col-xl-3 col-sm-6 col-12 mt-3">
+                    <div class="card text-bg-info">
+                        <div class="card-body pb-0">
+                            <div class="d-flex justify-content-between">
+                                <div class="text-start">
+                                    <h5 class="text-info">7</h5>
+                                    <span class="text-info fw-bold">Clicks</span>
+                                </div>
+                                <div class="align-self-center">
+                                    <i class="fa fa-mouse-pointer text-info card-icons"></i>
+                                    <i class="fa fa-pencil text-info card-icons"></i>
+                                    <i class="fa fa-pencil-square-o text-info card-icons"></i>
+                                    <i class="fa fa-check text-info card-icons"></i>
+                                    <i class="fa fa-circle-o-notch text-info card-icons"></i>
+                                    <i class="fa fa-user-circle-o text-info card-icons"></i>
+                                    <i class="fa fa-money text-info card-icons"></i>
+                                    <i class="fa fa-info-circle text-info card-icons"></i>
+                                    <i class="fa fa-remove text-info card-icons"></i>
+                                    <i class="fa fa-clock-o text-info card-icons"></i>
+                                </div>
+                            </div>
+                            <div class="border-top text-center mt-1">
+                                <a t-attf-href="/my/traffic" class="text-decoration-none">More Info &amp;nbsp; <i class="fa fa-arrow-circle-right" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-sm-6 col-12 mt-3">
+                    <a t-attf-href="/my/traffic" class="text-decoration-none">
+                        <div class="card text-bg-primary">
+                            <div class="card-body pb-0">
+                                <div class="d-flex justify-content-between">
+                                    <div class="text-start">
+                                        <h5 class="text-info">7</h5>
+                                        <span class="text-info fw-bold">Pending</span>
+                                    </div>
+                                    <div class="align-self-center">
+                                        <i class="fa fa-clock-o text-info card-icons"></i>
+                                    </div>
+                                </div>
+                                <div class="border-top text-center mt-1">
+                                    More Info &amp;nbsp; <i class="fa fa-arrow-circle-right" />
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-xl-3 col-sm-6 col-12 mt-3">
+                    <a t-attf-href="/my/commissions" class="text-decoration-none">
+                        <div class="card text-bg-secondary">
+                            <div class="card-body pb-0">
+                                <div class="d-flex justify-content-between">
+                                    <div class="text-start">
+                                        <h5 class="text-info">7</h5>
+                                        <span class="text-info fw-bold">Reject</span>
+                                    </div>
+                                    <div class="align-self-center">
+                                        <i class="fa fa-remove text-info card-icons"></i>
+                                    </div>
+                                </div>
+                                <div class="border-top text-center mt-1">
+                                    More Info &amp;nbsp; <i class="fa fa-arrow-circle-right" />
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-xl-3 col-sm-6 col-12 mt-3">
+                    <a t-attf-href="/my/commissions" class="text-decoration-none">
+                        <div class="card text-bg-success">
+                            <div class="card-body pb-0">
+                                <div class="d-flex justify-content-between">
+                                    <div class="text-start">
+                                        <h5 class="text-info">7</h5>
+                                        <span class="text-info fw-bold">Referral</span>
+                                    </div>
+                                    <div class="align-self-center">
+                                        <i class="fa fa-user-circle-o text-info card-icons"></i>
+                                    </div>
+                                </div>
+                                <div class="border-top text-center mt-1">
+                                    More Info &amp;nbsp; <i class="fa fa-arrow-circle-right" />
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-xl-3 col-sm-6 col-12 mt-3">
+                    <a t-attf-href="/my/commissions" class="text-decoration-none">
+                        <div class="card text-bg-success">
+                            <div class="card-body pb-0">
+                                <div class="d-flex justify-content-between">
+                                    <div class="text-start">
+                                        <h5 class="text-info">7</h5>
+                                        <span class="text-info fw-bold">Saldo</span>
+                                    </div>
+                                    <div class="align-self-center">
+                                        <i class="fa fa-money text-info card-icons"></i>
+                                    </div>
+                                </div>
+                                <div class="border-top text-center mt-1">
+                                    More Info &amp;nbsp; <i class="fa fa-arrow-circle-right" />
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div> -->
+        </xpath>
+
+
+    </template>
+
+
+    <template id="my_affiliate_link" name="Link to My Affiliate Account" inherit_id="portal.user_dropdown">
+        <xpath expr="//div[@id='o_logout_divider']" position="before">
+
+        <!-- <t t-if="user_id.partner_id.is_affiliate"> -->
+        <a class="dropdown-item" href="/my/affiliate" role="menuitem"><i class="fa fa-user-circle-o fa-fw small text-muted mr-1"></i>Dashboard Saya</a>
+        <!-- </t> -->
+
+        </xpath>
+
+    </template>
+
+
+    <!-- extend form partner -->
+    <record id="view_partner_form_inherit_affiliate" model="ir.ui.view">
+        <field name="name">res.partner.view.form.inheri.affiliate</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='vat']" position="after">
+                <field name="nik"/>
+                <field name="pekerjaan" />
+                <field name="medsos_ig" />
+                <field name="medsos_tiktok" />
+                <field name="nama_bank" />
+                <field name="no_rek" />
+                <field name="nama_rek" />
+                <field name="cabang_bank"/>
+                <field name="pw"/>
+            </xpath>
+        </field>
+    </record>
+
+
+    <!-- sembunyiin yg ad di pengaturan keamanan -->
+    <template id="portal_my_security" name="portal_my_security" inherit_id="portal.portal_my_security">
+        <xpath expr="//section[2]" position="replace">
+            
+        </xpath>
+    </template>
+
+
+    <!-- <template id="view_partner_form" name="view_partner_form_1" inherit_id="base.view_partner_form">
+        <xpath expr="//field[@name='vat']" position="after">
+            <field name="nik"/>
+        </xpath>
+    </template> -->
+
+
+
+</odoo>

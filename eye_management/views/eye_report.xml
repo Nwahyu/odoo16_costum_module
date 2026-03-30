@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+
+        <record id="income_byreport_report" model="ir.actions.report">
+            <field name="name">Income By Doctor</field>
+            <field name="model">income.by.doctor.report.wizard</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">eye_management.report_income_by_doctor</field>
+            <field name="report_file">eye_management.report_income_by_doctor</field>
+
+        </record>
+
+
+        <record id="income_by_procedure_qweb" model="ir.actions.report">
+            <field name="name">Income By Procedure</field>
+            <field name="model">income.by.procedure.wizard</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">eye_management.report_income_by_procedure</field>
+            <field name="report_file">eye_management.report_income_by_procedure</field>
+
+        </record>
+
+        <record id="income_by_insurance_company_qweb" model="ir.actions.report">
+            <field name="name">Income By Insurance Company</field>
+            <field name="model">income.by.insurance.company.wizard</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">eye_management.income_by_insurance</field>
+            <field name="report_file">eye_management.income_by_insurance</field>
+
+        </record>
+
+    </data>
+
+</odoo>

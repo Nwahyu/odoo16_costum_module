@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record model="ir.ui.view" id="medical_hospital_building_form">
+        <field name="name">hospital.building.form</field>
+        <field name="model">medical.hospital.building</field>
+        <field name="inherit_id" ref="eye_management.medical_hospital_building_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//form/group/group[2]" position="inside">
+                <field name="no_hp" />
+                <field name="email" />
+                <field name="url" />
+                <field name="address" placeholder="Ruko suka cita, Jl. mawar mekar no. 12 Jakarta"/>
+                <field name="city" placeholder="contoh: Jakarta"/>
+                <field name="post_code" />
+                <field name="cd_province" />
+                <field name="cd_city" />
+                <field name="cd_district" />
+                <field name="cd_village" />
+            </xpath>
+        </field>
+    </record>
+
+    <!-- ============================= -->
+
+    <record id="medical_hospital_unit_view_inherit_satset" model="ir.ui.view">
+        <field name="name">hospital.unit.view.form.inherit</field>
+        <field name="model">medical.hospital.unit</field>
+        <field name="inherit_id" ref="eye_management.medical_hospital_unit_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//form/group/group[2]" position="inside">
+                <field name="longtitude" />
+                <field name="latitude" />
+                <field name="altitude" />
+            </xpath>
+        </field>
+    </record>
+
+    <!-- ================================ -->
+
+    <record model="ir.ui.view" id="medical_appointment_view">
+        <field name="name">satset.app.form</field>
+        <field name="model">medical.appointment</field>
+        <field name="inherit_id" ref="eye_management.medical_appointment_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='service_id']" position="after">
+                <!-- <field name="icd10_ids" widget="many2many_tags" attrs="{'invisible':[('state','not in',['done','still_pending'])]}" options="{'no_create_edit':true, 'no_create':true}"/> -->
+                <field name="icd10_id"/>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- =================================== -->
+
+    <record id="medical_physician_view_inherit_satset" model="ir.ui.view">
+        <field name="name">medical_physician_view.inherit.satset</field>
+        <field name="model">medical.physician</field>
+        <field name="inherit_id" ref="eye_management.medical_physician_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='institution_ids']" position="after">
+                <field name="doctor_satset" />
+                <field name="id_satset" />
+            </xpath>
+        </field>
+    </record>
+
+    <!-- ====================================== -->
+
+    <record id="medical_patient_view_inherit_satset" model="ir.ui.view">
+        <field name="name">medical.patient.view.form.inherit</field>
+        <field name="model">medical.patient</field>
+        <field name="inherit_id" ref="eye_management.medical_patient_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='patient_id']" position="before">
+                <field name="id_satset" />
+            </xpath>
+        </field>
+    </record>
+
+    <!-- ========================================== -->
+
+    <!-- <record id="medical_physician_inherit_rme_dokter" model="ir.ui.view">
+        <field name="name">res.user.physician.form.inherit</field>
+        <field name="model">res.users</field>
+        <field name="inherit_id" ref="eye_management.view_res_users_inheirt_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='is_doctor']" position="inside">
+                <field name="data_dokter_id" />
+            </xpath>
+        </field>
+    </record> -->
+
+    
+</odoo>

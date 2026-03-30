@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="qontak_chat_cron" model="ir.cron">
+        <field name="name">Cron qontak chat</field>
+        <field name="model_id" ref="model_qontak_chat"/>
+        <field name="priority">4</field>
+        <field name="interval_number">1</field>
+        <field name="interval_type">minutes</field>
+        <field name="active">False</field>
+        <!-- <field name="active">True</field> -->
+        <field name="numbercall">-1</field>
+        <field name="state">code</field>
+        <field name="code">model.get_lead()</field>
+    </record>
+
+    <record id="qontak_lead_up_1" model="ir.cron">
+        <field name="name">Cron qontak lead 1</field>
+        <field name="model_id" ref="model_qontak_chat"/>
+        <field name="interval_number">5</field>
+        <field name="interval_type">minutes</field>
+        <field name="active">False</field>
+        <!-- <field name="active">True</field> -->
+        <field name="numbercall">-1</field>
+        <field name="state">code</field>
+        <field name="code">model.up_lead_1()</field>
+    </record>
+
+    <record id="qontak_lead_up_2" model="ir.cron">
+        <field name="name">Cron qontak lead 2</field>
+        <field name="model_id" ref="model_qontak_chat"/>
+        <field name="interval_number">5</field>
+        <field name="interval_type">minutes</field>
+        <field name="active">False</field>
+        <!-- <field name="active">True</field> -->
+        <field name="numbercall">-1</field>
+        <field name="state">code</field>
+        <field name="code">model.up_lead_2()</field>
+    </record>
+
+    <record id="qontak_lead_up_3" model="ir.cron">
+        <field name="name">Cron qontak lead 3</field>
+        <field name="model_id" ref="model_qontak_chat"/>
+        <field name="interval_number">5</field>
+        <field name="interval_type">minutes</field>
+        <field name="active">False</field>
+        <!-- <field name="active">True</field> -->
+        <field name="numbercall">-1</field>
+        <field name="state">code</field>
+        <field name="code">model.up_lead_3()</field>
+    </record>
+    
+    <record id="qontak_lead_up_4" model="ir.cron">
+        <field name="name">Cron qontak lead 4</field>
+        <field name="model_id" ref="model_qontak_chat"/>
+        <field name="interval_number">5</field>
+        <field name="interval_type">minutes</field>
+        <field name="active">False</field>
+        <!-- <field name="active">True</field> -->
+        <field name="numbercall">-1</field>
+        <field name="state">code</field>
+        <field name="code">model.up_lead_4()</field>
+    </record>
+
+    <record id="qontak_lead_up_5" model="ir.cron">
+        <field name="name">Cron qontak lead 5</field>
+        <field name="model_id" ref="model_qontak_chat"/>
+        <field name="interval_number">5</field>
+        <field name="interval_type">minutes</field>
+        <field name="active">False</field>
+        <!-- <field name="active">True</field> -->
+        <field name="numbercall">-1</field>
+        <field name="state">code</field>
+        <field name="code">model.up_lead_5()</field>
+    </record>
+
+    <record id="qontak_lead_up_6" model="ir.cron">
+        <field name="name">Cron qontak lead 6</field>
+        <field name="model_id" ref="model_qontak_chat"/>
+        <field name="interval_number">5</field>
+        <field name="interval_type">minutes</field>
+        <field name="active">False</field>
+        <!-- <field name="active">True</field> -->
+        <field name="numbercall">-1</field>
+        <field name="state">code</field>
+        <field name="code">model.up_lead_6()</field>
+    </record>
+
+    <record id="qontak_lead_up_7" model="ir.cron">
+        <field name="name">Cron qontak lead 7</field>
+        <field name="model_id" ref="model_qontak_chat"/>
+        <field name="interval_number">5</field>
+        <field name="interval_type">minutes</field>
+        <field name="active">False</field>
+        <!-- <field name="active">True</field> -->
+        <field name="numbercall">-1</field>
+        <field name="state">code</field>
+        <field name="code">model.up_lead_7()</field>
+    </record>
+
+</odoo>

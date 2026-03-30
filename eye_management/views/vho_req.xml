@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="roadshow_view_tree" model="ir.ui.view">
+        <field name="name">roadshow.view.tree</field>
+        <field name="model">roadshow</field>
+        <field name="arch" type="xml">
+            <tree string="">
+                <field name="nama"/>
+                <field name="tipe_data" />
+            </tree>
+        </field>
+    </record>
+
+
+    <record id="roadshow_view_form" model="ir.ui.view">
+        <field name="name">roadshow.view.form</field>
+        <field name="model">roadshow</field>
+        <field name="arch" type="xml">
+            <form string="">
+                <sheet>
+                    <group>
+                        <field name="nama"/>
+                        <field name="tipe_data"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="roadshow_action" model="ir.actions.act_window">
+        <field name="name">List roadshow</field>
+        <field name="res_model">roadshow</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p>roadshow kosong</p>
+        </field>
+    </record>
+
+
+</odoo>

@@ -1,0 +1,41 @@
+<!-- views/assets.xml -->
+<template id="assets_alpine" inherit_id="website.assets_frontend" name="Alpine JS (CDN)">
+    <xpath expr="." position="inside">
+        <!-- Alpine v3, defer so it runs after HTML is parsed -->
+        <script defer="defer" src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    </xpath>
+</template>
+
+<!-- Form Data Diri Assets -->
+<template id="assets_form_data_diri" inherit_id="website.assets_frontend" name="VIO Affiliate Form Data Diri Assets">
+    <xpath expr="." position="inside">
+        <!-- Form Data Diri CSS -->
+        <link rel="stylesheet" href="/vio_affiliate/static/src/css/form_data_diri.css"/>
+        <!-- Form Data Diri JavaScript -->
+        <script type="text/javascript" src="/vio_affiliate/static/src/js/form_data_diri.js"/>
+    </xpath>
+</template>
+
+<!-- Form Register Assets -->
+<template id="assets_form_register" inherit_id="website.assets_frontend" name="VIO Affiliate Form Register Assets">
+    <xpath expr="." position="inside">
+        <!-- Form Register CSS -->
+        <link rel="stylesheet" href="/vio_affiliate/static/src/css/form_register.css"/>
+        <!-- Form Register JavaScript -->
+        <script type="text/javascript" src="/vio_affiliate/static/src/js/form_register.js"/>
+    </xpath>
+</template>
+
+<!-- Dashboard Assets -->
+<template id="assets_dashboard" inherit_id="website.assets_frontend" name="VIO Affiliate Dashboard Assets">
+    <xpath expr="." position="inside">
+        <!-- Font Awesome for icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        <!-- Dashboard CSS -->
+        <link rel="stylesheet" href="/vio_affiliate/static/src/scss/dashboard.css"/>
+        <!-- Dashboard Affiliator CSS -->
+        <link rel="stylesheet" href="/vio_affiliate/static/src/css/dashboard_affiliator.css"/>
+        <!-- Dashboard Affiliator JavaScript -->
+        <script type="text/javascript" src="/vio_affiliate/static/src/js/dashboard_affiliator.js"/>
+    </xpath>
+</template>

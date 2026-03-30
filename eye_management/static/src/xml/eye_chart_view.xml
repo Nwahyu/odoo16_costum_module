@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+<t t-name="EyeChartView">
+<div>
+	<strong><p class="pname"></p></strong>
+	<button id= "close_button">x</button>
+
+	<center><h1 class="select">
+		Select right or left eye
+	</h1>
+	</center>
+	<center>
+		<div class="eye">
+			<img class = "eye_selected" id="right_eye" name = "Right Eye" src="/eye_management/static/src/img/righteye1.jpg" />
+			<img class = "eye_selected" id="left_eye" name = "Left Eye" src="/eye_management/static/src/img/lefteye1.jpg" />
+		</div>
+
+	</center>
+	<center>
+		<strong><p id="choice"></p></strong>
+	</center>
+
+		<center><h3 id="part">
+			</h3>
+		</center>
+
+	<table id = "operation_table_main" style = "display:none" height = "300px">
+	<thead>
+	<tr>
+	<th id = "treatment">Treatment</th>
+	</tr>
+	</thead>
+	<tbody id = "operation_table_body" >
+	 <tr >
+            <td colspan="2" >
+        <div class="scrollit"  >
+            <table id = "operation_table" width = "100%" >
+            </table>
+        </div>
+                </td>
+        </tr>
+	
+	</tbody>
+	</table>
+		<div style= "margin-left: 150px">
+		<img id="anatomy" src="" usemap="#planetmap" style= "position: relative"/>
+		</div>
+
+	<map class="map" name="planetmap">
+		<area class="eye_part viterous_body" id = "viterous_body" shape="poly" data-toggle="tooltip" name="Viterous Body_Vitero-Retinal Treatments"
+	data-maphilight='{"strokeColor":"ffff00","strokeWidth":0.1,"fillColor": "0614F1","fillOpacity":0.5}'
+	coords="260,226,253,228,248,234,244,243,239,250,234,257,225,266,216,273,205,280,190,286,176,289,162,
+	289,146,287,133,284,122,275,112,268,108,259,104,250,101,237,103,226,110,217,114,206,117,198,117,186,
+	115,177,112,170,108,162,102,154,98,148,100,138,102,129,106,117,110,108,118,101,126,96,139,93,148,90,
+	156,88,163,96,167,108,168,116,170,126,171,135,172,143,172,147,180,144,190,144,200,142,212,140,226,139,
+	238,141,247,143,255,157,259,177,262,199,261,211,263,217"
+	href="" />
+			<area class="eye_part retina" id = "retina_up" shape="poly" data-toggle="tooltip" name="Retina_Vitero-Retinal Treatments"
+	data-maphilight='{"strokeColor":"ffff00","strokeWidth":0.5,"fillColor":"0614F1","fillOpacity":0.6}'
+	coords="264,219,269,206,268,194,267,181,265,168,262,157,259,147,253,140,246,136,236,133,224,133,212,133,201,134,190,136,181,137,180,124,178,
+	114,176,104,172,94,166,87,162,84,148,86,138,89,128,93,127,96,132,94,136,92,144,90,151,88,156,88,161,92,165,98,169,108,
+	171,119,173,130,174,138,174,146,184,143,195,142,206,140,217,140,226,139,235,140,242,142,248,144,254,152,258,166,260,
+	177,262,190,263,204"
+	href="" />
+			<area class="eye_part retina" id= "retina_down" shape="poly" data-toggle="tooltip" name="Retina_Vitero-Retinal Treatments"
+	data-maphilight='{"strokeColor":"ffff00","strokeWidth":0.5,"fillColor":"0614F1","fillOpacity":0.6}'
+	coords="134,286,142,287,151,289,161,290,174,290,188,287,200,284,212,277,221,271,230,263,236,255,240,248,244,241,248,235,252,230,257,240,
+	253,240,251,243,247,249,242,257,236,265,228,272,218,280,207,287,197,290,184,294,172,295,162,295,153,294,145,292,140,290"
+	href="" />
+			<area class="eye_part choroial" id = "choroid_up" shape="poly" data-toggle="tooltip" name="Choroid_Choroidal Treatments"
+	data-maphilight='{"strokeColor":"ffff00","strokeWidth":0.1,"fillColor":"0614F1","fillOpacity":0.3}'
+	coords="269,206,268,190,266,176,264,163,258,147,251,139,242,135,229,133,215,134,198,136,184,138,180,139,179,127,178,115,176,103,
+	170,94,164,87,161,85,144,87,136,90,127,94,118,102,108,112,103,121,101,134,92,133,98,117,104,109,109,101,118,93,129,87,
+	142,83,156,80,168,81,174,81,176,90,178,98,179,102,188,101,201,102,214,103,231,109,241,116,249,124,256,137,262,147,266,
+	157,270,171,271,185,271,195,270,202" />
+			<area class="eye_part choroidal" id = "choroid_down" shape="poly" data-toggle="tooltip" name="Choroid_Choroidal Treatments"
+	data-maphilight='{"strokeColor":"ffff00","strokeWidth":0.1,"fillColor":"0614F1","fillOpacity":0.3}'
+	coords="90,243,94,247,98,257,102,265,109,275,115,281,123,287,134,293,147,298,158,300,170,300,184,299,198,295,209,292,219,285,228,
+	279,237,269,245,260,250,254,255,246,257,240,254,240,249,244,245,250,242,257,237,263,230,269,222,277,213,282,205,287,194,
+	291,183,294,171,295,158,295,148,292,138,289,131,285,123,279,116,273,111,268,108,263,105,258,104,253,101,246,101,243"
+	href="" />
+			<area class="eye_part scleral" id = "sclera" shape="poly" data-toggle="tooltip" name="Sclera_Scleral Treatments"
+	data-maphilight='{"strokeColor":"B3DFDC","strokeWidth":0.1,"fillColor":"0614F1","fillOpacity":0.3}'
+	coords="270,206,270,188,270,173,264,153,259,141,250,127,239,113,229,108,211,102,196,102,182,102,177,89,173,81,152,81,137,84,125,89,111,99,
+	102,109,95,123,91,133,89,139,85,141,77,151,72,163,69,176,68,191,70,207,76,224,82,235,88,241,93,247,95,249,99,260,105,269,111,277,120,285,
+	129,292,142,297,155,300,169,301,185,299,199,295,210,291,223,283,230,277,238,268,247,258,252,249,256,244,262,251,253,263,238,277,226,288,
+	214,297,203,303,190,307,175,308,163,309,150,307,138,305,125,301,114,294,107,286,98,277,94,272,90,265,88,261,86,259,83,256,80,254,74,249,
+	69,243,65,238,60,229,57,218,55,209,54,201,54,192,54,179,56,170,59,160,64,150,67,142,72,136,76,130,81,124,84,120,87,115,92,108,97,101,103,
+	95,110,87,121,80,130,75,140,73,148,71,159,71,168,71,178,72,188,75,200,78,214,85,223,89,233,97,240,103,249,111,256,120,262,129,268,143,273,
+	158,276,169,278,179,278,192,278,201"
+	href="" />
+			<area class="eye_part neural" id = "optic_nerve" shape="poly" data-toggle="tooltip"
+	name="Optic Nerve_Optic Nerve/Neural Treatments"
+	data-maphilight='{"strokeColor":"000000","strokeWidth":0.5,"fillColor":"0614F1","fillOpacity":0.6}'
+	coords="320,235,312,233,304,230,296,228,288,226,278,223,268,221,262,220,261,224,270,227,282,230,294,235,308,239,316,242,320,242"
+	href="" />
+			<area class="eye_part lens" id = "lens" shape="poly" data-toggle="tooltip" name="Lens_Lens Treatments"
+	data-maphilight='{"strokeColor":"00ff00","strokeWidth":0.1,"fillColor":"0614F1","fillOpacity":0.6}'
+	coords="97,159,90,163,84,172,83,184,82,198,85,210,90,220,96,224,104,223,110,217,113,211,116,203,116,193,115,182,112,171,107,163,103,160,100,159"
+	href="" />
+			<area class="eye_part pupil" id = "pupil" shape="poly" data-toggle="tooltip" name="Pupil_Pupil Treatments"
+	data-maphilight='{"strokeColor":"000000","strokeWidth":0.1,"fillColor":"0614F1","fillOpacity":0.3}'
+	coords="76,179,75,184,74,188,74,193,74,199,77,204,80,206,82,206,83,203,84,198,83,193,82,188,83,185,83,180,82,177,79,178"
+	href="" />
+			<area class="eye_part aqueous_humor" id = "aqueous_humor_1" shape="poly" data-toggle="tooltip"
+	name="Aqueous Humor_Aqueous Humor Treatment"
+	data-maphilight='{"strokeColor":"0000ff","strokeWidth":0.1,"fillColor":"0614F1","fillOpacity":0.3}'
+	coords="89,241,90,239,87,235,83,228,80,217,80,209,79,206,75,201,74,194,74,188,75,183,77,178,77,168,80,160,82,155,84,
+	149,86,146,87,139,81,144,76,152,72,160,70,171,68,182,68,194,70,206,72,214,76,222,78,228,82,234,86,239"
+	href="" />
+			<area class="eye_part eye_muscle" id = "eye_muscle_up" shape="poly" data-toggle="tooltip"
+	name="Eye Muscle_Eye Muscle Treatments"
+	data-maphilight='{"strokeColor":"0000ff","strokeWidth":0.1,"fillColor":"0614F1","fillOpacity":0.3}'
+	coords="126,72,136,76,150,74,163,71,176,73,182,74,241,72,245,69,245,62,244,57,242,53,156,63,150,63,
+	155,60,161,58,166,57,211,51,213,46,213,42,210,39,168,47,157,51,148,55,141,59,134,63"
+	href="" />
+			<area class="eye_part eye_muscle" id = "eye_muscle_down" shape="poly" data-toggle="tooltip"
+	name="Eye Muscle_Eye Muscle Treatments"
+	data-maphilight='{"strokeColor":"0000ff","strokeWidth":0.1,"fillColor":"0614F1","fillOpacity":0.3}'
+	coords="207,323,170,318,166,318,163,316,160,315,157,313,166,315,172,316,179,317,236,321,240,316,240,311,
+	238,307,236,305,200,303,188,306,178,308,168,309,158,308,147,307,137,305,126,304,136,315,146,321,154,325,171,
+	328,206,333,209,331,209,328,210,326,209,324"
+	href="" />
+			<area class="eye_part iris" id = "iris_up" shape="poly" data-toggle="tooltip" name="Iris_Iris Treatments"
+	data-maphilight='{"strokeColor":"000000","strokeWidth":0.1, "fillColor":"0614F1","fillOpacity":0.6}'
+	coords="91,136,89,151,87,158,85,166,83,173,80,178,77,177,77,170,79,161,82,154,86,145,88,138"
+	href="" />
+			<area class="eye_part iris" id = "iris_down" shape="poly" data-toggle="tooltip" name="Iris_Iris Treatments"
+	data-maphilight='{"strokeColor":"0000ff","strokeWidth":0.1,"fillColor":"0614F1","fillOpacity":0.6}'
+	coords="82,223,80,218,79,212,79,207,83,206,86,212,89,220,92,227,93,235,92,244,87,234,84,229" />
+			<area class="eye_part ciliary_muscles" id = "ciliary_muscles_up" shape="poly" data-toggle="tooltip"
+	name="Ciliary Muscles_Ciliary Muscles Treatments"
+	data-maphilight='{"strokeColor":"0000ff","strokeWidth":0.1,"fillColor":"0614F1","fillOpacity":0.7}'
+	coords="89,154,97,151,104,157,108,162,102,159,96,159,89,163,86,166"
+	href="" />
+			<area class="eye_part ciliary_muscles" id = "ciliary_muscles_down" shape="poly" data-toggle="tooltip"
+	name="Ciliary Muscles_Ciliary Muscles Treatments"
+	data-maphilight='{"strokeColor":"0000ff","strokeWidth":0.1,"fillColor":"0614F1","fillOpacity":0.7}'
+	coords="92,231,91,223,89,218,95,223,100,223,105,221,108,219,103,228,102,233,99,230,94,229"
+	href="" />
+			<area class="eye_part corneal" id = "cornea" shape="poly" data-toggle="tooltip" name="Cornea_Corneal Treatments"
+	data-maphilight='{"strokeColor":"0000ff","strokeWidth":0.1,"fillColor":"0614F1","fillOpacity":0.3}'
+	coords="86,256,78,251,70,243,61,231,57,217,54,203,54,192,54,179,57,164,61,156,65,147,69,141,75,133,81,125,84,120,89,
+	112,92,107,96,102,100,97,104,93,107,90,110,88,107,82,99,91,92,99,82,107,70,120,62,133,56,145,51,161,49,173,48,187,49,
+	203,51,220,55,231,59,240,66,253,74,262,81,270,89,278,95,283,103,289,107,286,102,278,97,272,93,268,91,264,90,261"
+	href="" />
+
+	<area class="eye_part eyelid" id = "lower_eyelid" shape="poly" data-toggle="tooltip" name="Eyelid_Eyelid Treatments"
+	data-maphilight='{"strokeColor":"ffff00","strokeWidth":0.5,"fillColor":"0614F1","fillOpacity":0.6}'
+	coords="158,351,145,340,143,337,142,335,142,332,142,329,112,299,99,287,95,286,93,285,83,275,80,277,78,278,72,277,69,277,
+	65,281,63,286,65,291,68,296,74,299,78,301,82,302,89,306,101,316,118,333,130,347,138,359"
+	href="" />
+	<area class="eye_part eyelid" id = "upper_eyelid" shape="poly" data-toggle="tooltip" name="Eyelid_Eyelid Treatments"
+	data-maphilight='{"strokeColor":"ffff00","strokeWidth":0.5,"fillColor":"0614F1","fillOpacity":0.6}'
+	coords="68,101,72,102,76,101,80,100,84,106,101,90,106,83,108,85,118,74,128,63,137,52,144,45,144,37,159,23,145,5,134,19,124,
+	32,115,44,104,57,90,69,77,76,70,81,65,85,63,89,63,93,63,95,65,100"
+	href="" />
+	</map>
+		<center>
+		<h3 id="part_selected">  </h3>
+	</center>
+
+		<center><div >
+		<!-- <button  style = "display:none" class= "state_buttons" id = "draft_button">Draft</button> -->
+		<button  style = "display:none" class= "state_buttons" id = "in_progress_button">In Progress</button>
+		<button  style = "display:none" class= "state_buttons" id = "complete_button">Complete</button>
+		</div></center>
+	<center>
+	<table id = "operation_part_main" style = "display:none">
+	<thead>
+	<tr>
+	<th id = "date">Date</th>
+	<th id = "procedure">Eye</th>
+	<th id = "part_of_eye">Part</th>
+	<th id = "which_eye">Treatment</th>
+	<th id = "doctor">Physician Name</th>
+	<th id = "state">State</th>
+	<th class = "invisible_id" id = "ids">IDs</th>
+
+	</tr>
+	</thead>
+	<tbody id = "operation_part"></tbody>
+	</table>
+	</center>
+
+	<script type="text/javascript">
+
+	$(document).ready(function() {
+
+		$("#anatomy").maphilight();
+
+		});
+	</script>
+
+</div>
+</t>
+</templates>
+

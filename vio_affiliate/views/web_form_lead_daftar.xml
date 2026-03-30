@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="web_form_satu" name="Laman Pendaftaran">
+        <t t-call="website.layout">
+
+
+    <div class="flex justify-center">
+        <img class="max-w-screen-lg w-screen my-10" src="https://lh3.googleusercontent.com/vCOSNQDj6URaY9wbuN_1eLk5yg4RIs0DbmRptcPxWXqj_lY6D0TzPyw__RdxPji5IBT3XdzjeKRs88-iRbIvDOKsRFWkDHrffQ=w702" alt="" />
+    </div>
+    <div class="sm:flex items-center justify-between">
+        <div class="text-center px-5 pb-3 md:text-2xl">
+                Faktanya jumlah anak sekolah yang menderita mata minus dan perlu
+                pemeriksaan lebih dini
+        </div>
+        <div class="text-center px-5 text-4xl pb-5 font-bold md:text-6xl">
+                mencapai 35% - 40% di tahun 2023
+        </div>
+    </div>
+    <div class="flex justify-center">
+        <!-- <button class="toFormsatu bg-[#1078B5] p-3 rounded-xl sm:text-4xl text-2xl text-white" id="">Tanya Kami</button> -->
+        <button class="modal_show block justify-end items-end bg-[#1078B5] p-3 rounded-xl text-white sm:text-4xl text-2xl">Tanya Kami</button>
+    </div>
+    
+    <div class="py-8"></div>
+    
+    <div class="text-center text-3xl font-bold mt-5 mb-3">
+            Ini bahayanya jika mata minus dibiarkan!
+    </div>
+    <div class="flex justify-center">
+        <img class="w-screen max-w-screen-lg" src="https://lh3.googleusercontent.com/sFLrDwALPi06zEyxFhg4ec2HSktdp6iLV767JVeB4sg1lxRwKpQP04gDDAlEACgvBGDl_jss_TYgPeBqWt7M7yoHaY2QHaNUttkh=w686" alt="" />
+    </div>
+    
+    <div class="text-center text-3xl font-bold mt-14 mb-3">
+            Akibat telat menangani mata minus
+    </div>
+    <div class="md:flex justify-center">
+        <div class="md:w-2/5 flex md:justify-end justify-center">
+            <img class="max-w-80 min-w-20 px-2" src="https://lh3.googleusercontent.com/yTFIJuaVt-qJftOhAyPrsi8fkPMswEQ1mptt4yvM2Tu4WBr6krR1WcgW8jF70ZEqOQOnSqJk8ISOWXuE8QWFIQqwcCYUoMQolLsR=w548" alt="" />
+        </div>
+        <div class="flex justify-center md:w-3/5 sm:mt-10">
+            <img class="md:w-3/4 md:h-3/4" src="https://lh3.googleusercontent.com/8M5XMjG_9S3-CJ7tVySVt2dEHK4EPA4fHZiGGuVnmftH9D6imsHeda-7_K54dWYDrG6JVF0v3fmEVS5WRdhPyxo_U46lj32KJSA=s0" alt="" />
+        </div>
+    </div>
+    
+    <div class="text-center text-3xl font-bold mt-12">
+            Tidak mau kondisi mata anak anda seperti Luthfiyyah?
+    </div>
+    <div class="text-center text-2xl font-semibold mt-6">
+            Konsultasikan Permasalahan Mata Anak Anda Gratis?<br />
+    Tim
+    <span class="text-blue-500">Vio Optical Clinic</span> siap melayani
+            Anda
+    </div>
+    <!-- <div class="flex justify-center space-y-12"> -->
+    <div id="form-satu" class="flex justify-center drop-shadow-md p-5">
+    <button class="modal_show block justify-end items-end bg-[#1078B5] p-3 rounded-xl text-white sm:text-4xl text-2xl">Hubungi Kami</button>
+    </div>
+    
+    <div class="py-12"></div>
+    
+    <div class="text-center text-3xl font-bold pb-5">
+            Apakah ada "REM" untuk minus yang terus naik?
+    </div>
+    
+    <div class="md:flex justify-center">
+    <img src="https://lh3.googleusercontent.com/pdbdGD59bbduz5wYmjgd1bp2u18S2zD4aundLmSaAdnGOm07dLLYvDS9U5fbPDc-LzeXoE19MzY_Bmmos_A349G2L-_5N6wVrHuN=w921" alt="" class="md:w-1/2 w-30" />
+    <div class="mt-2 px-3 md:text-xl grid grid-rows-2 gap-1">
+        <div class="row-start-1">
+                    Saat ini metode yang paling optimal adalah
+            <span class="text-2xl font-semibold">Terapi Ortho K</span>,
+                    metode yang dapat menurunkan dan juga menghambat laju mata
+                    minus serta silinder. Metode ini sangat direkomendasikan
+                    untuk anak-anak yang memiliki mata minus dan silinder sejak
+                    dini.
+        </div>
+        <div class="md:text-xl row-start-2 row-end-3">
+            <span class="text-2xl font-semibold">Terapi Ortho K</span>
+                    membentuk ulang permukaan kornea mata menggunakan lensa
+                    kontak keras berbahan RGP (Rigid Gas Permeable). Lensa ini
+                    digunakan saat tidur di malam hari.
+        </div>
+    </div>
+    </div>
+    
+    <div class="my-8"></div>
+    
+    <!-- <p class="flex justify-center sm:visible invisible sm:text-5xl text-xl font-bold"> -->
+    <!-- <p class="flex justify-center sm:visible sm:text-5xl text-xl font-bold">
+            Mengapa memilih Ortho-K?
+    </p> -->
+    <div class="sm:flex md:justify-evenly justify-center">
+    <!-- <img class="md:max-w-screen-2/3 w-screen-2/3 " src="https://lh3.googleusercontent.com/ydh1u1aQVp0azIeMgjl0zeJ_Da6Zh1JBkr_7BZ-h9WLUw_2Zj-2MhO3hAKp6Cy8x_WadMoTfbw8WsDsxZKcDy0Yp_aKL8h0LHuE=w491" alt=""> -->
+    <img class="md:w-1/3 sm:w-1/2 sm:p-14 px-16" src="https://lh3.googleusercontent.com/ydh1u1aQVp0azIeMgjl0zeJ_Da6Zh1JBkr_7BZ-h9WLUw_2Zj-2MhO3hAKp6Cy8x_WadMoTfbw8WsDsxZKcDy0Yp_aKL8h0LHuE=w491" alt="pp" />
+    <div class="gap-2">
+        <!-- <p class="text-center text-3xl font-bold sm:invisible"> -->
+        <p class="text-center text-3xl font-bold">
+                    Mengapa memilih Ortho-K?
+        </p>
+        <ul class="list-inside list-disc text-xl text-gray-500 font-semibold pl-2 md:pl-0">
+            <li>Aman dan Tanpa Operasi</li>
+            <li>Tingkat Keberhasilan Tinggi</li>
+            <li>Menghambat Laju Minus</li>
+            <li>Dipakai saat tidur</li>
+            <li>Bebas dari mata minus dapat mengubah hidup</li>
+            <li>Gratis check up sebanyak 16 kali</li>
+            <li>Ditangani langsung oleh ahli yang tersertifikasi</li>
+        </ul>
+    </div>
+    </div>
+    
+    <!-- <button class="block mx-auto bg-[#1078B5] p-3 rounded-xl sm:text-4xl text-2xl" href="#form-dua"><span class=" text-white font-semibold tracking-wide">Dapatkan sekarang</span></button> -->
+    <div class=" flex justify-center">
+        <button class="toFormdua bg-[#1078B5] p-3 rounded-xl sm:text-4xl text-2xl text-white" id="">Konsultasi Sekarang</button>
+    </div>
+    
+    <div class="py-8"></div>
+    
+    <div class="text-center">
+    <p class="text-3xl font-bold">
+                Mau Mata Sehat dan Bebas Dari Kacamata?<br />
+    Ayo Periksa Mata
+                Secara Rutin di VIO Optical Clinic
+    </p>
+    <p class="text-2xl">
+                Dapatkan Info Lebih Lanjut Dan Promo Spesial Untuk Anda Sekarang
+                Juga Lewat Tombol Dibawah Ya!
+    </p>
+    <div class="grid grid-rows-1 grid-flow-row">
+        <i class="fa-solid fa-angle-down text-4xl text-[#1078B5] animate-bounce"></i>
+    </div>
+    <div id="form-dua" class="flex justify-center drop-shadow-md pb-5">
+        <button class="modal_show block justify-end items-end bg-[#1078B5] p-3 rounded-xl text-white sm:text-4xl text-2xl" id="">Hubungi Kami</button>
+    </div>
+    </div>
+    
+    
+    
+    <!-- modal section -->
+    
+    
+    <div id="modal-target" class="hidden fixed top-0 left-0 z-50 justify-center items-center w-full max-h-full inset-0 h-[calc(100%-1rem)]">
+    <!-- <div class="relative border p-4 grid grid-cols-4 grid-rows-3"> -->
+    <div class="relative border p-4 grid grid-cols-4 md:grid-rows-3 grid-rows-6 bg-black/45">
+    
+        <!-- <div class="relative col-start-2 col-span-2 row-start-1 row-span-1 justify-center pt-5"> -->
+        <div class="relative col-start-2 col-span-2 md:row-start-1 md:row-span-1 row-start-2 row-span-4 justify-center pt-5">
+            <div class="p-4 border bg-blue-300 rounded-xl">
+                <div id="head" class="flex justify-between">
+                    <!-- <p class="lg:text-base text-sm">Silakan mengisi form ini untuk melanjutkan dan mendapatkan promonya segera</p> -->
+                    <p class="lg:text-base text-sm">Silakan mengisi form ini untuk melanjutkan dan dapatkan promonya segera</p>
+                    <button class="modal_hide rounded-full text-gray-700 px-2 text-xl">x</button>
+                </div>
+                <form action="/lead-daftar" method="post">
+                    <input type="hidden" class="form-control" id="token" name="token" t-att-value="token" required="1"/>
+                    <input type="hidden" class="form-control" id="csrf" name="csrf_token" required="1" t-att-value="request.csrf_token()"/>
+                    <input type="hidden" class="form-control" id="emailfield" name="email" aria-describedby="emailhelp" placeholder="jhondoe@example.com" required="1" value="-"/>
+    
+                    <div class="">
+                        <label class="block mb-1 mt-4 lg:text-base text-sm" for="nama">Nama :</label>
+                        <input id="nama" required="1" name="nama" class="border bg-gray-200 rounded-lg text-sm focus:hover:border-red-600 w-full p-2.5 border-gray-300"></input>
+                    </div>
+    
+                    <div class="">
+                        <label class="block mb-1 mt-4 lg:text-base text-sm" for="number">Nomor Handphone ( WA aktif ) :</label>
+                        <input id="number" required="1" name="number" type="text" pattern="\d*" placeholder="628***" class="bg-gray-200 border-none ring-0 rounded-lg text-sm w-full p-2.5"></input>
+                    </div>
+    
+                    <button class="mt-4 bg-[#1078B5] text-white p-2 rounded-md lg:text-base text-sm">Submit</button>
+    
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    </t>
+</template>
+</odoo>

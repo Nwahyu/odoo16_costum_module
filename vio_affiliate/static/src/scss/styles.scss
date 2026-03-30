@@ -1,0 +1,28 @@
+$color_white : white;
+
+
+.bg-biru {
+    background-color: #1078b5;
+    color:$color_white;
+}
+
+.bg-color>* {
+    color: $color_white;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+}
+
+// main{
+//     padding-bottom: 5%;
+// }
+
+main {
+    // overflow-y: scroll;
+    padding: 5px 0px 12px 0px;
+}
+body { position: absolute; }

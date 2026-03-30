@@ -1,0 +1,101 @@
+<odoo>
+	<data>
+		<record id="action_open_eye_chart" model="ir.actions.client">
+			<field name="name">Eye Chart</field>
+			<field name="tag">eye_chart</field>
+		</record>
+		<record id="medical_patient_view_inherit" model="ir.ui.view">
+			<field name="name">medical.patient.view</field>
+			<field name="model">medical.patient</field>
+			<field name="inherit_id" ref="eye_management.medical_patient_view" />
+			<field name="arch" type="xml">
+				<data>
+					<xpath expr="//page[@name='appointment']" position="after">
+						<page string="Eye Chart">
+							<button name="open_chart" string="Open Chart" type="object"
+								class="btn-primary" />
+						</page>
+						<page string="Operations">
+							<field name="operation_ids">
+								<tree>
+								    <field name="date"></field>
+									<field name="patient_id"></field>
+									<field name="part_type"></field>
+									<field name="eye_type"></field>
+									<field name="physician_name"></field>
+									<field name="state"></field>
+									<field name="treatment_ids"></field>
+								</tree>
+							</field>
+						</page>
+					</xpath>
+				</data>
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="view_product_form_inherit_new">
+			<field name="name">product.normal.form</field>
+			<field name="model">product.product</field>
+			<field name="inherit_id" ref="eye_management.view_product_form1" />
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<data>
+					<xpath expr="//field[@name='is_treatment']" position="after">
+						<field name="part_type"></field>
+					</xpath>
+				</data>
+			</field>
+		</record>
+		<record model="ir.ui.view" id="view_patient_operation">
+			<field name="name">patient.operation.form</field>
+			<field name="model">patient.operation</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form>
+					<group>
+					    <field name="date"></field>
+						<field name="patient_id"></field>
+						<field name="part_type"></field>
+						<field name="eye_type"></field>
+						<field name="state"></field>
+						<field name="treatment_ids"></field>
+					</group>
+				</form>
+			</field>
+		</record>
+		<record model="ir.ui.view" id="view_patient_operation_tree">
+			<field name="name">patient.operation.tree</field>
+			<field name="model">patient.operation</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree>
+					<field name="date"></field>
+					<field name="patient_id"></field>
+					<field name="part_type"></field>
+					<field name="eye_type"></field>
+					<field name="state"></field>
+					<field name="treatment_ids"></field>
+
+				</tree>
+			</field>
+		</record>
+
+
+		<record model="ir.ui.view" id="medical_lab_tree">
+			<field name="name">Treatments</field>
+			<field name="model">patient.operation</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string='Operations'>
+				    <field name="date"></field>
+					<field name="patient_id"></field>
+					<field name="part_type"></field>
+					<field name="eye_type"></field>
+				    <field name="state"></field>
+					<field name="treatment_ids"></field>
+				</tree>
+			</field>
+		</record>
+
+	</data>
+</odoo>

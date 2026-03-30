@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="portal_my_affiliate_home">
+        <t t-call="portal.portal_layout">
+            <t t-set="title" t-value="page_name"/>
+            <t t-set="no_breadcrumbs" t-value="True"/>
+
+            <!-- Bootstrap CSS CDN -->
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+            <!-- Font Awesome CDN -->
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+            <!-- Dashboard CSS -->
+            <link href="/vio_affiliate/static/src/scss/dashboard.css" rel="stylesheet"/>
+            <link href="/vio_affiliate/static/src/css/dashboard_affiliator.css" rel="stylesheet"/>
+
+            <div class="dashboard-container min-vh-100">
+                <div class="container py-4 py-md-5">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-lg-10 col-xl-9">
+
+                            <!-- Welcome Header Card -->
+                            <div class="dashboard-card mb-4 animate-fade-in-up">
+                                <div class="card-body p-4 p-md-5">
+                                    <div class="row g-4">
+                                        <div class="col-12 col-md-7">
+                                            <div class="mb-3">
+                                                <span class="badge-custom primary mb-2">
+                                                    <i class="fas fa-sparkles me-1"></i> Vision Hero
+                                                </span>
+                                            </div>
+                                            <p class="text-secondary-custom small mb-2">Selamat datang,</p>
+                                            <h1 class="text-primary-custom h3 h-md-2 fw-bold mb-4">
+                                                <t t-if="condition">
+                                                    <t t-out="data_user.nama"/>
+                                                </t>
+                                                <t t-else="">User</t>
+                                            </h1>
+                                            <p class="text-secondary-custom mb-4">
+                                            Mulai bagikan kode referral Anda dan dapatkan hadiah menarik!
+                                            </p>
+                                            <button class="btn btn-primary bg-primary-blue border-0 px-4 py-2" data-bs-toggle="modal" data-bs-target="#tutorialModal" aria-label="Buka panduan penggunaan">
+                                                <i class="fas fa-book-open me-2"></i>
+                                            Panduan Penggunaan
+                                            </button>
+                                        </div>
+
+                                        <div class="col-12 col-md-5">
+                                            <!-- Referral Code Box -->
+                                            <div class="referral-box">
+                                                <div class="d-flex flex-column gap-3">
+                                                    <div class="text-center">
+                                                        <div class="text-primary-custom fw-medium mb-2">
+                                                            <i class="fas fa-share-alt me-2"></i>Bagikan Kode Ini
+                                                        </div>
+                                                        <div class="referral-code mb-3" t-att-value="token" id="referralCode">
+                                                            <t t-out="token"/>
+                                                        </div>
+                                                    </div>
+                                                    <button class="copy-btn w-100" type="button" onclick="copyReferralCode()" aria-label="Salin kode referral">
+                                                        <i class="fas fa-copy" id="copyIcon"></i>
+                                                        <span id="copyText">Salin Kode</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Statistics Cards -->
+                            <div class="row g-3 g-md-4 mb-4">
+                                <!-- Points Card -->
+                                <div class="col-6 col-md-3">
+                                    <div class="stats-card primary animate-fade-in-up">
+                                        <div class="stats-icon primary">
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="stats-value" t-out="point">0</div>
+                                        <div class="stats-label">Total Poin</div>
+                                    </div>
+                                </div>
+
+                                <!-- Clicks Card -->
+                                <div class="col-6 col-md-3">
+                                    <div class="stats-card info animate-fade-in-up">
+                                        <div class="stats-icon info">
+                                            <i class="fas fa-mouse-pointer"></i>
+                                        </div>
+                                        <div class="stats-value" t-out="klik">0</div>
+                                        <div class="stats-label">Total Klik</div>
+                                    </div>
+                                </div>
+
+                                <!-- Referrals Card -->
+                                <div class="col-6 col-md-3">
+                                    <div class="stats-card success animate-fade-in-up">
+                                        <div class="stats-icon success">
+                                            <i class="fas fa-users"></i>
+                                        </div>
+                                        <div class="stats-value" t-out="refferal">0</div>
+                                        <div class="stats-label">Referral</div>
+                                    </div>
+                                </div>
+
+                                <!-- Balance Card -->
+                                <div class="col-6 col-md-3">
+                                    <div class="stats-card warning animate-fade-in-up">
+                                        <div class="stats-icon warning">
+                                            <i class="fas fa-wallet"></i>
+                                        </div>
+                                        <div class="stats-value" t-out="saldo">0</div>
+                                        <div class="stats-label">Saldo</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Quick Actions -->
+                            <div class="row g-3 mb-4">
+                                <div class="col-12 col-md-6">
+                                    <a href="/my/referrals" class="quick-action-card text-decoration-none" aria-label="Lihat daftar referral">
+                                        <div class="quick-action-icon">
+                                            <i class="fas fa-user-friends"></i>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <div class="quick-action-label">Total Referral</div>
+                                            <div class="quick-action-value" t-out="refferal">0</div>
+                                        </div>
+                                        <i class="fas fa-chevron-right text-secondary-custom"></i>
+                                    </a>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <a href="/my/saldo" class="quick-action-card text-decoration-none" aria-label="Lihat riwayat saldo">
+                                        <div class="quick-action-icon">
+                                            <i class="fas fa-history"></i>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <div class="quick-action-label">Saldo Tersedia</div>
+                                            <div class="quick-action-value" t-out="saldo">0</div>
+                                        </div>
+                                        <i class="fas fa-chevron-right text-secondary-custom"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- VIO Optical Clinic Branches -->
+                            <div class="dashboard-card mb-4 animate-fade-in-up">
+                                <div class="card-body p-4 p-md-5">
+                                    <div class="section-header">
+                                        <div class="section-icon">
+                                            <i class="fas fa-store"></i>
+                                        </div>
+                                        <h2 class="section-title">Daftar Cabang VIO Optical Clinic</h2>
+                                    </div>
+
+                                    <t t-if="list_cabang">
+                                        <div class="row g-3">
+                                            <t t-foreach="list_cabang" t-as="cb">
+                                                <div class="col-12 col-md-6 col-lg-4">
+                                                    <div class="branch-card">
+                                                        <div class="branch-name">
+                                                            <i class="fas fa-map-marker-alt text-primary-blue me-2"></i>
+                                                            <t t-out="cb.name"/>
+                                                        </div>
+                                                        <div class="branch-address mb-3">
+                                                            <t t-out="cb.address or 'Alamat belum tersedia'"/>
+                                                        </div>
+                                                        <div class="branch-actions">
+                                                            <t t-if="cb.phone">
+                                                                <a t-att-href="'tel:%s' % cb.phone" class="branch-action-btn" title="Telepon cabang" aria-label="Telepon ke cabang">
+                                                                    <i class="fas fa-phone"></i>
+                                                                </a>
+                                                            </t>
+                                                            <t t-if="cb.map_link">
+                                                                <a t-att-href="cb.map_link" target="_blank" rel="noopener noreferrer" class="branch-action-btn" title="Lihat di peta" aria-label="Buka lokasi di peta">
+                                                                    <i class="fas fa-map-marked-alt"></i>
+                                                                </a>
+                                                            </t>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </t>
+                                        </div>
+                                    </t>
+                                    <t t-else="">
+                                        <div class="empty-state">
+                                            <div class="empty-state-icon">
+                                                <i class="fas fa-store-slash"></i>
+                                            </div>
+                                            <p class="empty-state-text">Data cabang belum tersedia.</p>
+                                        </div>
+                                    </t>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal Tutorial -->
+            <div class="modal fade" id="tutorialModal" tabindex="-1" aria-labelledby="tutorialModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content modal-content-custom">
+                        <div class="modal-header modal-header-custom">
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="section-icon">
+                                    <i class="fas fa-book-open"></i>
+                                </div>
+                                <h1 class="modal-title h5 text-primary-custom fw-bold mb-0" id="tutorialModalLabel">Cara Menggunakan</h1>
+                            </div>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup modal"></button>
+                        </div>
+                        <div class="modal-body modal-body-custom">
+                            <!-- Referral Link Section -->
+                            <div class="referral-box mb-4">
+                                <div class="d-flex flex-column gap-3">
+                                    <div class="text-center">
+                                        <div class="text-primary-custom fw-medium mb-2">
+                                            <i class="fas fa-link me-2"></i>Link Referral Anda
+                                        </div>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control border-light-custom" id="affiliateLink" name="aff_link" t-att-value="url" readonly="readonly" aria-label="Link affiliate"/>
+                                            <button class="btn btn-primary bg-primary-blue border-0" type="button" onclick="copyAffiliateLink(event)" aria-label="Salin link affiliate">
+                                                <i class="fas fa-copy"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Tutorial Steps -->
+                            <div class="mb-4">
+                                <h6 class="text-primary-custom fw-bold mb-3">
+                                    <i class="fas fa-list-ol me-2"></i>Langkah-langkah:
+                                </h6>
+                                <div class="tutorial-step">
+                                    <div class="step-number">1</div>
+                                    <div class="step-content">
+                                        <div class="step-title">Salin Kode Referral</div>
+                                        <div class="step-description">Klik tombol salin pada kode atau link referral di atas</div>
+                                    </div>
+                                </div>
+                                <div class="tutorial-step">
+                                    <div class="step-number">2</div>
+                                    <div class="step-content">
+                                        <div class="step-title">Bagikan ke Teman</div>
+                                        <div class="step-description">Sebarkan kode referral melalui WhatsApp, Instagram, atau media sosial lainnya</div>
+                                    </div>
+                                </div>
+                                <div class="tutorial-step">
+                                    <div class="step-number">3</div>
+                                    <div class="step-content">
+                                        <div class="step-title">Dapatkan Hadiah</div>
+                                        <div class="step-description">Teman Anda mendaftar menggunakan kode referral dan Anda mendapatkan poin</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Terms -->
+                            <div class="bg-light-blue p-3 rounded">
+                                <h6 class="text-primary-custom fw-bold mb-3">
+                                    <i class="fas fa-info-circle me-2"></i>Ketentuan Referral:
+                                </h6>
+                                <ul class="list-unstyled mb-0">
+                                    <li class="d-flex align-items-start mb-2">
+                                        <span class="text-primary-blue me-2 mt-1">•</span>
+                                        <span class="text-secondary-custom small">Tidak berlaku untuk keluarga dalam 1 Kartu Keluarga</span>
+                                    </li>
+                                    <li class="d-flex align-items-start mb-2">
+                                        <span class="text-primary-blue me-2 mt-1">•</span>
+                                        <span class="text-secondary-custom small">Tim kami akan memvalidasi terkait data customer yang direferalkan</span>
+                                    </li>
+                                    <li class="d-flex align-items-start">
+                                        <span class="text-primary-blue me-2 mt-1">•</span>
+                                        <span class="text-secondary-custom small">Poin akan dikreditkan setelah validasi berhasil</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="modal-footer modal-footer-custom">
+                            <button type="button" class="btn btn-outline-secondary border-light-custom px-4" data-bs-dismiss="modal">
+                                <i class="fas fa-times me-2"></i>Tutup
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal Bank -->
+            <div id="modalBank" class="modal fade" tabindex="-1" aria-labelledby="modalBankLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content modal-content-custom">
+                        <div class="modal-header modal-header-custom">
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="section-icon">
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                </div>
+                                <h5 class="modal-title text-primary-custom fw-bold mb-0" id="modalBankLabel">Mohon lengkapi data diri</h5>
+                            </div>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup modal"></button>
+                        </div>
+                        <div class="modal-body modal-body-custom">
+                            <div class="text-center py-3">
+                                <div class="empty-state-icon mx-auto mb-3">
+                                    <i class="fas fa-user-edit"></i>
+                                </div>
+                                <p class="text-secondary-custom mb-4">Mohon segera lengkapi data diri Anda untuk melanjutkan dan menikmati semua fitur.</p>
+                                <a href="/my/account" class="btn btn-primary bg-primary-blue border-0 px-5 py-2">
+                                    <i class="fas fa-user-plus me-2"></i>Lengkapi Data Diri
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bootstrap JS CDN -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+            <!-- Custom JavaScript -->
+            <script src="/vio_affiliate/static/src/js/dashboard_affiliator.js"></script>
+
+        </t>
+    </template>
+</odoo>

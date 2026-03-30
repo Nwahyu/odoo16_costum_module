@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+res users
+
+    	<record model="ir.ui.view" id="view_res_users_inheirt_form">
+			<field name="name">res.users.form</field>
+			<field name="model">res.users</field>
+			<field name="inherit_id" ref="base.view_users_form" />
+			<field name="arch" type="xml">
+                <xpath expr="//notebook" position="inside">
+					<page string="Extra Information">
+						<group>
+							<field name="is_patient"/>
+							<field name="is_doctor"/>
+						</group>
+					</page>
+				</xpath>
+			</field>
+		</record>
+
+==================================================================================================
+crm lead
+
+		<record model="ir.ui.view" id="crm_lead_view_form">
+			<field name="name">crm.inherit.from.eye.management</field>
+			<field name="model">crm.lead</field>
+			<field name="inherit_id" ref="crm.crm_lead_view_form"/>
+			<field name="arch" type="xml">
+
+				<div name="button_box" position="inside">
+					<!-- <button name="action_view_appointment" type="object" class="oe_stat_button" icon="fa-pencil-square-o" attrs="{'invisible':[('stage_id.is_won','!=','1')]}"> -->
+					<button name="action_view_appointment" type="object" class="oe_stat_button" icon="fa-pencil-square-o" string="Tambah App">
+						<!-- <field name="count_sale_order" string="Sale Order" widget="statinfo"/> -->
+					</button>
+				</div>
+
+				<xpath expr="//notebook/page[1]" position="after">
+					<page string="App">
+						<field name="appointment_ids" readonly="1">
+							<tree editable="bottom">
+								<field name="name"/>
+							</tree>
+						</field>
+					</page>
+				</xpath>
+			</field>
+		</record>
+
+=============================================================================================
+res company
+
+		<record id="view_company_form_inherit_eye_mng" model="ir.ui.view">
+			<field name="name">model.name.view.form.inherit</field>
+			<field name="model">res.company</field>
+			<field name="inherit_id" ref="base.view_company_form"/>
+			<field name="arch" type="xml">
+				<xpath expr="//field[@name='partner_id']" position="after">
+					<field name="is_company_khusus"/>
+				</xpath>
+			</field>
+		</record>
+
+================================================================================================
+res groups
+
+	<record id="view_group_inherit_groups_view" model="ir.ui.view">
+		<field name="name">res.groups.view.form.inherit</field>
+		<field name="model">res.groups</field>
+		<field name="inherit_id" ref="base.view_groups_form"/>
+		<field name="arch" type="xml">
+			<xpath expr="//field[@name='share']" position="after">
+				<field name="is_super_admin_traffic"/>
+			</xpath>
+		</field>
+	</record>
+
+
+	</data>
+</odoo>

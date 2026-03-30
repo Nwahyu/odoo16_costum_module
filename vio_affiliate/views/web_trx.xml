@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="web_list_trx" name="web_list_trx">
+        <t t-call="portal.portal_layout">
+            <t t-set="title" t-value="'my commissions'"/>
+            <t t-set="no_breadcrumbs" t-value="True"/>
+            <div class="grid justify-items-center">
+                <div class="w-full max-w-6xl justify-between items-center">
+                    <header class="flex flex-col justify-between gap-4 mb-6">
+                        <h2 class="text-xl font-bold">Daftar Lead Anda</h2>
+                    </header>
+                    <ul class="list-disc list-inside px-2 font-light">
+                        <li>Komisi yang bisa ditarik hanya transaksi dengan status approve, anda bisa lihat total saldo anda pada halaman home.</li>
+                        <li>Komisi dicairkan setiap bulannya ke rekening pengguna dengan minimum komisi 100rb</li>
+                    </ul>
+                    
+
+                    <!-- Table -->
+                    <div class="overflow-x-auto">
+                        <table class="min-w-full divide-y divide-neutral-gray/30 rounded-md">
+                            <thead class="bg-vio-blue text-white">
+                                <tr>
+                                    <th scope="col"
+                                        class="px-4 py-3 text-left text-sm font-semibold uppercase tracking-wider">
+                                        Nama Lead</th>
+                                    <th scope="col"
+                                        class="px-4 py-3 text-left text-sm font-semibold uppercase tracking-wider">
+                                        Kategori Transaksi</th>
+                                    <th scope="col"
+                                        class="px-4 py-3 text-left text-sm font-semibold uppercase tracking-wider">
+                                        Nominal Transaksi</th>
+                                    <th scope="col"
+                                        class="px-4 py-3 text-left text-sm font-semibold uppercase tracking-wider">
+                                        Total Komisi</th>
+                                    <th scope="col"
+                                        class="px-4 py-3 text-left text-sm font-semibold uppercase tracking-wider">
+                                        Status Validasi</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-neutral-gray/20">
+                                <t t-foreach="trx" t-as="lead_data">
+                                <tr class="odd:bg-bg-light even:bg-white hover:bg-vio-blue-light/10">
+                                    <td class="px-4 py-3 whitespace-nowrap font-medium"><t t-out="lead_data.user_id.nama"/></td>
+                                    <td class="px-4 py-3"><t t-out="lead_data.kategori_trx"/></td>
+                                    <td class="px-4 py-3"><t t-out="lead_data.total_trx"/></td>
+                                    <td class="px-4 py-3"><t t-out="lead_data.komisi"/></td>
+                                    <td class="px-4 py-3">
+                                        <t t-if="lead_data.status == 'rejected'">
+                                            <span
+                                                class="inline-flex items-center gap-1 bg-neutral-gray/10 text-neutral-gray px-2 py-1 text-xs font-semibold rounded-full">
+                                                <svg class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                                    stroke-width="2">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M5 13l4 4L19 7" />
+                                                </svg>
+                                                rejected
+                                            </span>
+                                        </t>
+                                        <t t-elif="lead_data.status == 'waiting'">
+                                            <span
+                                                class="inline-flex items-center gap-1 bg-action-green/10 text-vio-gold px-2 py-1 text-xs font-semibold rounded-full">
+                                                <svg class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                                    stroke-width="2">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M5 13l4 4L19 7" />
+                                                </svg>
+                                                Waiting
+                                            </span>
+                                        </t>
+                                        <t t-else="lead_data.status == 'approve'">
+                                            <span
+                                                class="inline-flex items-center gap-1 bg-action-green/10 text-action-green px-2 py-1 text-xs font-semibold rounded-full">
+                                                <svg class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                                    stroke-width="2">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M5 13l4 4L19 7" />
+                                                </svg>
+                                                Approved
+                                            </span>
+                                        </t>
+                                    </td>
+                                </tr>
+                                </t>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </t>
+    </template>
+
+</odoo>

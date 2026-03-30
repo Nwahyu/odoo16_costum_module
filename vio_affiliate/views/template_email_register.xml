@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="join_affiliate_email" model="mail.template">
+            <field name="name">template email kirim</field>
+            <field name="model_id" ref="vio_affiliate.model_aff_user" />
+            <!-- <field name="email_from">{{object.email or ''}}</field> masuk dari email_value -->
+            <field name="email_to">{{object.email or ''}}</field>
+            <field name="subject">subrek bank</field>
+            <field name="auto_delete" eval="False"/>
+            <field name="body_html" type="html">
+                <p>ini tes</p>
+                <p>ini object <t t-out="object"/></p>
+                <p>You have been invited to connect to Affiliate Program in order to get access to your Account please complete your sign up process.</p>
+                <div>
+                    <a t-attf-href="#{object.website_id.domain}/affiliate">ga ada juga kah</a>
+                    <a t-attf-href="{{object.website_id.domain}}/affiliate">ga ada juga kah</a>
+                </div>
+            </field>
+        </record>
+
+        <record id="join_affiliate_email_2" model="mail.template">
+            <field name="name">template email kirim 2</field>
+            <field name="model_id" ref="vio_affiliate.model_aff_user" />
+            <!-- <field name="email_from">{{object.email or ''}}</field> masuk dari email_value -->
+            <field name="email_to">{{object.email or ''}}</field>
+            <field name="subject">subrek bank 2</field>
+            <field name="auto_delete" eval="False"/>
+            <field name="body_html" type="html">
+                <p>ini tes</p>
+                <p>ini object <t t-out="object"/></p>
+                <p>You have been invited to connect to Affiliate Program in order to get access to your Account please complete your sign up process.</p>
+                <div>
+                    <a t-attf-href="#{object.website_id.domain}/register">lah ga ada</a>
+                </div>
+            </field>
+        </record>
+    </data>
+</odoo>

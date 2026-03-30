@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="0">
+    <record id="sequence_pat_vgl" model="ir.sequence">
+        <field name="name">PAT Vio Green Lake</field>
+        <field name="code">medical.patient.sequence</field>
+        <field name="prefix">GL</field>
+        <field name="padding">6</field>
+        <field name="company_id">25</field>
+    </record>
+    <record id="sequence_pat_vsm" model="ir.sequence">
+        <field name="name">PAT Vio Semarang</field>
+        <field name="code">medical.patient.sequence</field>
+        <field name="prefix">SM</field>
+        <field name="padding">6</field>
+        <field name="company_id">26</field>
+    </record>
+    <record id="sequence_pat_vmd" model="ir.sequence">
+        <field name="name">PAT Vio Margonda Depok</field>
+        <field name="code">medical.patient.sequence</field>
+        <field name="prefix">MD</field>
+        <field name="padding">6</field>
+        <field name="company_id">27</field>
+    </record>
+    <record id="sequence_pat_vgs" model="ir.sequence">
+        <field name="name">PAT Vio Gading Serpong</field>
+        <field name="code">medical.patient.sequence</field>
+        <field name="prefix">GS</field>
+        <field name="padding">6</field>
+        <field name="company_id">28</field>
+    </record>
+    <record id="sequence_pat_vst" model="ir.sequence">
+        <field name="name">PAT Vio Surabaya Timur</field>
+        <field name="code">medical.patient.sequence</field>
+        <field name="prefix">ST</field>
+        <field name="padding">6</field>
+        <field name="company_id">29</field>
+    </record>
+    <record id="sequence_pat_vbd" model="ir.sequence">
+        <field name="name">PAT Vio Bandung</field>
+        <field name="code">medical.patient.sequence</field>
+        <field name="prefix">BD</field>
+        <field name="padding">6</field>
+        <field name="company_id">30</field>
+    </record>
+    <record id="sequence_pat_vbg" model="ir.sequence">
+        <field name="name">PAT Vio Bogor</field>
+        <field name="code">medical.patient.sequence</field>
+        <field name="prefix">BG</field>
+        <field name="padding">6</field>
+        <field name="company_id">31</field>
+    </record>
+    <record id="sequence_pat_vjs" model="ir.sequence">
+        <field name="name">PAT Vio Jakarta Selatan</field>
+        <field name="code">medical.patient.sequence</field>
+        <field name="prefix">JS</field>
+        <field name="padding">6</field>
+        <field name="company_id">32</field>
+    </record>
+    <record id="sequence_pat_vgc" model="ir.sequence">
+        <field name="name">PAT Vio Galaxy City</field>
+        <field name="code">medical.patient.sequence</field>
+        <field name="prefix">GG</field>
+        <field name="padding">6</field>
+        <field name="company_id">33</field>
+    </record>
+    <record id="sequence_pat_vhi" model="ir.sequence">
+        <field name="name">PAT Vio Harapan Indah</field>
+        <field name="code">medical.patient.sequence</field>
+        <field name="prefix">AT</field>
+        <field name="padding">6</field>
+        <field name="company_id">34</field>
+    </record>
+    <record id="sequence_pat_vho" model="ir.sequence">
+        <field name="name">PAT VIO Optical Clinic</field>
+        <field name="code">medical.patient.sequence</field>
+        <field name="prefix">HO</field>
+        <field name="padding">6</field>
+        <field name="company_id">35</field>
+    </record>
+
+    <!-- =============== sequence pasien ============================== -->
+
+    <record id="sequence_pasien_vho" model="ir.sequence">
+        <field name="name">Pasien Sequence</field>
+        <field name="code">medical.patient</field>
+        <field name="prefix">HO</field>
+        <field name="padding">6</field>
+        <field name="company_id">35</field>
+    </record>
+
+    <record id="sequence_pasien_vgl" model="ir.sequence">
+        <field name="name">Pasien Sequence</field>
+        <field name="code">medical.patient</field>
+        <field name="prefix">GL</field>
+        <field name="padding">6</field>
+        <field name="company_id">25</field>
+    </record>
+
+    <record id="sequence_pasien_vsm" model="ir.sequence">
+        <field name="name">Pasien Sequence</field>
+        <field name="code">medical.patient</field>
+        <field name="prefix">SM</field>
+        <field name="padding">6</field>
+        <field name="company_id">26</field>
+    </record>
+
+    <record id="sequence_pasien_vmd" model="ir.sequence">
+        <field name="name">Pasien Sequence</field>
+        <field name="code">medical.patient</field>
+        <field name="prefix">MD</field>
+        <field name="padding">6</field>
+        <field name="company_id">27</field>
+    </record>
+
+    <record id="sequence_pasien_vgs" model="ir.sequence">
+        <field name="name">Pasien Sequence</field>
+        <field name="code">medical.patient</field>
+        <field name="prefix">GS</field>
+        <field name="padding">6</field>
+        <field name="company_id">28</field>
+    </record>
+
+    <record id="sequence_pasien_vst" model="ir.sequence">
+        <field name="name">Pasien Sequence</field>
+        <field name="code">medical.patient</field>
+        <field name="prefix">ST</field>
+        <field name="padding">6</field>
+        <field name="company_id">29</field>
+    </record>
+
+    <record id="sequence_pasien_vbd" model="ir.sequence">
+        <field name="name">Pasien Sequence</field>
+        <field name="code">medical.patient</field>
+        <field name="prefix">BD</field>
+        <field name="padding">6</field>
+        <field name="company_id">30</field>
+    </record>
+
+    <record id="sequence_pasien_vbg" model="ir.sequence">
+        <field name="name">Pasien Sequence</field>
+        <field name="code">medical.patient</field>
+        <field name="prefix">BG</field>
+        <field name="padding">6</field>
+        <field name="company_id">31</field>
+    </record>
+
+    <record id="sequence_pasien_vjs" model="ir.sequence">
+        <field name="name">Pasien Sequence</field>
+        <field name="code">medical.patient</field>
+        <field name="prefix">JS</field>
+        <field name="padding">6</field>
+        <field name="company_id">32</field>
+    </record>
+
+    <record id="sequence_pasien_vgc" model="ir.sequence">
+        <field name="name">Pasien Sequence</field>
+        <field name="code">medical.patient</field>
+        <field name="prefix">GC</field>
+        <field name="padding">6</field>
+        <field name="company_id">33</field>
+    </record>
+
+    <record id="sequence_pasien_vhi" model="ir.sequence">
+        <field name="name">Pasien Sequence</field>
+        <field name="code">medical.patient</field>
+        <field name="prefix">AT</field>
+        <field name="padding">6</field>
+        <field name="company_id">34</field>
+    </record>
+
+    <!-- ==================== sequence app =========================== -->
+
+    <record id="sequence_app_vho" model="ir.sequence">
+        <field name="name">App Sequence</field>
+        <field name="code">medical.patient</field>
+        <field name="prefix">tHO</field>
+        <field name="padding">6</field>
+        <field name="company_id">35</field>
+    </record>
+
+    <record id="sequence_app_vgl" model="ir.sequence">
+        <field name="name">App Sequence</field>
+        <field name="code">medical.appointment</field>
+        <field name="prefix">tGL</field>
+        <field name="padding">6</field>
+        <field name="company_id">25</field>
+    </record>
+
+    <record id="sequence_app_vsm" model="ir.sequence">
+        <field name="name">App Sequence</field>
+        <field name="code">medical.appointment</field>
+        <field name="prefix">tSM</field>
+        <field name="padding">6</field>
+        <field name="company_id">26</field>
+    </record>
+
+    <record id="sequence_app_vmd" model="ir.sequence">
+        <field name="name">App Sequence</field>
+        <field name="code">medical.appointment</field>
+        <field name="prefix">tMD</field>
+        <field name="padding">6</field>
+        <field name="company_id">27</field>
+    </record>
+
+    <record id="sequence_app_vgs" model="ir.sequence">
+        <field name="name">App Sequence</field>
+        <field name="code">medical.appointment</field>
+        <field name="prefix">tGS</field>
+        <field name="padding">6</field>
+        <field name="company_id">28</field>
+    </record>
+
+    <record id="sequence_app_vst" model="ir.sequence">
+        <field name="name">App Sequence</field>
+        <field name="code">medical.appointment</field>
+        <field name="prefix">tST</field>
+        <field name="padding">6</field>
+        <field name="company_id">29</field>
+    </record>
+
+    <record id="sequence_app_vbd" model="ir.sequence">
+        <field name="name">App Sequence</field>
+        <field name="code">medical.appointment</field>
+        <field name="prefix">tBD</field>
+        <field name="padding">6</field>
+        <field name="company_id">30</field>
+    </record>
+
+    <record id="sequence_app_vbg" model="ir.sequence">
+        <field name="name">App Sequence</field>
+        <field name="code">medical.appointment</field>
+        <field name="prefix">tBG</field>
+        <field name="padding">6</field>
+        <field name="company_id">31</field>
+    </record>
+
+    <record id="sequence_app_vjs" model="ir.sequence">
+        <field name="name">App Sequence</field>
+        <field name="code">medical.appointment</field>
+        <field name="prefix">tJS</field>
+        <field name="padding">6</field>
+        <field name="company_id">32</field>
+    </record>
+
+    <record id="sequence_app_vgc" model="ir.sequence">
+        <field name="name">App Sequence</field>
+        <field name="code">medical.appointment</field>
+        <field name="prefix">tGC</field>
+        <field name="padding">6</field>
+        <field name="company_id">33</field>
+    </record>
+
+    <record id="sequence_app_vhi" model="ir.sequence">
+        <field name="name">App Sequence</field>
+        <field name="code">medical.appointment</field>
+        <field name="prefix">tAT</field>
+        <field name="padding">6</field>
+        <field name="company_id">34</field>
+    </record>
+
+
+
+</odoo>

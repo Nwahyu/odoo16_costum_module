@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access.kriteria,access_kriteria,model_tag_kriteria,,1,1,1,1
+access.solusi,access_solusi,model_tag_solusi,,1,1,1,1
+access.race,access_race,model_tag_race,,1,1,1,1
+access.chat,access_chat,model_qontak_chat,,1,1,1,1
+access_tag_race_tipe,access_tag_race_tipe,model_tag_race_tipe,,1,1,1,1
+access_tag_tujuan_kedatangan,access_tag_tujuan_kedatangan,model_tag_tujuan_kedatangan,,1,1,1,1

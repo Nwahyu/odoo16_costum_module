@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="rme_vio_inherit_module_res_users" model="ir.ui.view">
+        <field name="name">rme.view.form.inherit</field>
+        <field name="model">res.users</field>
+        <field name="inherit_id" ref="eye_management.view_res_users_inheirt_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='is_doctor']" position="after">
+                <field name="physician_id" attrs="{'required':[('is_doctor', '=', True)]}"/>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

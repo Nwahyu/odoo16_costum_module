@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="view_partner_form_4">
+            <field name="name">view.partner.form.4</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="eye_management.view_partner_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='is_pharmacy']" position="after">
+                    <field name="is_lab"/>
+                </xpath>
+                <xpath expr="//field[@name='city']" position="replace">
+                    <field name="city" invisible="1"/>
+                    <field name="city_id"/>
+                    <field name="district_id"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

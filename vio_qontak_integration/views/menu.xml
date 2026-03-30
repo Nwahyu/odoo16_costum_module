@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem
+        id="vio_qontak_root"
+        name="Vio Qontak Setting"
+        sequence="10"/>
+
+        <menuitem
+            id="tag_menu"
+            name="Tag menu"
+            parent="vio_qontak_root"
+            sequence="10"/>
+
+        <menuitem
+            id="kriteria_menu"
+            name="kriteria"
+            action="tag_kriteria_action"
+            parent="tag_menu"
+            sequence="10"/>
+        
+        <menuitem
+            id="solusi_menu"
+            name="solusi"
+            action="tag_solusi_action"
+            parent="tag_menu"
+            sequence="20"/>
+        
+        <menuitem
+            id="race_menu"
+            name="race"
+            action="tag_race_action"
+            parent="tag_menu"
+            sequence="30"/>
+        
+        <menuitem
+            id="race_tipe_menu"
+            name="race tipe"
+            action="tag_race_tipe_action"
+            parent="tag_menu"
+            sequence="30"/>
+
+
+
+        <menuitem
+            id="tujuan_kedatangan_menu"
+            name="Tujuan Kedatangan"
+            action="tag_tujuan_kedatangan_action"
+            parent="vio_qontak_root"
+            sequence="20"/>
+
+    
+</odoo>

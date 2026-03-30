@@ -1,0 +1,27 @@
+.bg-biru {
+    background-color: rgba(15, 169, 253, 57%);
+}
+.navbar {
+    padding-bottom: 0;
+}
+.text-primary-custom { color: #1f2937 !important; }
+.text-secondary-custom { color: #6b7280 !important; }
+.text-primary-blue { color: #3b82f6 !important; }
+.bg-primary-blue { background-color: #3b82f6 !important; }
+.bg-light-blue { background-color: #eff6ff !important; }
+.border-light-custom { border-color: #e5e7eb !important; }
+.btn-outline-custom {
+    color: #374151;
+    border-color: #e5e7eb;
+    background-color: #ffffff;
+}
+.btn-outline-custom:hover {
+    color: #3b82f6;
+    border-color: #3b82f6;
+    background-color: #f9fafb;
+}
+.divider-custom {
+    width: 1px;
+    height: 32px;
+    background-color: #e5e7eb;
+}

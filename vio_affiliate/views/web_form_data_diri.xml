@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="form_data_diri" name="Form data diri">
+        <t t-call="website.layout">
+            <t t-set="head">
+                <link href="/vio_affiliate/static/src/css/form_data_diri.css" rel="stylesheet"/>
+            </t>
+            <div id="wrap" class="container my-4">
+
+                <div class="form-container">
+                    <div class="form-header">
+                        <h2>Form Data Diri</h2>
+                        <p>Lengkapi data diri Anda dengan lengkap dan benar</p>
+                    </div>
+
+                    <div id="successMessage" class="success-message" role="alert" aria-live="polite">
+                        <strong>✓ Berhasil!</strong> Data Anda telah disimpan dengan baik.
+                    </div>
+
+                    <form action="/my/account" method="post" id="formDataDiri" novalidate="novalidate">
+                        <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+
+                        <!-- Section: Informasi Pribadi -->
+                        <div class="form-section">
+                            <h3>
+                                <svg class="section-icon" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                                </svg>
+                                Informasi Pribadi
+                            </h3>
+
+                            <div class="form-group">
+                                <label for="input_nik" class="form-label">
+                                    NIK
+                                    <span class="required-indicator">*</span>
+                                </label>
+                                <input type="text" class="form-control" id="input_nik" name="nik" t-att-value="nik" placeholder="Masukkan 16 digit NIK" maxlength="16" pattern="[0-9]{16}" aria-required="true" aria-describedby="help_nik error_nik valid_nik" oninput="this.value = this.value.replace(/[^0-9]/g, ''); validateField(this);"/>
+                                <div id="help_nik" class="form-text">Nomor Induk Kependudukan (16 digit)</div>
+                                <div id="error_nik" class="invalid-feedback">NIK harus 16 digit angka</div>
+                                <div id="valid_nik" class="valid-feedback">NIK valid</div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="input_name" class="form-label">
+                                    Nama Lengkap
+                                    <span class="required-indicator">*</span>
+                                </label>
+                                <input type="text" class="form-control" id="input_name" name="name" t-att-value="name" placeholder="Masukkan nama lengkap Anda" required="required" aria-required="true" aria-describedby="help_name error_name valid_name" oninput="validateField(this);"/>
+                                <div id="help_name" class="form-text">Nama sesuai dengan kartu identitas</div>
+                                <div id="error_name" class="invalid-feedback">Nama harus diisi</div>
+                                <div id="valid_name" class="valid-feedback">Nama valid</div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="input_phone" class="form-label">
+                                    No. Telepon
+                                    <span class="required-indicator">*</span>
+                                </label>
+                                <input type="tel" class="form-control" id="input_phone" name="phone" t-att-value="phone" placeholder="Contoh: 081234567890" pattern="[0-9]{10,15}" aria-required="true" aria-describedby="help_phone error_phone valid_phone" oninput="this.value = this.value.replace(/[^0-9]/g, ''); validateField(this);"/>
+                                <div id="help_phone" class="form-text">Nomor WhatsApp yang aktif (10-15 digit)</div>
+                                <div id="error_phone" class="invalid-feedback">Nomor telepon tidak valid</div>
+                                <div id="valid_phone" class="valid-feedback">Nomor telepon valid</div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="input_email" class="form-label">
+                                    Email
+                                    <span class="required-indicator">*</span>
+                                </label>
+                                <input type="email" class="form-control" id="input_email" name="email" t-att-value="email" placeholder="nama@email.com" required="required" aria-required="true" aria-describedby="help_email error_email valid_email" oninput="validateField(this);"/>
+                                <div id="help_email" class="form-text">Email yang digunakan untuk login ke sistem</div>
+                                <div id="error_email" class="invalid-feedback">Format email tidak valid</div>
+                                <div id="valid_email" class="valid-feedback">Email valid</div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="input_city" class="form-label">
+                                    Kota Domisili
+                                    <span class="required-indicator">*</span>
+                                </label>
+                                <input type="text" class="form-control" id="input_city" name="city" t-att-value="city" placeholder="Contoh: Jakarta Selatan" required="required" aria-required="true" aria-describedby="help_city error_city valid_city" oninput="validateField(this);"/>
+                                <div id="help_city" class="form-text">Kota tempat Anda tinggal saat ini</div>
+                                <div id="error_city" class="invalid-feedback">Kota harus diisi</div>
+                                <div id="valid_city" class="valid-feedback">Kota valid</div>
+                            </div>
+                        </div>
+
+                        <!-- Section: Informasi Pekerjaan -->
+                        <div class="form-section">
+                            <h3>
+                                <svg class="section-icon" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/>
+                                </svg>
+                                Informasi Pekerjaan
+                            </h3>
+
+                            <div class="form-group">
+                                <label for="input_pekerjaan" class="form-label">
+                                    Pekerjaan
+                                    <span class="required-indicator">*</span>
+                                </label>
+                                <input type="text" class="form-control" id="input_pekerjaan" name="pekerjaan" t-att-value="pekerjaan" placeholder="Contoh: Karyawan Swasta" required="required" aria-required="true" aria-describedby="help_pekerjaan error_pekerjaan valid_pekerjaan" oninput="validateField(this);"/>
+                                <div id="help_pekerjaan" class="form-text">Pekerjaan Anda saat ini</div>
+                                <div id="error_pekerjaan" class="invalid-feedback">Pekerjaan harus diisi</div>
+                                <div id="valid_pekerjaan" class="valid-feedback">Pekerjaan valid</div>
+                            </div>
+                        </div>
+
+                        <!-- Section: Media Sosial -->
+                        <div class="form-section">
+                            <h3>
+                                <svg class="section-icon" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                                </svg>
+                                Media Sosial
+                            </h3>
+
+                            <div class="form-group">
+                                <label for="input_medsos_ig" class="form-label">Link Profil Instagram</label>
+                                <input type="url" class="form-control" id="input_medsos_ig" name="medsos_ig" t-att-value="ig" placeholder="https://instagram.com/username" aria-describedby="help_medsos_ig" oninput="validateField(this);"/>
+                                <div id="help_medsos_ig" class="form-text">Link profil Instagram Anda (opsional)</div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="input_medsos_tiktok" class="form-label">Link Profil TikTok</label>
+                                <input type="url" class="form-control" id="input_medsos_tiktok" name="medsos_tiktok" t-att-value="tiktok" placeholder="https://tiktok.com/@username" aria-describedby="help_medsos_tiktok" oninput="validateField(this);"/>
+                                <div id="help_medsos_tiktok" class="form-text">Link profil TikTok Anda (opsional)</div>
+                            </div>
+                        </div>
+
+                        <!-- Section: Informasi Rekening Bank -->
+                        <div class="form-section">
+                            <h3>
+                                <svg class="section-icon" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M4 10h3v7H4zM10.5 10h3v7h-3zM2 19h20v3H2zM17 10h3v7h-3zM12 1L2 6v2h20V6z"/>
+                                </svg>
+                                Informasi Rekening Bank
+                            </h3>
+
+                            <div class="form-group">
+                                <label for="input_nama_bank" class="form-label">
+                                    Nama Bank
+                                    <span class="required-indicator">*</span>
+                                </label>
+                                <input type="text" class="form-control" id="input_nama_bank" name="nama_bank" placeholder="Contoh: BCA, Mandiri, BNI" t-att-value="nama_bank" required="required" aria-required="true" aria-describedby="help_nama_bank error_nama_bank valid_nama_bank" oninput="validateField(this);"/>
+                                <div id="help_nama_bank" class="form-text">Nama bank yang Anda gunakan</div>
+                                <div id="error_nama_bank" class="invalid-feedback">Nama bank harus diisi</div>
+                                <div id="valid_nama_bank" class="valid-feedback">Nama bank valid</div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="input_no_rek" class="form-label">
+                                    Nomor Rekening
+                                    <span class="required-indicator">*</span>
+                                </label>
+                                <input type="text" class="form-control" id="input_no_rek" name="no_rek" placeholder="Masukkan nomor rekening" t-att-value="no_rek" pattern="[0-9]{8,20}" required="required" aria-required="true" aria-describedby="help_no_rek error_no_rek valid_no_rek" oninput="this.value = this.value.replace(/[^0-9]/g, ''); validateField(this);"/>
+                                <div id="help_no_rek" class="form-text">Nomor rekening bank Anda (8-20 digit)</div>
+                                <div id="error_no_rek" class="invalid-feedback">Nomor rekening tidak valid</div>
+                                <div id="valid_no_rek" class="valid-feedback">Nomor rekening valid</div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="input_nama_rek" class="form-label">
+                                    Nama Pemilik Rekening
+                                    <span class="required-indicator">*</span>
+                                </label>
+                                <input type="text" class="form-control" id="input_nama_rek" name="nama_rek" placeholder="Sesuai dengan buku rekening" t-att-value="nama_rek" required="required" aria-required="true" aria-describedby="help_nama_rek error_nama_rek valid_nama_rek" oninput="validateField(this);"/>
+                                <div id="help_nama_rek" class="form-text">Nama pemilik rekening harus sesuai dengan KTP</div>
+                                <div id="error_nama_rek" class="invalid-feedback">Nama pemilik rekening harus diisi</div>
+                                <div id="valid_nama_rek" class="valid-feedback">Nama pemilik rekening valid</div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="input_cabang_bank" class="form-label">
+                                    Wilayah Unit Cabang
+                                    <span class="required-indicator">*</span>
+                                </label>
+                                <input type="text" class="form-control" id="input_cabang_bank" name="cabang_bank" placeholder="Contoh: Jakarta Pusat" t-att-value="cabang_bank" required="required" aria-required="true" aria-describedby="help_cabang_bank error_cabang_bank valid_cabang_bank" oninput="validateField(this);"/>
+                                <div id="help_cabang_bank" class="form-text">Wilayah cabang bank</div>
+                                <div id="error_cabang_bank" class="invalid-feedback">Wilayah cabang harus diisi</div>
+                                <div id="valid_cabang_bank" class="valid-feedback">Wilayah cabang valid</div>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-submit" id="submitBtn">
+                            <span class="spinner"></span>
+                            <span>Simpan Data</span>
+                        </button>
+                    </form>
+                </div>
+
+                <script src="/vio_affiliate/static/src/js/form_data_diri.js"></script>
+            </div>
+        </t>
+    </template>
+
+</odoo>

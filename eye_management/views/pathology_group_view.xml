@@ -1,0 +1,41 @@
+<odoo>
+    <!-- Pathology Group -->
+
+    <record model="ir.ui.view" id="medical_pathology_groups_view">
+        <field name="name">Pathology Groups</field>
+        <field name="model">medical.pathology.group</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="Pathology Groups">
+                <group colspan="4" col="4">
+                    <field name="name" required="1"/>
+                    <field name="code" required="1"/>
+                    <field name="desc" required="1"/>
+                    <newline/>
+                    <field name="info" colspan="4"/>
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="medical_pathology_groups_tree">
+        <field name="name">Pathology Groups</field>
+        <field name="model">medical.pathology.group</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string='Pathology Groups'>
+                <field name="name"/>
+                <field name="code"/>
+                <field name="desc"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="action_medical_pathology_groups_tree">
+        <field name="name">Pathology Groups</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">medical.pathology.group</field>
+        <field name="view_id" ref="medical_pathology_groups_tree"/>
+    </record>
+
+</odoo>

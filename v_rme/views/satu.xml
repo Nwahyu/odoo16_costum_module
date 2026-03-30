@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="vio_rme_view_tree" model="ir.ui.view">
+        <field name="name">vio.rme.view.tree</field>
+        <field name="model">vio.rme</field>
+        <field name="arch" type="xml">
+            <tree string="">
+                <field name="name" />
+                <field name="patient_id" />
+                <field name="no_hp" />
+                <field name="appointment_sdate" />
+                <field name="institution_id" />
+                <field name="state" />
+                <field name="status_by" />
+                <field name="race_tipe_id" />
+                <field name="tujuan_id" />
+                <field name="service_id" />
+                <field name="resolved" />
+                <field name="doctor_id" />
+                <field name="reason" />
+                <field name="remarks" />
+            </tree>
+        </field>
+    </record>
+
+
+    <record id="vio_rme_view_form" model="ir.ui.view">
+        <field name="name">vio.rme.view.form</field>
+        <field name="model">vio.rme</field>
+        <field name="arch" type="xml">
+            <form string="">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name" />
+                            <field name="patient_id" />
+                            <field name="appointment_sdate" />
+                            <field name="doctor_id" />
+                            <field name="resolved" />
+                        </group>
+                        <group>
+                            <field name="institution_id" />
+                            <field name="no_hp" />
+                            <field name="status_by" />
+                            <field name="race_tipe_id" />
+                            <field name="agent_ids" widget="many2many_tags" options="{'no_create_edit':true, 'no_create':true}"/>
+                            <field name="service_id" />
+                            <field name="reason" />
+                        </group>
+                        <field name="remarks" placeholder="Remarks kosong"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="vio_rme_action" model="ir.actions.act_window">
+        <field name="name">RME pasien RME</field>
+        <field name="res_model">vio.rme</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p>list RME pasien Vio</p>
+        </field>
+    </record>
+
+</odoo>

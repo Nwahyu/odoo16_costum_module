@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_income_by_doctor_form" model="ir.ui.view">
+            <field name="name">Income By Doctor</field>
+            <field name="model">income.by.doctor.report.wizard</field>
+            <field name="arch" type="xml">
+                <form string="By Doctor">
+                    <separator string="Fill The Dates" colspan="4"/>
+                    <group>
+                        <group>
+                            <field name="start_date"/>
+                        </group>
+                        <group>
+                            <field name="end_date"/>
+                        </group>
+                    </group>
+                    <footer>
+                        <button special="cancel" string="Cancel"
+                                icon="fa-times-circle text-danger"/>
+                        <button name="income_by_doctor_report" string="Print Report"
+                                type="object" icon="fa-arrow-right text-success"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="action_income_by_doctor_report">
+            <field name="name">Income By Doctor</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">income.by.doctor.report.wizard</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+
+
+        <menuitem action="action_income_by_doctor_report" name="Income By Doctor"
+                  id="income_by_doctor_submenu" parent="medical_reporting_menu" sequence="1"/>
+
+        <record model="ir.ui.view" id="income_by_procedure_new_view">
+            <field name="name">income.by.procedure.wizard.form</field>
+            <field name="model">income.by.procedure.wizard</field>
+            <field name="arch" type="xml">
+                <form string="Report Wizard" version="7.0">
+                    <separator string="Fill The Dates" colspan="4"/>
+                    <group>
+                        <group>
+                            <field name="date_start"/>
+                        </group>
+                        <group>
+                            <field name="date_end"/>
+                        </group>
+                    </group>
+                    <footer>
+                        <button special="cancel" string="Cancel"
+                                icon="fa-times-circle text-danger"/>
+                        <button name="print_report" string="Print Report" type="object"
+                                icon="fa-arrow-right text-success"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+        <record id="action_income_by_procedure_wizard_report" model="ir.actions.act_window">
+            <field name="name">Income By Procedure</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">income.by.procedure.wizard</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+        <menuitem id="menu_action_income_by_procedure_report" action="action_income_by_procedure_wizard_report"
+                  parent="medical_reporting_menu" sequence="2"/>
+
+        <record model="ir.ui.view" id="income_by_insurance_company_new_view">
+			<field name="name">income.by.insurance.company.wizard.form</field>
+			<field name="model">income.by.insurance.company.wizard</field>
+			<field name="arch" type="xml">
+				<form string="Report Wizard" version="7.0">
+					<separator string="Fill The Dates" colspan="4" />
+					<group>
+                        <group>
+    						<field name="date_start" />
+    						<field name="insurance_company" domain="[('is_insurance_company','=',True)]" />
+    					</group>
+                        <group>
+    						<field name="date_end" />
+                        </group>
+                    </group>
+					<footer>
+						<button special="cancel" string="Cancel"
+							icon="fa-times-circle text-danger" />
+						<button name="print_report" string="Print Report" type="object"
+							icon="fa-arrow-right text-success" />
+					</footer>
+				</form>
+			</field>
+		</record>
+        <record id="action_income_by_insurance_company_wizard_report"
+			model="ir.actions.act_window">
+			<field name="name">Income By Insurance Company</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">income.by.insurance.company.wizard</field>
+			<field name="view_mode">form</field>
+			<field name="target">new</field>
+		</record>
+        <menuitem id="menu_action_income_by_insurance_company_report"
+			action="action_income_by_insurance_company_wizard_report" parent="medical_reporting_menu"
+			sequence="5" />
+
+
+        <!-- ========================== -->
+
+
+        <record id="view_my_wizard_form" model="ir.ui.view">
+            <field name="name">my.wizard.form</field>
+            <field name="model">appointment.wizard</field>
+            <field name="arch" type="xml">
+            <form string="My Wizard">
+                <group>
+                    <field name="name" placeholder="nama file hasil export"/>
+                    <group>    
+                        <field name="cabang_ids" widget='many2many_checkboxes' options="{'horizontal':'1'}"/>
+                    </group>
+                    <group>
+                        <field name="start_time" widget="daterange" class="oe_inline" options="{'related_end_date': 'end_time'}"/>
+                        <field name="end_time" widget="daterange" class="oe_inline" options="{'related_start_date': 'start_time'}"/>
+                    </group>
+                </group>
+                <footer>
+                    <button name="action_export_xlsx" type="object" string="Confirm" class="btn-primary"/>
+                    <button string="Cancel" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <!-- menunya ada di file menu_item -->
+    <record id="action_open_wizard_export_apointment" model="ir.actions.act_window">
+        <field name="name">Export menu</field>
+        <field name="res_model">appointment.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="view_my_wizard_form"/>
+        <field name="target">new</field>
+    </record>
+
+
+    </data>
+</odoo>

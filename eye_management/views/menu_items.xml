@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem name="Eye Management" id="medical_menu"/>
+    <!-- configuration paling atas -->
+    <menuitem name="Configuration" id="medical_conf_menu" parent="medical_menu" sequence="12" />
+
+    <!-- 1 -->
+    <menuitem name="Patients" id="medical_patients_menu" parent="medical_menu" sequence="1" />
+    <!-- 2 -->
+    <menuitem name="Traffic" id="medical_appointment_menu"
+              parent="medical_menu" sequence="2" />
+    <menuitem name="Prescriptions" id="medical_prescription_menu"
+              parent="medical_menu" sequence="3" />
+    <menuitem name="Medical Procedures" id="medical_conf_procedure"
+              parent="medical_conf_menu" sequence="4" />
+    <menuitem name="Operational Areas" id="medical_conf_operational_areas"
+              parent="medical_conf_menu" sequence="6" />
+    <menuitem name="Health Centers" id="medical_conf_hospital"
+              parent="medical_conf_menu" sequence="5" />
+    <menuitem name="Physicians" id="medical_conf_physicians"
+              parent="medical_conf_menu" sequence="7" />
+    <menuitem name="Medicaments" id="medical_conf_medicaments"
+              parent="medical_conf_menu" sequence="8" />
+    <menuitem name="Insurances" id="medical_conf_insurances"
+              parent="medical_conf_menu" sequence="9" />
+    <menuitem name="Reporting" id="medical_reporting_menu"
+              parent="medical_menu" sequence="11" />
+    <menuitem action="medical_action_form_appointment" id="medical_conf_appointment_add" parent="medical_appointment_menu" sequence="1" />
+    <menuitem action="medical_action_form_physician" id="medical_conf_physician_list" parent="medical_conf_physicians" sequence="1" />
+    <menuitem action="medical_action_tree_medicament" id="medical_edit_medicament" parent="medical_conf_medicaments" sequence="2" />
+    <menuitem action="medical_action_insurance" id="medical_conf_edit_insurance" parent="medical_conf_insurances" sequence="1" />
+    <menuitem action="action_partner_health_insurance_company"
+          id="menu_health_insurance_company_form" parent="medical_conf_insurances" sequence="0" />
+    <menuitem action="medical_action_speciality" id="medical_conf_speciality" parent="medical_conf_physicians" />
+    <!-- <menuitem action="medical_action_tree_family_code" id="medical_conf_edit_family_code" parent="medical_patients_menu" sequence="2" /> -->
+    <menuitem action="medical_patient_action_tree" parent="medical_patients_menu" id="medical_edit_patient" sequence="1" />
+    <menuitem action="action_partner_health_center" id="menu_health_center_form" parent="medical_conf_hospital" sequence="0" />
+    <menuitem action="medical_action_form_hospital_building" id="medical_conf_hospital_building_add" parent="medical_conf_hospital" sequence="1" />
+    <menuitem action="medical_action_form_hospital_unit" id="medical_conf_hospital_unit_add" parent="medical_conf_hospital" sequence="2" />
+    <menuitem action="medical_action_form_hospital_oprating_room"
+              id="medical_conf_hospital_oprating_room" parent="medical_conf_hospital" sequence="5" />
+    <menuitem action="action_medical_procedure_tree" id="medical_procedure_list" parent="medical_conf_procedure" />
+    <menuitem action="action_teeth_code_tree" id="teeth_code_list"
+              parent="medical_conf_procedure" groups='make_invisible'  />
+    <menuitem action="medical_action_prescription" id="menu_medical_action_prescription" parent="medical_prescription_menu" />
+    <menuitem id="menu_product_treatment_action" action="product_treatment_action" parent="medical_conf_procedure" />
+
+    <menuitem name="Eye Readings Masters" id="eye_readings_master" parent="medical_conf_menu"/>
+    <menuitem name="Distance" id="distance_menu" action="distance_action" parent="eye_management.eye_readings_master" sequence="1"/>
+    <menuitem name="Near" action="near_action" id="near_menu" parent="eye_management.eye_readings_master" sequence="2"/>
+    <menuitem name="With Glasses" action="with_glasses_action" id="with_glasses_menu" parent="eye_management.eye_readings_master" sequence="3"/>
+    <menuitem name="Without Glasses" action="without_glasses_action" id="without_glasses_menu" parent="eye_management.eye_readings_master"
+        sequence="4"/>
+    <menuitem name="PIN" id="pin_menu" action="pin_action" parent="eye_management.eye_readings_master" sequence="5"/>
+    <menuitem name="IOP" id="iop_menu" action="iop_action" parent="eye_management.eye_readings_master" sequence="6"/>
+
+
+
+    <menuitem
+        id="confi_menu"
+        name="Configurasi 2"
+        sequence="13"
+        parent="medical_menu"/>
+
+    <menuitem
+        id="insial_sales_menu"
+        name="inisial agent"
+        action="inisial_sales_action"
+        parent="confi_menu"
+        sequence="2"/>
+
+    <menuitem
+        id="roadshow_menu"
+        name="roadshow list"
+        action="roadshow_action"
+        parent="confi_menu"
+        sequence="3"/>
+
+    <!-- 3 -->
+    <menuitem
+        id="medical_dokter_menu"
+        name="List Dokter"
+        action="medical_action_form_physician"
+        parent="medical_menu"
+        sequence="2"/>
+    
+    <menuitem
+        id="export_menu"
+        name="export menu"
+        action="action_open_wizard_export_apointment"
+        parent="medical_appointment_menu"
+        sequence="5"/>
+
+    <menuitem
+        id="dashboard_owl_menu"
+        name="dashboard p"
+        action="action_owlDashboard"
+        parent="medical_appointment_menu"
+        sequence="10"/>
+    
+    
+
+    <!-- <menuitem action="medical_action_form_physician" id="medical_conf_physician_list" parent="medical_conf_physicians" sequence="1" /> -->
+    <menuitem name="Assistance Doctor" id="assistance_doctor_menu" action="assistance_doctor_action" parent="medical_menu" sequence="3"/>
+
+
+</odoo>
